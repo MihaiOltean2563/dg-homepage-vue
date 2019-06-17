@@ -17,7 +17,7 @@
             <a href="#">Photo & Video devices</a>
           </p>
         </div>
-        <div class="grid-wrapper__center col-xs-12 col-md-4">
+        <div class="grid-wrapper__center col-xs-12 col-md-6">
           <h3 class="footer-grid-heading">Useful links</h3>
           <div class="row">
             <div class="col-xs-12 col-md-6">
@@ -59,7 +59,7 @@
             </div>
           </div>
         </div>
-        <div class="grid-wrapper__right col-xs-12 col-md-5">
+        <div class="grid-wrapper__right col-xs-12 col-md-3">
           <h3 class="footer-grid-heading">Sign up to our Newsletter</h3>
           <input type="text" class="newsletter-input">
           <a href="#" class="sign-to-newsletter-cta center-xs middle-xs">

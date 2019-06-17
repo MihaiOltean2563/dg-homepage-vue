@@ -6,12 +6,16 @@
           <div class="widget-icon center-xs">
             <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_arrow-purple.svg" alt="arrow-purple">
           </div>
-          <p><strong>Received a letter in the post?</strong></p>
-          <a class="find-my-quote" id="find-my-quote" href="#"><strong>Find my quote</strong></a>
+          <div class="widget-body middle-xs">
+            <p><strong>Received a letter in the post?</strong></p>
+            <a class="find-my-quote" id="find-my-quote" href="#"><strong>Find my quote</strong></a>
+          </div>
         </div>
       </div>
       <div class="welcome-intro middle-xs">
-        <h1 class="welcome-intro__title">Manage your plans, appliances, and repairs all in one place</h1>
+        <div class="welcome-intro-wrapper">
+          <h1 class="welcome-intro__title">Manage your plans, appliances, and repairs all in one place</h1>
+        </div>
         <a class="welcome-intro__cta center-xs middle-xs" href="#">Log in to My Account</a>
       </div>
     </div><!--container-wrapper-end-->
@@ -41,22 +45,31 @@ export default {
       &__title {
         color: #fff;
         font-size: 28px;
-        padding-top: 20px;
-        padding-bottom: 50px;
-        @media (min-width: 768px) {
+        padding: 20px 20px 50px 20px;
+        @media(min-width: 550px){
+          padding-left: 0;
+          padding-right: 0;
+          max-width: 500px;
           font-size: 42px;
-          width: 60%;
+          line-height: 62px;
+        }
+        @media(min-width: 650px){
+          max-width: 650px;
         }
       }
       &__cta {
         background: #0a93d3;
         color: #fff;
         height: 55px;
-        width: 280px;
         display: flex;
         border-radius: 3px;
         font-size: 18px;
         margin-bottom: 100px;
+        // max-width: 90%;
+        padding: 0 15px;
+        @media(min-width: 300px){
+          width: 280px;
+        }
         @media (min-width: 768px) {
           font-size: 22px;
         }
@@ -80,14 +93,26 @@ export default {
         }
         .widget-icon{
           border-radius: 50%;
-          width: 25px;
-          height: 25px;
+          width: 35px;
+          height: 35px;
           background: #4C2178;
           display: flex;
+          @media(min-width: 768px){
+            width: 25px;
+            height: 25px;
+          }
+        }
+        .widget-body{
+          display: block;
+          text-align: left;
+
+          @media(min-width: 500px){
+            display: flex;
+          }
         }
         .find-my-quote{
           text-decoration: underline;
-          padding-right: 10px;
+          padding: 0 10px;
         }
       }
     }

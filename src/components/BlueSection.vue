@@ -16,54 +16,54 @@
           <div class="col-xs-12 col-md-6 special-warranty__left">
             <div class="benefits-wrapper">
               <div class="row benefit">
-                <div class="col-xs-2 benefit__icon center-xs">
+                <div class="col-xs-12 col-sm-2 benefit__icon">
                   <div class="icon-box center-xs">
                     <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_plan.svg" alt="icon">
                   </div>
                 </div>
-                <div class="col-xs-10 benefit__desc top-xs start-xs">
-                  <div class="row">
-                    <div class="col-xs-1">
+                <div class="col-xs-12 col-sm-10 benefit__desc top-xs start-xs">
+                  <div class="benefit-title">
+                    <div>
                       <img class="arr-right" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_arrow-white.png">
                     </div>
-                    <div class="col-xs-11">
-                      <h2 class="benefit__desc__title">My Account</h2>
-                    </div>
+                   <div>
+                      <h2 class="benefit__desc__title"><a href="#">My Account</a></h2>
+                   </div>
                   </div>
                   <p class="benefit__desc__description">View and manage your plans anytime,<br> anywhere</p>
                 </div>
               </div>
               <div class="row benefit">
-                <div class="col-xs-2 benefit__icon center-xs">
+                <div class="col-xs-12 col-sm-2 benefit__icon start-xs">
                   <div class="icon-box center-xs">
                     <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/Repair+engineer+icon+outlined.svg" alt="icon">
                   </div>
                 </div>
-                <div class="col-xs-10 benefit__desc top-xs start-xs">
-                  <div class="row">
-                    <div class="col-xs-1">
+                <div class="col-xs-12 col-sm-10 benefit__desc top-xs start-xs">
+                  <div class="benefit-title">
+                    <div>
                       <img class="arr-right" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_arrow-white.png">
                     </div>
-                    <div class="col-xs-11">
-                      <h2 class="benefit__desc__title">Digital repair booking</h2>
+                    <div>
+                      <h2 class="benefit__desc__title"><a href="#">Digital repair booking</a></h2>
                     </div>
                   </div>
                   <p class="benefit__desc__description">Request a repair and track existing engineer appointments from any device</p>
                 </div>
               </div>
               <div class="row benefit">
-                <div class="col-xs-2 benefit__icon center-xs">
+                <div class="col-xs-12 col-sm-2 benefit__icon start-xs">
                   <div class="icon-box center-xs">
                     <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/Repair+icon+outlined.svg" alt="icon">
                   </div>
                 </div>
-                <div class="col-xs-10 benefit__desc top-xs start-xs">
-                  <div class="row">
-                    <div class="col-xs-1">
+                <div class="col-xs-12 col-sm-10 benefit__desc top-xs start-xs">
+                  <div class="benefit-title">
+                    <div>
                       <img class="arr-right" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_arrow-white.png">
                     </div>
-                    <div class="col-xs-11">
-                      <h2 class="benefit__desc__title">Troubleshooting and maintenance content</h2>
+                    <div>
+                      <h2 class="benefit__desc__title"><a href="#">Troubleshooting and maintenance content</a></h2>
                     </div>
                   </div>
                   <p class="benefit__desc__description">Get quick fixes for common faults without needing an engineer</p>
@@ -72,7 +72,9 @@
             </div>
           </div>
           <div class="col-xs-12 col-md-6 special-warranty__right">
-              <img src="../assets/coming-soon.png">
+            <div class="img-wrapper">
+              <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/father-son.png">
+            </div>
           </div>
         </div>
 
@@ -98,7 +100,9 @@ export default {
 <style scoped lang="scss">
 #special-warranty{
   background: #006DB3;
-
+  a{
+    color: #fff;
+  }
   .special-warranty-wrapper{
     display: flex;
     .container{ 
@@ -107,12 +111,12 @@ export default {
         color: #fff;
         font-size: 25px;
         line-height: 38px;
-        padding: 90px 0;
+        padding: 90px 20px;
         @media(min-width: 768px){
           font-size: 35px;
           line-height: 52px;
-          width: 80%;
-          margin: 0 auto;
+          padding-right:0;
+          padding-left:0;
         }
       }
       
@@ -137,6 +141,10 @@ export default {
                 // border: 1px solid palegreen;
                 display: flex;
                 padding-right: 0;
+                padding-bottom: 20px;
+                @media(min-width: 768px){
+                  justify-content: center;
+                }
                 .icon-box{
                   width: 50px;
                   height: 50px;
@@ -150,15 +158,9 @@ export default {
                 display: flex;
                 flex-direction: column;
                 padding-left: 0;
-                padding-top: 10px;
-                .row{
-                  width: 100%;
-                  .col-xs-1{
-                    padding: 0;
-                  }
-                  .col-xs-11{
-                    padding-left: 0;
-                  }
+                padding-top: 5px;
+                .benefit-title{
+                  display: flex;
                 }
                 &__title{
                   font-size: 22px;
@@ -170,6 +172,7 @@ export default {
                 &__description{
                   font-size: 18px;
                   line-height: 28px;
+                  padding-left: 25px;
                 }
               }
             }
@@ -177,6 +180,13 @@ export default {
         }
         &__right{
           // border: 1px solid pink;
+          .img-wrapper{
+            max-width: 100%;
+            max-height: 100%;
+            img{
+              max-width: 100%;
+            }
+          }
         }
       }
     }

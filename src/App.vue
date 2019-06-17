@@ -19,10 +19,12 @@ export default {
  @import "./assets/sass/styles";
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  // font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
+  font-family: 'VAG Rounded W01 Light',sans-serif;
+
 }
 
 // Carousel start

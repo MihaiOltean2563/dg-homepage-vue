@@ -48,10 +48,11 @@ export default {
         font-size: 25px;
         line-height: 30px;
         color: #333333;
-        padding: 90px 0;
+        padding: 50px 20px;
         @media(min-width: 768px){
           font-size: 35px;
           line-height: 49px;
+          padding: 90px 20px;
         }
         
       }

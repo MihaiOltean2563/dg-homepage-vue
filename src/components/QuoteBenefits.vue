@@ -14,79 +14,69 @@
           </div>
           <div class="qb-wrapper__right col-xs-12 col-md-6">
             <div class="benefits-wrapper">
-              <div class="row">
-                <div class="col-xs-1">
+              <div class="benefit-row">
                   <div class="icon-wrapper">
                     <img
                       class="arr-right"
                       src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/white-tick.svg"
                     >
                   </div>
-                </div>
-                <div class="col-xs-11">
+                <div>
                   <h5 class="benefit__desc__title">
                     <strong>Protection against breakdowns</strong>
                   </h5>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-xs-1">
+              <div class="benefit-row">
                   <div class="icon-wrapper">
                     <img
                       class="arr-right"
                       src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/white-tick.svg"
                     >
                   </div>
-                </div>
-                <div class="col-xs-11">
+                <div>
                   <h5 class="benefit__desc__title">
                     <strong>Accidental damage cover</strong>
                   </h5>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-xs-1">
+              <div class="benefit-row">
                   <div class="icon-wrapper">
                     <img
                       class="arr-right"
                       src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/white-tick.svg"
                     >
                   </div>
-                </div>
-                <div class="col-xs-11">
+                <div>
                   <h5 class="benefit__desc__title">
                     <strong>Unlimited repairs by expert engineers</strong>
                   </h5>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-xs-1">
-                  <div class="icon-wrapper">
+              <div class="benefit-row">
+                <div class="icon-wrapper">
                     <img
                       class="arr-right"
                       src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/white-tick.svg"
                     >
-                  </div>
                 </div>
-                <div class="col-xs-11">
+                <div>
                   <h5 class="benefit__desc__title">
                     <strong>Parts, labour, and call-out charges included</strong>
                   </h5>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-xs-1">
+              <div class="benefit-row">
                   <div class="icon-wrapper">
                     <img
                       class="arr-right"
                       src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/white-tick.svg"
                     >
                   </div>
-                </div>
-                <div class="col-xs-11">
+                <div>
                   <h5 class="benefit__desc__title">
-                    <strong>A replacement product if yours can't be fixed</strong>
-                    <br>(just pay the cost of installation and disposal)
+                    <strong> A replacement product if yours can't be fixed</strong>
+                    (just pay the cost of installation and disposal)
                   </h5>
                   <a
                     href="#"
@@ -135,6 +125,7 @@ export default {};
 #quote-benefits {
   border: none;
   border-bottom: 1px solid #bcbcbc;
+   
   .quote-benefits-wrapper {
     display: flex;
     .container {
@@ -177,9 +168,20 @@ export default {};
         }
         &__right {
           .benefits-wrapper {
+            .benefit-row{
+              display: flex;
+              padding-bottom: 10px;
+              a {
+                text-decoration: underline;
+                color: #333;
+              }
+            }
             .icon-wrapper {
               width: 25px;
               height: 25px;
+              min-width: 25px;
+              min-height: 25px;
+              margin-right: 5px;
               img {
                 padding: 5px;
               }
@@ -193,11 +195,7 @@ export default {};
               height: 100%;
             }
             .row {
-              padding-bottom: 30px;
-              a {
-                text-decoration: underline;
-                color: #333;
-              }
+             
             }
 
             .benefit__desc__title {
