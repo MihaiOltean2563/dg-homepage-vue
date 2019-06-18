@@ -20,7 +20,7 @@
         <div class="grid-wrapper__center col-xs-12 col-md-6">
           <h3 class="footer-grid-heading">Useful links</h3>
           <div class="row">
-            <div class="col-xs-12 col-md-6">
+            <div class="col-xs-12 col-md-5">
               <p>
                 <a href="#">About us</a>
               </p>
@@ -37,7 +37,7 @@
                 <a href="#">Careers</a>
               </p>
             </div>
-            <div class="col-xs-12 col-md-6">
+            <div class="col-xs-12 col-md-7">
               <p>
                 <a href="#">Investor relations</a>
               </p>
