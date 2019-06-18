@@ -38,7 +38,7 @@ export default {
 #app {
   // font-family: "VAG Rounded W01 Light", sans-serif;
   font-family: 'Varela Round', sans-serif;
-
+  overflow: hidden;
 }
 
 // Carousel start

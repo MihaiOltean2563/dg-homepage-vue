@@ -12,6 +12,7 @@
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0",
     "vue": "^2.6.10",
+    "vue-burger-menu": "^2.0.1",
     "vue-carousel": "^0.18.0"
   },
   "devDependencies": {

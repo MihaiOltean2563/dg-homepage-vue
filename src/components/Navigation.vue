@@ -31,33 +31,33 @@
         <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/logo_D%2BG_white.png" alt="Domestic&General Logo">
       </div>
       <div class="nav-mobile__account-management col-xs-2 middle-xs">
-        <!-- <span class="menu-burger">
-          <span class="hamburger"></span>
-        </span> -->
-        <label>
-          <input type="checkbox">
-          <span class="menu">
-            <span class="hamburger"></span>
-          </span>
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Work</a>
-            </li>
-          </ul>
-        </label>
+        <Slide right class="nav-burger-wrapper">
+          <a id="home" href="#">
+            <span>Get protected</span>
+          </a>
+          <a id="home" href="#">
+            <span>Book a repair</span>
+          </a>
+          <a id="home" href="#">
+            <span>Help and advice</span>
+          </a>
+          <a id="home" href="#">
+            <span>Log out</span>
+          </a>
+        </Slide>
       </div>
     </header>
   </div>
 </template>
 
 <script>
+import { Slide } from 'vue-burger-menu'  // import the CSS transitions you wish to use, in this case we are using `Slide`
 
+export default{
+  components: {
+    Slide
+  }
+}
 </script>
 
 <style lang="scss">
@@ -72,7 +72,7 @@
     }
     .nav{
       display: none;
-      @media(min-width: 768px){
+      @media(min-width: 975px){
         // border: 1px solid goldenrod;
         display: flex;
         color: #fff;
@@ -99,7 +99,7 @@
             border-left : .5px solid whitesmoke;
             padding: 5px 0 5px 0;
             &__item{
-              padding: 0 15px;
+              padding: 0 10px;
               font-size: 18px;
               
             }
@@ -123,12 +123,12 @@
               display: flex;
             }
           }
-
+          
         }
       }
     }
     .nav-mobile{
-      @media(min-width: 768px){
+      @media(min-width: 975px){
         display: none;
       }
       // border: 1px solid goldenrod;
@@ -167,45 +167,11 @@
         // border: 1px solid seagreen;
         font-size: 18px;
         display: flex;
-        .menu-burger{
-          
-          position: absolute;
-          right: 23px;
-          width: 50px;
-          height: 50px;
-          background: #FFF;
-          border-radius: 50% 50% 50% 50%;
-          transition: .5s ease-in-out;
-          cursor: pointer;
-          background: transparent;
-
-          .hamburger{
-            position: absolute;
-            top: 25px;
-            left: 10px;
-            width: 30px;
-            height: 2px;
-            // background: #000;
-            background: #fff;
-            display: block;
-            -webkit-transform-origin: center;
-            transform-origin: center;
-            transition: .5s ease-in-out;
-            &:before,
-            &:after{
-            transition: .5s ease-in-out;
-            content: "";
-            position: absolute;
-            display: block;
-            width: 100%;
-            height: 2px;
-            background: #fff;
-            }
-            &:before {
-              top: -10px;
-            } 
-            &:after {
-              bottom: -10px;
+        .nav-burger-wrapper{
+          .bm-burger-button{
+            top: 0;  
+            .bm-burger-bars{
+              background: #fff;
             }
           }
         }
