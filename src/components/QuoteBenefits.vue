@@ -181,7 +181,7 @@ export default {};
               height: 25px;
               min-width: 25px;
               min-height: 25px;
-              margin-right: 10px;
+              margin-right: 20px;
               img {
                 padding: 5px;
               }

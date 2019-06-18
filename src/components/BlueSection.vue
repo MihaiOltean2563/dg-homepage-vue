@@ -2,14 +2,12 @@
   <section id="special-warranty">
     <div class="special-warranty-wrapper center-xs">
       <div class="container">
-        <h1
-          class="special-warranty-title"
-        >Take control of your plans with help from Domestic & General, the UK’s leading specialist warranty provider</h1>
+        <h1 class="special-warranty-title">Take control of your plans with help from Domestic & General, the UK’s leading specialist warranty provider</h1>
 
         <carousel
           :scrollPerPage="true"
           :navigationEnabled="true"
-          :perPageCustom="[[480, 3], [768, 5]]"
+          :perPageCustom="[[480, 2],[500, 3], [768, 4], [960, 5]]"
           
         >
         <!-- :autoplay="true" -->
@@ -190,11 +188,14 @@ export default {
           line-height: 52px;
           padding-right: 0;
           padding-left: 0;
+          max-width: 975px;
+          margin: 0 auto;
         }
       }
 
-      .special-warranty {
+        .special-warranty {
         margin: 0;
+        padding: 0 10px;
         .row {
           margin: 0;
         }

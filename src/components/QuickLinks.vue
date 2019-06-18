@@ -11,20 +11,36 @@
               <p><strong>Protect your</strong></p>
               <p class="copy--blue"><strong>washing machine</strong></p>
               <div class="img-wrapper">
-                <img src="../assets/images/Appliances/img_washing-machine.png" alt="washing-machine">
+                <img src="../assets/images/Appliances/img_washing-machine.png" alt="Washing Machine">
               </div>
             </a>
           </div>
           <div id="8261695" class="appliance" data-type="dishwasher">
-            <a
-              href="https://www.domesticandgeneral.com/goal-search/household-en/dishwasher-protection"
-            ></a>
+            <a class="appliance__link-wrapper" href="https://www.domesticandgeneral.com/goal-search/household-en/dishwasher-protection">
+              <p><strong>Protect your</strong></p>
+              <p class="copy--blue"><strong>dishwasher</strong></p>
+              <div class="img-wrapper">
+                <img src="../assets/images/Appliances/img_dishwasher.png" alt="Dishwasher">
+              </div>
+            </a>
           </div>
           <div id="2688671" class="appliance" data-type="fridge-freezer">
-            <a href="https://www.domesticandgeneral.com/goal-search/household-en/fridge-freezer-44"></a>
+            <a class="appliance__link-wrapper" href="https://www.domesticandgeneral.com/goal-search/household-en/fridge-freezer-44">
+              <p><strong>Protect your</strong></p>
+              <p class="copy--blue"><strong>fridge freezer</strong></p>
+              <div class="img-wrapper">
+                <img src="../assets/images/Appliances/img_fridge-freezer.png" alt="Fridge Freezer">
+              </div>
+            </a>
           </div>
           <div id="6165187" class="appliance" data-type="all-appliances">
-            <a href="https://www.domesticandgeneral.com/products"></a>
+            <a class="appliance__link-wrapper" href="https://www.domesticandgeneral.com/products">
+             <p><strong>View our</strong></p>
+              <p class="copy--blue"><strong>appliances</strong></p>
+              <div class="img-wrapper">
+                <img src="../assets/images/Appliances/img_all-appliances.png" alt="All appliaces">
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -44,7 +60,7 @@ export default {};
     @media (min-width: 768px) {
       display: flex;
     }
-    .container {
+    .container{
       // border: 1px solid goldenrod;
       padding-bottom: 90px;
 
@@ -65,7 +81,7 @@ export default {};
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        padding: 0 20px;
+        padding: 0 10px;
         @media (min-width: 768px) {
           padding: 0;
         }
@@ -79,6 +95,12 @@ export default {};
           max-width: 45%;
           display: flex;
           transition: all 0.3s ease-in-out;
+
+          @media (min-width: 1000px) {
+            flex-basis: 23%;
+            max-width: 23%;
+            margin-top: 0;
+          }
 
           &__link-wrapper{
             width: 100%;
@@ -113,10 +135,13 @@ export default {};
             .img-wrapper{
               // border: 1px solid goldenrod;
               img{
-                max-width: 100%;
+                max-width: 80%;
                 position: absolute;
                 right: 0;
                 bottom: 0;
+                @media(min-width: 768px){
+                  max-width: 100%;
+                }
               }
             }
           }
@@ -129,15 +154,11 @@ export default {};
             transition: all 0.3s ease-in-out;
             cursor: pointer;
           }
-          @media (min-width: 768px) {
-            flex-basis: 23%;
-            max-width: 23%;
-            margin-top: 0;
-          }
+          
           &:nth-of-type(3),
           &:nth-of-type(4) {
             margin-top: 3%;
-            @media (min-width: 768px) {
+            @media (min-width: 1000px) {
               margin-top: 0;
             }
           }

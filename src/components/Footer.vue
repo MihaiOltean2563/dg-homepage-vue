@@ -179,6 +179,8 @@ export default {};
       .footer-list {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
         @media (min-width: 990px) {
           flex-direction: row;
         }
