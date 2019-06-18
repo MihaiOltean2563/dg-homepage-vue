@@ -95,7 +95,7 @@ export default {};
           max-width: 45%;
           display: flex;
           transition: all 0.3s ease-in-out;
-
+          border-radius: 5px;
           @media (min-width: 1000px) {
             flex-basis: 23%;
             max-width: 23%;

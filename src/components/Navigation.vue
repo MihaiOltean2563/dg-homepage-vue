@@ -31,9 +31,26 @@
         <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/logo_D%2BG_white.png" alt="Domestic&General Logo">
       </div>
       <div class="nav-mobile__account-management col-xs-2 middle-xs">
-        <span class="menu-burger">
+        <!-- <span class="menu-burger">
           <span class="hamburger"></span>
-        </span>
+        </span> -->
+        <label>
+          <input type="checkbox">
+          <span class="menu">
+            <span class="hamburger"></span>
+          </span>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Work</a>
+            </li>
+          </ul>
+        </label>
       </div>
     </header>
   </div>

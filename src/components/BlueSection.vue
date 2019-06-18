@@ -65,12 +65,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-10 benefit__desc top-xs start-xs">
                   <div class="benefit-title">
-                    <div>
-                      <img
-                        class="arr-right"
-                        src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_arrow-white.png"
-                      >
-                    </div>
+                    <img class="arr-right" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_arrow-white.png">
                     <div>
                       <h2 class="benefit__desc__title">
                         <a href="#">My Account</a>
@@ -94,12 +89,9 @@
                 </div>
                 <div class="col-xs-12 col-sm-10 benefit__desc top-xs start-xs">
                   <div class="benefit-title">
-                    <div>
-                      <img
-                        class="arr-right"
+                      <img class="arr-right"
                         src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_arrow-white.png"
                       >
-                    </div>
                     <div>
                       <h2 class="benefit__desc__title">
                         <a href="#">Digital repair booking</a>
@@ -122,7 +114,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-10 benefit__desc top-xs start-xs">
                   <div class="benefit-title">
-                    <div>
+                    <div class="last-benefit-icon">
                       <img
                         class="arr-right"
                         src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_arrow-white.png"
@@ -235,12 +227,20 @@ export default {
                 padding-top: 5px;
                 .benefit-title {
                   display: flex;
+                  transition: .5s ease-out;
+                  &:hover > img{
+                    transform: translateX(3px);
+                    transition: .5s ease-out;
+                  }
+                  &:hover > .last-benefit-icon{
+                    transform: translateX(3px);
+                    transition: .5s ease-out;
+                  }
                 }
                 &__title {
                   font-size: 22px;
                   line-height: 30px;
-                  .arrow-right {
-                  }
+                 
                 }
                 &__description {
                   font-size: 18px;

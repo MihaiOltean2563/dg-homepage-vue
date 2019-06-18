@@ -92,7 +92,7 @@
     <div class="social left-xs center-sm">
       <div class="container">
         <div class="social-bar-wrapper">
-          <div class="social__follow-us">
+          <div class="social__follow-us middle-xs">
             <a href="#">Follow us</a>
           </div>
           <div class="social__twitter center-xs middle-xs">
@@ -194,9 +194,6 @@ export default {};
               width: 100%;
               height: 100%;
             }
-            .row {
-             
-            }
 
             .benefit__desc__title {
               font-size: 18px;
@@ -229,6 +226,7 @@ export default {};
       font-size: 22px;
       line-height: 36px;
       padding-right: 30px;
+      display: flex;
       a {
         color: #333;
       }

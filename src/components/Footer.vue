@@ -5,16 +5,16 @@
         <div class="grid-wrapper__left col-xs-12 col-md-3">
           <h3 class="footer-grid-heading">Products we protect</h3>
           <p>
-            <a href="#">Household appliances</a>
+            <a href="https://www.domesticandgeneral.com/products/household">Household appliances</a>
           </p>
           <p>
-            <a href="#">Heating</a>
+            <a href="https://www.domesticandgeneral.com/heating">Heating</a>
           </p>
           <p>
-            <a href="#">TV & Audio</a>
+            <a href="https://www.domesticandgeneral.com/products/tv-audio">TV & Audio</a>
           </p>
           <p>
-            <a href="#">Photo & Video devices</a>
+            <a href="https://www.domesticandgeneral.com/products/camera-mobile">Photo & Video devices</a>
           </p>
         </div>
         <div class="grid-wrapper__center col-xs-12 col-md-6">
@@ -22,19 +22,19 @@
           <div class="row">
             <div class="col-xs-12 col-md-5">
               <p>
-                <a href="#">About us</a>
+                <a href="https://www.domesticandgeneral.com/corporate/about-us">About us</a>
               </p>
               <p>
-                <a href="#">Help and advice</a>
+                <a href="https://www.domesticandgeneral.com/content/help-advice-section/faq">Help and advice</a>
               </p>
               <p>
-                <a href="#">Contact us</a>
+                <a href="https://www.domesticandgeneral.com/content/contact-domestic-general">Contact us</a>
               </p>
               <p>
-                <a href="#">Media centre</a>
+                <a href="https://www.domesticandgeneral.com/content/help-advice-section/corporate-information/media-centre">Media centre</a>
               </p>
               <p>
-                <a href="#">Careers</a>
+                <a href="https://careers.domesticandgeneral.com/">Careers</a>
               </p>
             </div>
             <div class="col-xs-12 col-md-7">
@@ -69,19 +69,19 @@
       </div>
       <div class="copy">
         Service plans, maintenance & support plans are provided by Domestic & General Services Limited. Insurance policies are provided by Domestic & General Insurance PLC. Domestic & General Insurance PLC is an insurance undertaking, not an intermediary. We are the underwriter of the insurance policies and do not provide a personal recommendation or advice. Domestic & General Insurance PLC is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority (Financial Services Register Number 202111). Our address and details of our authorisation can be checked on the
-        <a href="#">FCA website</a> or by contacting the FCA on 0800 111 6768.
+        <a href="https://register.fca.org.uk/">FCA website</a> or by contacting the FCA on 0800 111 6768.
       </div>
       <div class="list-wrapper">
         <ul class="footer-list">
           <li>© 2019 Domestic & General Group Limited</li>
           <li>
-            <a href="#">Website Terms and Conditions</a>
+            <a href="https://www.domesticandgeneral.com/web-terms-conditions">Website Terms and Conditions</a>
           </li>
           <li>
-            <a href="#">Privacy and Cookies policy</a>
+            <a href="https://www.domesticandgeneral.com/privacy-cookies-policy">Privacy and Cookies policy</a>
           </li>
           <li>
-            <a href="#">Accessibility policy</a>
+            <a href="https://www.domesticandgeneral.com/accessibility">Accessibility policy</a>
           </li>
         </ul>
       </div>

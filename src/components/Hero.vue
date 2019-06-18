@@ -71,14 +71,14 @@ export default {};
         display: flex;
         border-radius: 3px;
         font-size: 18px;
-        margin-bottom: 100px;
-        // max-width: 90%;
+        margin-bottom: 70px;
         padding: 0 15px;
         @media (min-width: 300px) {
           width: 280px;
         }
         @media (min-width: 768px) {
           font-size: 22px;
+          margin-bottom: 100px;
         }
       }
     }
