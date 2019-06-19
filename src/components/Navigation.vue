@@ -41,9 +41,21 @@
       </div>
 
        <nav id="menu">
-          <div class="nav-link-mobile middle-xs">Get protected</div>
-          <div class="nav-link-mobile middle-xs">Book a repair</div>
-          <div class="nav-link-mobile middle-xs">Help and advice</div>
+          <div class="nav-link-mobile middle-xs">
+            <a href="#" class="middle-xs">Get protected</a>
+          </div>
+          <div class="nav-link-mobile middle-xs">
+            <a href="#" class="middle-xs">Book a repair</a>
+          </div>
+          <div class="nav-link-mobile middle-xs">
+            <a href="#" class="middle-xs">Help and advice</a>
+          </div>
+          <div class="nav-link-mobile middle-xs">
+            <a href="#" class="middle-xs">My account</a>
+          </div>
+          <div class="nav-link-mobile middle-xs">
+            <a href="#" class="middle-xs">Logout</a>
+          </div>
         </nav>
     </header>
   </div>
@@ -61,7 +73,6 @@ export default{
       var body = document.getElementsByTagName("body")[0];
 			(!body.classList.contains("display_menu")) ? body.classList.add("display_menu") : body.classList.remove("display_menu");
        console.log('display menu fired');
-      //  return 1;
     }
   },
   components: {
@@ -141,10 +152,12 @@ export default{
       @media(min-width: 975px){
         display: none;
       }
-      border: 1px solid goldenrod;
+      // border: 1px solid goldenrod;
       display: flex;
       max-width: 100%;
       margin: 0;
+      position: relative;
+
       #menu{
           width: 100%;
           display: flex;
@@ -153,15 +166,21 @@ export default{
           transform-origin: 50% 0;
           transition: 0.6s ease;
           flex-direction: column;
+          margin-top: 20px;
           .nav-link-mobile{
             opacity: 0;
             height: 0;
             padding-left: 20px;
+            // margin: 20px 0;
+            a{
+              width: 100%;
+              height: 100%;
+              display: flex;
+              color: #333;
+            }
           }
         }
-      a{
-        color: #fff;
-      }
+      
       &__burger{
         display: flex;
         #hamburger {
@@ -182,6 +201,9 @@ export default{
           &:nth-child(1) {width: 12px;}
           &:nth-child(2) {width: 24px;}
           &:nth-child(3) {width: 12px;}
+        }
+        &:hover{
+          cursor: pointer; 
         }
       }
 
@@ -207,19 +229,18 @@ export default{
   }
 
   .display_menu .nav-mobile #menu .nav-link-mobile{
-    opacity: 1;
-		display: block;
-    height: 20px;
-    // border-bottom: 1px solid gray;
     transition: 0.6s ease;
     opacity: 1;
     display: flex;
     flex: 1;
   }
   .display_menu .nav-mobile #menu{
-    height:150px;
+    height:250px;
     background: #fff;
     color: #333;
+  }
+  .display_menu .nav-mobile {
+    z-index: 1;
   }
     
 </style>
