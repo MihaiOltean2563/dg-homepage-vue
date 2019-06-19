@@ -92,7 +92,7 @@ export default {};
         border-radius: 50px;
         padding: 5px 15px;
         padding-left: 8px;
-        padding-bottom: 8px;
+        padding-bottom: 6px;
         background: rgba(255, 255, 255, 0.18);
         p,
         a {
