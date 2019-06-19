@@ -2,8 +2,7 @@
   <section id="trustpilot">
     <div class="cols-wrapper">
       <div class="trustpilot-wrapper middle-xs">
-        <!-- <div class="container">
-          <div
+        <!-- <div
             class="trustpilot-widget"
             data-locale="en-GB"
             data-template-id="5406e65db0d04a09e042d5fc"
@@ -16,22 +15,16 @@
               target="_blank"
               rel="noopener"
             >Trustpilot</a>
-          </div>
-        </div> -->
-        <div
-            class="trustpilot-widget"
-            data-locale="en-GB"
-            data-template-id="5406e65db0d04a09e042d5fc"
-            data-businessunit-id="4cb3113600006400050dfb02"
-            data-style-height="40px"
-            data-style-width="100%"
-            data-theme="light">
-            <a
-              href="https://uk.trustpilot.com/review/domesticandgeneral.com"
-              target="_blank"
-              rel="noopener"
-            >Trustpilot</a>
-          </div>
+          </div> -->
+          <!-- <div class="trustpilot-widget" data-locale="en-GB" data-template-id="5419b6ffb0d04a076446a9af" data-businessunit-id="4cb3113600006400050dfb02" data-style-height="150px" data-style-width="100%" data-theme="light"> <a href="https://uk.trustpilot.com/review/domesticandgeneral.com" target="_blank" rel="noopener">Trustpilot</a> </div> -->
+      <!-- TrustBox widget - Micro Combo --> 
+      <!-- <div class="trustpilot-widget" data-locale="en-GB" data-template-id="5419b6ffb0d04a076446a9af" data-businessunit-id="4cb3113600006400050dfb02" data-style-height="100px" data-style-width="70%" data-theme="light"> <a href="https://uk.trustpilot.com/review/domesticandgeneral.com" target="_blank" rel="noopener">Trustpilot</a> 
+      </div>  -->
+      <!-- End TrustBox widget -->
+
+      <!-- TrustBox widget - Mini --> 
+      <div class="trustpilot-widget" data-locale="en-GB" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="4cb3113600006400050dfb02" data-style-height="120px" data-style-width="100%" data-theme="light"> <a href="https://uk.trustpilot.com/review/domesticandgeneral.com" target="_blank" rel="noopener">Trustpilot</a> </div> 
+      <!-- End TrustBox widget -->
       </div>
       <div class="login-account-wrapper middle-xs">
         <h2>Take control of your plans with <strong>My Account</strong></h2>
@@ -44,7 +37,12 @@
 </template>
 
 <script>
-export default {};
+export default {
+
+// API Key: PnGH3ryOxEs13oR4MpzMvO4IYmeY6I0g
+// Secret: Dm8c7AhGTPVAAtMN
+
+};
 </script>
 
 <style lang="scss">

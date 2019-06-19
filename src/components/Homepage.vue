@@ -31,6 +31,7 @@ export default {
     Footer
   }
 }
+
 </script>
 
 <style lang="scss">

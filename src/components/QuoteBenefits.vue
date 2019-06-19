@@ -79,7 +79,7 @@
                     (just pay the cost of installation and disposal)
                   </h5>
                   <a
-                    href="#"
+                    href="https://www.domesticandgeneral.com/products"
                     class="select-boiler-link"
                   >Select your boiler to see the benefits of our maintenance and support plans.</a>
                 </div>

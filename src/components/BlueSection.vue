@@ -94,7 +94,7 @@
                       >
                     <div>
                       <h2 class="benefit__desc__title">
-                        <a href="#">Digital repair booking</a>
+                        <a href="https://www.domesticandgeneral.com/repairs">Digital repair booking</a>
                       </h2>
                     </div>
                   </div>
@@ -122,7 +122,7 @@
                     </div>
                     <div>
                       <h2 class="benefit__desc__title">
-                        <a href="#">Troubleshooting and maintenance content</a>
+                        <a href="https://www.domesticandgeneral.com/content/help-advice-section/faq">Troubleshooting and maintenance content</a>
                       </h2>
                     </div>
                   </div>

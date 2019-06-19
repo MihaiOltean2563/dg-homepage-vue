@@ -39,29 +39,29 @@
             </div>
             <div class="col-xs-12 col-md-7">
               <p>
-                <a href="#">Investor relations</a>
+                <a href="https://investors.domesticandgeneral.com/">Investor relations</a>
               </p>
               <p>
-                <a href="#">Regulatory information</a>
+                <a href="https://www.domesticandgeneral.com/company-information-legal">Regulatory information</a>
               </p>
               <p>
-                <a href="#">Charity Partnerships</a>
+                <a href="https://www.domesticandgeneral.com/content/help-advice-section/corporate-information/charity-partnerships">Charity Partnerships</a>
               </p>
               <p>
-                <a href="#">Modern Slavery Statement</a>
+                <a href="https://www.domesticandgeneral.com/modern-slavery">Modern Slavery Statement</a>
               </p>
               <p>
-                <a href="#">Part VII Transfer</a>
+                <a href="https://www.domesticandgeneral.com/PartVIITransfer">Part VII Transfer</a>
               </p>
               <p>
-                <a href="#">Rogue Trader Guidance</a>
+                <a href="https://www.domesticandgeneral.com/content/help-advice-section/faq/received-a-strange-call-">Rogue Trader Guidance</a>
               </p>
             </div>
           </div>
         </div>
         <div class="grid-wrapper__right col-xs-12 col-md-3">
           <h3 class="footer-grid-heading">Sign up to our Newsletter</h3>
-          <input type="text" class="newsletter-input">
+          <input type="text" class="newsletter-input" id="newsletterEmail">
           <a href="#" class="sign-to-newsletter-cta center-xs middle-xs">
             <strong>Sign up</strong>
           </a>

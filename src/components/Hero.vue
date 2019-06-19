@@ -86,25 +86,42 @@ export default {};
     .quote-finder {
       display: flex;
       margin: 150px 0 40px 0;
+      // font-family: Arial, Helvetica, sans-serif;
       &__widget {
         display: flex;
         border-radius: 50px;
-        padding: 10px;
+        padding: 5px 15px;
+        padding-left: 8px;
+        padding-bottom: 8px;
         background: rgba(255, 255, 255, 0.18);
         p,
         a {
           color: #fff;
+          letter-spacing: .5px;
         }
         p {
           padding: 0 10px;
           margin: 5px 0;
+          color: #D8CCE0;
+          font-size: 14px;
+          margin-bottom: 3px;
+          @media (min-width: 768px) {
+            font-size: 16px;
+            margin-bottom: 5px;
+          }
         }
         .widget-icon {
           border-radius: 50%;
-          width: 35px;
-          height: 35px;
+          width: 40px;
+          height: 40px;
           background: #4c2178;
           display: flex;
+          img{
+            width: 18px;
+            @media (min-width: 768px) {
+               width: 14px;
+            }
+          }
           @media (min-width: 768px) {
             width: 25px;
             height: 25px;
@@ -120,7 +137,11 @@ export default {};
         }
         .find-my-quote {
           text-decoration: underline;
-          padding: 0 10px;
+          padding-left: 10px;
+          padding-right: 10px;
+          @media (min-width: 768px) {
+            padding-left: 0;
+          }
         }
       }
     }
