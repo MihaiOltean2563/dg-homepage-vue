@@ -54,7 +54,7 @@
             <a href="#" class="middle-xs">My account</a>
           </div>
           <div class="nav-link-mobile middle-xs">
-            <a href="#" class="middle-xs">Logout</a>
+            <a href="#" class="logout center-xs middle-xs">Logout</a>
           </div>
         </nav>
     </header>
@@ -167,6 +167,7 @@ export default{
           transition: 0.6s ease;
           flex-direction: column;
           margin-top: 20px;
+          
           .nav-link-mobile{
             opacity: 0;
             height: 0;
@@ -177,6 +178,20 @@ export default{
               height: 100%;
               display: flex;
               color: #333;
+            }
+            &:last-of-type{
+              border-top: 1px solid #333;
+              flex: 2;
+              a{
+                height: auto;
+              }
+              .logout{
+                width: 100px;
+                background: #0a93d3;
+                color: #fff;
+                border-radius: 3px;
+                padding: 10px 0;
+              }
             }
           }
         }

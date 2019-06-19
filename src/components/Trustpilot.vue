@@ -80,10 +80,10 @@ export default {
         h2{
           color: #333333;
           font-weight: 300;
-          padding: 0 20px;
+          padding: 0 20px 20px 20px;
           @media(min-width: 768px){
-            padding-right: 0;
-            padding-left: 0;
+            // padding-right: 0;
+            // padding-left: 0;
           }
         }
         @media(min-width: 768px){
