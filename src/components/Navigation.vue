@@ -190,6 +190,9 @@ export default{
       max-width: 100%;
       margin: 0;
       position: relative;
+      // position: fixed;
+      // left: 0;
+      // width: 100%;
 
       #menu{
           width: 100%;
