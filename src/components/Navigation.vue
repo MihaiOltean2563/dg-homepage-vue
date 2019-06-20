@@ -27,20 +27,40 @@
     </header>
     <header class="nav-mobile row" role="banner">
       <div class="nav-mobile__burger col-xs-2 start-xs middle-xs">
-       <div id="hamburger" @click="display_menu">
+       <!-- <div id="hamburger" @click="display_menu">
 					<span></span>
 					<span></span>
 					<span></span>
-				</div>
+				</div> -->
+        <Slide class="nav-burger-wrapper">
+          <a id="home" href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
+            <span>Get protected</span>
+          </a>
+          <a id="home" href="https://www.domesticandgeneral.com/repairs">
+            <span>Book a repair</span>
+          </a>
+          <a id="home" href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
+            <span>Help and advice</span>
+          </a>
+          <a id="home" href="#">
+            <span>Log out</span>
+          </a>
+        </Slide>
+
       </div>
       <div class="nav-mobile__brand col-xs-8 middle-xs center-xs">
-        <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/logo_D%2BG_white.png" alt="Domestic&General Logo">
+        <a href="https://www.domesticandgeneral.com">
+          <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/logo_D%2BG_white.png" alt="Domestic&General Logo">
+        </a>
       </div>
       <div class="nav-mobile__basket col-xs-2 center-xs middle-xs">
-        Basket
+        <a href="#">
+          <img class="basket-img" src="../assets/images/basket.svg" alt="Basket Icon">
+
+        </a>
       </div>
 
-       <nav id="menu">
+       <!-- <nav id="menu">
           <div class="nav-link-mobile middle-xs">
             <a href="#" class="middle-xs">Get protected</a>
           </div>
@@ -56,13 +76,13 @@
           <div class="nav-link-mobile middle-xs">
             <a href="#" class="logout center-xs middle-xs">Logout</a>
           </div>
-        </nav>
+        </nav> -->
     </header>
   </div>
 </template>
 
 <script>
-// import { Slide } from 'vue-burger-menu'
+import { Slide } from 'vue-burger-menu'
 
 export default{
   /* eslint-disable */
@@ -76,7 +96,7 @@ export default{
     }
   },
   components: {
-    // Slide
+    Slide
   }
 }
 </script>
@@ -167,7 +187,7 @@ export default{
           transition: 0.6s ease;
           flex-direction: column;
           margin-top: 20px;
-          
+        
           .nav-link-mobile{
             opacity: 0;
             height: 0;
@@ -198,6 +218,7 @@ export default{
       
       &__burger{
         display: flex;
+        // My custom dropdown css
         #hamburger {
           cursor: pointer;
           border-radius: 50%;
@@ -217,6 +238,21 @@ export default{
           &:nth-child(2) {width: 24px;}
           &:nth-child(3) {width: 12px;}
         }
+        //My custom dropdown css end
+        // vue-burger-menu css
+        .nav-burger-wrapper{
+          position: absolute;
+          top: 0;
+          left: 0;
+          .bm-burger-button{
+            left: 0px;
+            top: 10px;
+            .bm-burger-bars{
+              background: #fff;
+            }
+          }
+        }
+        // vue-burger-menu css end
         &:hover{
           cursor: pointer; 
         }
@@ -231,6 +267,9 @@ export default{
       }
       &__basket{
         display: flex;
+        .basket-img{
+          width: 40px;
+        }
       }
     }
   }
@@ -251,7 +290,7 @@ export default{
   }
   .display_menu .nav-mobile #menu{
     height:250px;
-    background: #fff;
+     background: #F6F6F6;
     color: #333;
   }
   .display_menu .nav-mobile {

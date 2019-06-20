@@ -2,35 +2,20 @@
   <section id="trustpilot">
     <div class="cols-wrapper">
       <div class="trustpilot-wrapper middle-xs">
-        <!-- <div
-            class="trustpilot-widget"
-            data-locale="en-GB"
-            data-template-id="5406e65db0d04a09e042d5fc"
-            data-businessunit-id="4cb3113600006400050dfb02"
-            data-style-height="40px"
-            data-style-width="100%"
-            data-theme="light">
-            <a
-              href="https://uk.trustpilot.com/review/domesticandgeneral.com"
-              target="_blank"
-              rel="noopener"
-            >Trustpilot</a>
-          </div> -->
-          <!-- <div class="trustpilot-widget" data-locale="en-GB" data-template-id="5419b6ffb0d04a076446a9af" data-businessunit-id="4cb3113600006400050dfb02" data-style-height="150px" data-style-width="100%" data-theme="light"> <a href="https://uk.trustpilot.com/review/domesticandgeneral.com" target="_blank" rel="noopener">Trustpilot</a> </div> -->
-      <!-- TrustBox widget - Micro Combo --> 
-      <!-- <div class="trustpilot-widget" data-locale="en-GB" data-template-id="5419b6ffb0d04a076446a9af" data-businessunit-id="4cb3113600006400050dfb02" data-style-height="100px" data-style-width="70%" data-theme="light"> <a href="https://uk.trustpilot.com/review/domesticandgeneral.com" target="_blank" rel="noopener">Trustpilot</a> 
-      </div>  -->
-      <!-- End TrustBox widget -->
+    
+        <!-- TrustBox widget - Mini --> 
+        <div class="trustpilot-widget" data-locale="en-GB" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="4cb3113600006400050dfb02" data-style-height="120px" data-style-width="100%" data-theme="light">    <a href="https://uk.trustpilot.com/review/domesticandgeneral.com" target="_blank" rel="noopener">Trustpilot</a> </div> 
+        <!-- End TrustBox widget -->
+        </div>
 
-      <!-- TrustBox widget - Mini --> 
-      <div class="trustpilot-widget" data-locale="en-GB" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="4cb3113600006400050dfb02" data-style-height="120px" data-style-width="100%" data-theme="light"> <a href="https://uk.trustpilot.com/review/domesticandgeneral.com" target="_blank" rel="noopener">Trustpilot</a> </div> 
-      <!-- End TrustBox widget -->
-      </div>
       <div class="login-account-wrapper middle-xs">
-        <h2>Take control of your plans with <strong>My Account</strong></h2>
-        <a class="login-cta center-xs middle-xs" href="#">
-          <strong>Log in to My Account</strong>
-        </a>
+        <div class="wrapper-big-screens middle-xs">
+  
+          <h2>Take control of your plans with <strong>My Account</strong></h2>
+          <a class="login-cta center-xs middle-xs" href="#">
+            <strong>Log in to My Account</strong>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -61,35 +46,50 @@ export default {
         padding: 30px 0;
         > .trustpilot-widget{
           flex: 1;
-          > *{
-            font-size: 20px!important;
+          // border: 1px solid goldenrod;
+          @media(min-width: 1800px){
+            justify-content: flex-end;
+            flex: none;
           }
         }
+
         @media(min-width: 768px){
           flex-basis: 50%;
           max-width: 50%;
           border-right: 1px solid #BCBCBC;
           border-bottom: none;
         }
+        @media(min-width: 1200px){
+          justify-content: flex-end;
+          padding-right: 30px;
+        }
       }
       .login-account-wrapper{
-        // border: 1px solid darkgreen;
         display: flex;
         flex-direction: column;
         padding: 40px 0;
+        // border: 1px solid goldenrod;
+        @media(min-width: 768px){
+          flex-basis: 50%;
+          max-width: 50%;
+          justify-content: flex-start;
+        }
+        @media(min-width: 1800px){
+          align-items: flex-start;
+          padding-left: 30px;
+        }
+
+        .wrapper-big-screens{
+          display: flex;
+          flex-direction: column;
+        }
+
         h2{
           color: #333333;
           font-weight: 300;
           padding: 0 20px 20px 20px;
-          @media(min-width: 768px){
-            // padding-right: 0;
-            // padding-left: 0;
-          }
         }
-        @media(min-width: 768px){
-           flex-basis: 50%;
-          max-width: 50%;
-        }
+       
         .login-cta{
           background: #0a93d3;
           color: #fff;
