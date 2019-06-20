@@ -133,9 +133,11 @@ export default {};
       .qb-wrapper {
         margin: 0;
         text-align: left;
-        padding-top: 90px;
+        padding-top: 50px;
         padding-bottom: 50px;
-
+        @media(min-width: 768px){
+          padding-top: 90px;
+        }
         &__left {
           .quote-title {
             font-size: 25px;
