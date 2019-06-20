@@ -2,18 +2,22 @@
   <section id="trustpilot">
     <div class="cols-wrapper">
       <div class="trustpilot-wrapper middle-xs">
-    
         <!-- TrustBox widget - Mini --> 
         <div class="trustpilot-widget" data-locale="en-GB" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="4cb3113600006400050dfb02" data-style-height="120px" data-style-width="100%" data-theme="light">    <a href="https://uk.trustpilot.com/review/domesticandgeneral.com" target="_blank" rel="noopener">Trustpilot</a> </div> 
-        <!-- End TrustBox widget -->
-        </div>
+        <!-- End TrustBox widget - Mini-->
+      </div>
 
       <div class="login-account-wrapper middle-xs">
         <div class="wrapper-big-screens middle-xs">
   
-          <h2>Take control of your plans with <strong>My Account</strong></h2>
-          <a class="login-cta center-xs middle-xs" href="#">
+          <h2 v-if="!isNewCustomer">Take control of your plans with <strong>My Account</strong></h2>
+          <h2 v-if="isNewCustomer">Protect the appliances that matter to you</h2>
+
+          <a v-if="!isNewCustomer" class="login-cta center-xs middle-xs" href="#">
             <strong>Log in to My Account</strong>
+          </a>
+          <a v-if="isNewCustomer" class="login-cta center-xs middle-xs" href="#">
+            <strong>Get an instant quote</strong>
           </a>
         </div>
       </div>
@@ -24,8 +28,12 @@
 <script>
 export default {
 
-// API Key: PnGH3ryOxEs13oR4MpzMvO4IYmeY6I0g
-// Secret: Dm8c7AhGTPVAAtMN
+ name: 'Trustpilot',
+ data(){
+   return{
+     isNewCustomer: true,
+   }
+ }
 
 };
 </script>
@@ -61,7 +69,7 @@ export default {
         }
         @media(min-width: 1200px){
           justify-content: flex-end;
-          padding-right: 30px;
+          padding-right: 100px;
         }
       }
       .login-account-wrapper{

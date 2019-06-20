@@ -13,7 +13,7 @@
           <li class="list-wrapper__item"><a href="https://www.domesticandgeneral.com/content/help-advice-section/faq"><strong>Help and advice</strong></a></li>
         </ul>
       </div>
-      <div class="nav__account-management col-xs-4 middle-xs">
+      <div class="nav__account-management col-xs-4 middle-xs" v-if="!isNewCustomer">
         <div class="row account-box">
           <a href="#" class="col-xs-6 account-box__login middle-xs end-xs">
             <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
@@ -23,6 +23,12 @@
             <strong>Register</strong>
           </a>
         </div>
+      </div>
+      <div v-if="isNewCustomer" class="nav__account-management col-xs-4 middle-xs">
+         <a href="#"  class="col-xs-12 account-box__login middle-xs end-xs new-customer">
+            <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
+            <strong>My account</strong>
+          </a>
       </div>
     </header>
     <header class="nav-mobile row" role="banner">
@@ -56,7 +62,6 @@
       <div class="nav-mobile__basket col-xs-2 center-xs middle-xs">
         <a href="#">
           <img class="basket-img" src="../assets/images/basket.svg" alt="Basket Icon">
-
         </a>
       </div>
 
@@ -88,6 +93,11 @@ export default{
   /* eslint-disable */
 
   name: 'Navigation',
+  data(){
+    return{
+     isNewCustomer: true,
+    }  
+  },
   methods: {
      display_menu(){
       var body = document.getElementsByTagName("body")[0];
@@ -159,6 +169,9 @@ export default{
                 padding-right: 10px;
                 max-height: 35px;
               }
+            }
+            &__login.new-customer{
+               border-right: none;
             }
             &__register{
               display: flex;
