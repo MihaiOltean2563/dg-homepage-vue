@@ -190,84 +190,20 @@ export default{
       max-width: 100%;
       margin: 0;
       position: relative;
-      // position: fixed;
-      // left: 0;
-      // width: 100%;
-
-      #menu{
-          width: 100%;
-          display: flex;
-          height: 0;
-          -webkit-transform-origin: 50% 0;
-          transform-origin: 50% 0;
-          transition: 0.6s ease;
-          flex-direction: column;
-          margin-top: 20px;
-        
-          .nav-link-mobile{
-            opacity: 0;
-            height: 0;
-            padding-left: 20px;
-            // margin: 20px 0;
-            a{
-              width: 100%;
-              height: 100%;
-              display: flex;
-              color: #333;
-            }
-            &:last-of-type{
-              border-top: 1px solid #333;
-              flex: 2;
-              a{
-                height: auto;
-              }
-              .logout{
-                width: 100px;
-                background: #0a93d3;
-                color: #fff;
-                border-radius: 3px;
-                padding: 10px 0;
-              }
-            }
-          }
-        }
-      
+   
+   
       &__burger{
         display: flex;
-        // My custom dropdown css
-        // #hamburger {
-        //   cursor: pointer;
-        //   border-radius: 50%;
-        //   position: absolute;
-        //   // left: 12%;
-        //   // top: 30px;
-        //   // transform: translateY(-50%);
-        // }
-        // #hamburger span {
-        //   height: 2px;
-        //   margin-top: 5px;
-        //   margin-bottom: 5px;
-        //   background-color: white;
-        //   display: block;
-        //   transition: 0.33s;
-        //   &:nth-child(1) {width: 12px;}
-        //   &:nth-child(2) {width: 24px;}
-        //   &:nth-child(3) {width: 12px;}
-        // }
-        //My custom dropdown css end
         // vue-burger-menu css
         .nav-burger-wrapper{
-          // position: absolute;
-          // top: 0;
-          // left: 0;
            .bm-burger-button {
-              position: fixed;
               width: 36px;
               height: 30px;
-              left: 36px;
-              top: 47px;
+              left: 0px;
+              top: 12px;
               cursor: pointer;
             }
+            
             .bm-burger-bars {
               background-color: #fff;
             }
