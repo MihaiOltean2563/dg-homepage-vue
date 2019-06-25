@@ -40,11 +40,11 @@ export default {
   font-family: 'Varela Round', sans-serif;
   overflow: hidden;
 }
-body{
-  &.bm-overlay{
-    background: transparent;
-  }
+
+.bm-overlay{
+  background: transparent;
 }
+
 // Carousel start
 
 .VueCarousel {

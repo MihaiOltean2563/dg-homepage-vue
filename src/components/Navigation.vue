@@ -33,11 +33,7 @@
     </header>
     <header class="nav-mobile row" role="banner">
       <div class="nav-mobile__burger col-xs-2 start-xs middle-xs">
-       <!-- <div id="hamburger" @click="display_menu">
-					<span></span>
-					<span></span>
-					<span></span>
-				</div> -->
+
         <Slide class="nav-burger-wrapper">
           <a id="home" href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
             <span>Get protected</span>
@@ -65,23 +61,6 @@
         </a>
       </div>
 
-       <!-- <nav id="menu">
-          <div class="nav-link-mobile middle-xs">
-            <a href="#" class="middle-xs">Get protected</a>
-          </div>
-          <div class="nav-link-mobile middle-xs">
-            <a href="#" class="middle-xs">Book a repair</a>
-          </div>
-          <div class="nav-link-mobile middle-xs">
-            <a href="#" class="middle-xs">Help and advice</a>
-          </div>
-          <div class="nav-link-mobile middle-xs">
-            <a href="#" class="middle-xs">My account</a>
-          </div>
-          <div class="nav-link-mobile middle-xs">
-            <a href="#" class="logout center-xs middle-xs">Logout</a>
-          </div>
-        </nav> -->
     </header>
   </div>
 </template>
@@ -98,11 +77,19 @@ export default{
      isNewCustomer: true,
     }  
   },
+  mounted(){
+    this.cloneBasketNode();
+  },
   methods: {
-     display_menu(){
+    display_menu(){
       var body = document.getElementsByTagName("body")[0];
 			(!body.classList.contains("display_menu")) ? body.classList.add("display_menu") : body.classList.remove("display_menu");
        console.log('display menu fired');
+    },
+    cloneBasketNode(){
+      console.log('Basket node was cloned!')
+      // var nodeToClone = document.querySelector('.svg-icon--minibasket');
+      // console.log('nodetoclone', nodeToClone)
     }
   },
   components: {
@@ -281,43 +268,5 @@ export default{
     }
   }
 
-  
-
-  .display_menu #hamburger {
-    span:nth-child(1) {transform: rotate(45deg) translate(2px, 1px); }
-    span:nth-child(2) {transform: rotate(-45deg) ;}
-    span:nth-child(3) {transform: rotate(45deg) translate(6px, -9px);}
-  }
-
-  .display_menu .nav-mobile #menu .nav-link-mobile{
-    transition: 0.6s ease;
-    opacity: 1;
-    display: flex;
-    flex: 1;
-  }
-  .display_menu .nav-mobile #menu{
-    height:250px;
-     background: #F6F6F6;
-    color: #333;
-  }
-  .display_menu .nav-mobile {
-    z-index: 1;
-  }
     
 </style>
-
-<!--Working nav component-->
- <!-- <Slide right class="nav-burger-wrapper">
-    <a id="home" href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
-      <span>Get protected</span>
-    </a>
-    <a id="home" href="https://www.domesticandgeneral.com/repairs">
-      <span>Book a repair</span>
-    </a>
-    <a id="home" href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
-      <span>Help and advice</span>
-    </a>
-    <a id="home" href="#">
-      <span>Log out</span>
-    </a>
-  </Slide> -->
