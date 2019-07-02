@@ -20,7 +20,6 @@ import QuoteBenefits from './QuoteBenefits';
 import Footer from './Footer';
 
 export default {
-  /* eslint-disable */
   name: 'homepage',
   components: {
     Navigation,
@@ -30,24 +29,6 @@ export default {
     BlueSection,
     QuoteBenefits,
     Footer
-  },
-  data(){
-    return {
-      showNavbar: false
-    }
-  },
-  methods:{
-    handleScroll(e){
-      window.pageYOffset > 50 ? 
-        this.showNavbar = true :
-        this.showNavbar = false;
-    }
-  },
-  created () {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  destroyed () {
-    window.removeEventListener('scroll', this.handleScroll);
   }
 }
 

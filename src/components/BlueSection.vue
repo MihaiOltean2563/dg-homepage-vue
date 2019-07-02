@@ -7,7 +7,7 @@
         <carousel
           :scrollPerPage="true"
           :navigationEnabled="true"
-          :perPageCustom="[[480, 2],[500, 3], [768, 4], [960, 5]]"
+          :perPageCustom="[[480, 2],[600, 3], [768, 4], [960, 5]]"
           
         >
         <!-- :autoplay="true" -->
@@ -54,7 +54,7 @@
         <div class="row special-warranty">
           <div class="col-xs-12 col-md-6 special-warranty__left">
             <div class="benefits-wrapper">
-              <a href="#">
+              <a href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">
                 <div class="row benefit">
                   <div class="col-xs-12 col-sm-2 benefit__icon">
                     <div class="icon-box center-xs">
@@ -80,7 +80,7 @@
                   </div>
                 </div>
               </a>
-              <a href="#">
+              <a href="https://www.domesticandgeneral.com/repairs">
                 <div class="row benefit">
                   <div class="col-xs-12 col-sm-2 benefit__icon start-xs">
                     <div class="icon-box center-xs">
@@ -107,7 +107,7 @@
                   </div>
                 </div>
               </a>
-              <a href="#">
+              <a href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
                 <div class="row benefit">
                   <div class="col-xs-12 col-sm-2 benefit__icon start-xs">
                     <div class="icon-box center-xs">

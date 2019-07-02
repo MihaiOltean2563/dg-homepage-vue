@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid nav-wrapper">
+  <div class="container-fluid nav-wrapper" :class="{ sticky: showNavbar}">
     <header class="nav row" role="banner">
       <div class="nav__brand col-xs-2 end-xs">
         <a href="https://www.domesticandgeneral.com">
@@ -15,17 +15,17 @@
       </div>
       <div class="nav__account-management col-xs-4 middle-xs" v-if="!isNewCustomer">
         <div class="row account-box">
-          <a href="#" class="col-xs-6 account-box__login middle-xs end-xs">
+          <a href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151" class="col-xs-6 account-box__login middle-xs end-xs">
             <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
             <strong>Log in</strong>
           </a>
-          <a href="#" class="col-xs-6 account-box__register middle-xs start-xs">
+          <a href="https://www.domesticandgeneral.com/UserRegistrationForm?new=Y&catalogId=10052&myAcctMain=1&langId=44&storeId=10151" class="col-xs-6 account-box__register middle-xs start-xs">
             <strong>Register</strong>
           </a>
         </div>
       </div>
       <div v-if="isNewCustomer" class="nav__account-management col-xs-4 middle-xs">
-         <a href="#"  class="col-xs-12 account-box__login middle-xs end-xs new-customer">
+         <a href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151"  class="col-xs-12 account-box__login middle-xs end-xs new-customer">
             <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
             <strong>My account</strong>
           </a>
@@ -38,13 +38,13 @@
           <a id="home" href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
             <span>Get protected</span>
           </a>
-          <a id="home" href="https://www.domesticandgeneral.com/repairs">
+          <a id="repairs" href="https://www.domesticandgeneral.com/repairs">
             <span>Book a repair</span>
           </a>
-          <a id="home" href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
+          <a id="help-advice" href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
             <span>Help and advice</span>
           </a>
-          <a id="home" href="#">
+          <a id="logout" href="#">
             <span>Log out</span>
           </a>
         </Slide>
@@ -56,7 +56,7 @@
         </a>
       </div>
       <div class="nav-mobile__basket col-xs-2 center-xs middle-xs">
-        <a href="#"  class="">
+        <a href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">
           <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
         </a>
       </div>
@@ -75,10 +75,24 @@ export default{
   data(){
     return{
      isNewCustomer: true,
+     showNavbar: false
     }  
   },
   components: {
     Slide
+  },
+  methods:{
+    handleScroll(){
+      window.pageYOffset > 0 ? 
+        this.showNavbar = true :
+        this.showNavbar = false;
+    }
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 }
 </script>
@@ -88,8 +102,24 @@ export default{
     position: absolute;
     left: 0;
     right: 0;
-    margin-top: 35px;
-    
+    padding-top: 35px;
+    background: transparent;
+    transition: .5s ease-in-out;
+    &.sticky{
+      position:fixed;
+      top:0;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      // background: #400668;
+      background: rgba(64, 6, 104, .92);
+      z-index: 1;
+      @media(min-width: 768px){
+        position: absolute;
+        top: initial;
+        background: transparent;
+      }
+    }
     @media(min-width: 1200px){
       max-width: 1200px; 
     }

@@ -4,15 +4,10 @@
       <div class="quote-finder center-xs">
         <div class="quote-finder__widget middle-xs">
           <div class="widget-icon center-xs">
-            <img
-              src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_arrow-purple.svg"
-              alt="arrow-purple"
-            >
+            <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_arrow-purple.svg" alt="arrow-purple">
           </div>
           <div class="widget-body middle-xs">
-            <p>
-              <strong>Received a letter in the post?</strong>
-            </p>
+            <p><strong>Received a letter in the post?</strong></p>
             <a class="find-my-quote" id="find-my-quote" href="#">
               <strong>Find my quote</strong>
             </a>
@@ -25,7 +20,7 @@
           <h1 class="welcome-intro__title" v-if="!isNewCustomer">Manage your plans, appliances, and repairs all in one place</h1>
         </div>
         <a class="welcome-intro__cta center-xs middle-xs" href="#" v-if="isNewCustomer"><strong>Get an instant quote</strong></a>
-        <a class="welcome-intro__cta center-xs middle-xs" href="#" v-if="!isNewCustomer"><strong>Log in to My Account</strong></a>
+        <a class="welcome-intro__cta center-xs middle-xs" href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151" v-if="!isNewCustomer"><strong>Log in to My Account</strong></a>
       </div>
     </div>
     <!--container-wrapper-end-->

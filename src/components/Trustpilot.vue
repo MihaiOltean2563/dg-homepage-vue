@@ -13,7 +13,7 @@
           <h2 v-if="isNewCustomer">Take control of your plans with <strong>My Account</strong></h2>
           <h2 v-if="!isNewCustomer">Protect the appliances that matter to you</h2>
 
-          <a v-if="isNewCustomer" class="login-cta center-xs middle-xs" href="#">
+          <a v-if="isNewCustomer" class="login-cta center-xs middle-xs" href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">
             <strong>Log in to My Account</strong>
           </a>
           <a v-if="!isNewCustomer" class="login-cta center-xs middle-xs" href="#">
@@ -69,6 +69,9 @@ export default {
           order: 0;
         }
         @media(min-width: 1200px){
+          justify-content: flex-end;
+        }
+        @media(min-width: 1800px){
           justify-content: flex-end;
           padding-right: 100px;
         }

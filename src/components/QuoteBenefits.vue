@@ -93,22 +93,16 @@
       <div class="container">
         <div class="social-bar-wrapper">
           <div class="social__follow-us middle-xs">
-            <a href="#">Follow us</a>
+            <p>Follow us</p>
           </div>
           <div class="social__twitter center-xs middle-xs">
-            <a href="#">
-              <img
-                src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Footer/icon_social-twitter.svg"
-                alt="twitter"
-              >
+            <a href="https://twitter.com/DandG_UK" target="_blank">
+              <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Footer/icon_social-twitter.svg" alt="twitter">
             </a>
           </div>
           <div class="social__facebook center-xs middle-xs">
-            <a href="#">
-              <img
-                src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Footer/icon_social-facebook.svg"
-                alt="facebook"
-              >
+            <a href="https://www.facebook.com/pages/Domestic-General/1465140350420618" target="_blank">
+              <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Footer/icon_social-facebook.svg" alt="facebook">
             </a>
           </div>
         </div>
