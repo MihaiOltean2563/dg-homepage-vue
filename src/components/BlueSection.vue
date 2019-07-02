@@ -54,90 +54,94 @@
         <div class="row special-warranty">
           <div class="col-xs-12 col-md-6 special-warranty__left">
             <div class="benefits-wrapper">
-              <div class="row benefit">
-                <div class="col-xs-12 col-sm-2 benefit__icon">
-                  <div class="icon-box center-xs">
-                    <img
-                      src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_plan.svg"
-                      alt="icon"
-                    >
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-10 benefit__desc top-xs start-xs">
-                  <div class="benefit-title">
-                    <img class="arr-right" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_arrow-white.png">
-                    <div>
-                      <h2 class="benefit__desc__title">
-                        <a href="#">My Account</a>
-                      </h2>
-                    </div>
-                  </div>
-                  <p class="benefit__desc__description">
-                    View and manage your plans anytime,
-                    <br>anywhere
-                  </p>
-                </div>
-              </div>
-              <div class="row benefit">
-                <div class="col-xs-12 col-sm-2 benefit__icon start-xs">
-                  <div class="icon-box center-xs">
-                    <img
-                      src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/Repair+engineer+icon+outlined.svg"
-                      alt="icon"
-                    >
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-10 benefit__desc top-xs start-xs">
-                  <div class="benefit-title">
-                      <img class="arr-right"
-                        src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_arrow-white.png"
-                      >
-                    <div>
-                      <h2 class="benefit__desc__title">
-                        <a href="https://www.domesticandgeneral.com/repairs">Digital repair booking</a>
-                      </h2>
-                    </div>
-                  </div>
-                  <p
-                    class="benefit__desc__description"
-                  >Request a repair and track existing engineer appointments from any device</p>
-                </div>
-              </div>
-              <div class="row benefit">
-                <div class="col-xs-12 col-sm-2 benefit__icon start-xs">
-                  <div class="icon-box center-xs">
-                    <img
-                      src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/Repair+icon+outlined.svg"
-                      alt="icon"
-                    >
-                  </div>
-                </div>
-                <div class="col-xs-12 col-sm-10 benefit__desc top-xs start-xs">
-                  <div class="benefit-title">
-                    <div class="last-benefit-icon">
+              <a href="#">
+                <div class="row benefit">
+                  <div class="col-xs-12 col-sm-2 benefit__icon">
+                    <div class="icon-box center-xs">
                       <img
-                        class="arr-right"
-                        src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_arrow-white.png"
+                        src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_plan.svg"
+                        alt="icon"
                       >
                     </div>
-                    <div>
-                      <h2 class="benefit__desc__title">
-                        <a href="https://www.domesticandgeneral.com/content/help-advice-section/faq">Troubleshooting and maintenance content</a>
-                      </h2>
+                  </div>
+                  <div class="col-xs-12 col-sm-10 benefit__desc top-xs start-xs">
+                    <div class="benefit-title">
+                      <img class="arr-right" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_arrow-white.png">
+                      <div>
+                        <h2 class="benefit__desc__title">
+                          <a href="#">My Account</a>
+                        </h2>
+                      </div>
+                    </div>
+                    <p class="benefit__desc__description">
+                      View and manage your plans anytime,
+                      <br>anywhere
+                    </p>
+                  </div>
+                </div>
+              </a>
+              <a href="#">
+                <div class="row benefit">
+                  <div class="col-xs-12 col-sm-2 benefit__icon start-xs">
+                    <div class="icon-box center-xs">
+                      <img
+                        src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/Repair+engineer+icon+outlined.svg"
+                        alt="icon"
+                      >
                     </div>
                   </div>
-                  <p
-                    class="benefit__desc__description"
-                  >Get quick fixes for common faults without needing an engineer</p>
+                  <div class="col-xs-12 col-sm-10 benefit__desc top-xs start-xs">
+                    <div class="benefit-title">
+                        <img class="arr-right"
+                          src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_arrow-white.png"
+                        >
+                      <div>
+                        <h2 class="benefit__desc__title">
+                          <a href="https://www.domesticandgeneral.com/repairs">Digital repair booking</a>
+                        </h2>
+                      </div>
+                    </div>
+                    <p
+                      class="benefit__desc__description"
+                    >Request a repair and track existing engineer appointments from any device</p>
+                  </div>
                 </div>
-              </div>
+              </a>
+              <a href="#">
+                <div class="row benefit">
+                  <div class="col-xs-12 col-sm-2 benefit__icon start-xs">
+                    <div class="icon-box center-xs">
+                      <img
+                        src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/Repair+icon+outlined.svg"
+                        alt="icon"
+                      >
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-10 benefit__desc top-xs start-xs">
+                    <div class="benefit-title">
+                      <div class="last-benefit-icon">
+                        <img
+                          class="arr-right"
+                          src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_arrow-white.png"
+                        >
+                      </div>
+                      <div>
+                        <h2 class="benefit__desc__title">
+                          <a href="https://www.domesticandgeneral.com/content/help-advice-section/faq">Troubleshooting and maintenance content</a>
+                        </h2>
+                      </div>
+                    </div>
+                    <p
+                      class="benefit__desc__description"
+                    >Get quick fixes for common faults without needing an engineer</p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
           <div class="col-xs-12 col-md-6 special-warranty__right">
             <div class="img-wrapper">
-              <img
-                src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/father-son.png"
-              >
+              <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/father-son.png">
             </div>
           </div>
         </div>

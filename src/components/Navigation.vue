@@ -56,8 +56,8 @@
         </a>
       </div>
       <div class="nav-mobile__basket col-xs-2 center-xs middle-xs">
-        <a href="#">
-          <img class="basket-img" src="../assets/images/basket.svg" alt="Basket Icon">
+        <a href="#"  class="">
+          <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
         </a>
       </div>
 

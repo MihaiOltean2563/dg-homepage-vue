@@ -27,7 +27,6 @@
 
 <script>
 export default {
-//VU40002000
  name: 'Trustpilot',
  data(){
    return{
@@ -49,9 +48,10 @@ export default {
       }
       .trustpilot-wrapper{
         border-right: none;
-        border-bottom: 1px solid #BCBCBC;
+        border-top: 1px solid #BCBCBC;
         display: flex;
         padding: 30px 0;
+        order: 1;
         > .trustpilot-widget{
           flex: 1;
           // border: 1px solid goldenrod;
@@ -66,6 +66,7 @@ export default {
           max-width: 50%;
           border-right: 1px solid #BCBCBC;
           border-bottom: none;
+          order: 0;
         }
         @media(min-width: 1200px){
           justify-content: flex-end;
@@ -76,6 +77,7 @@ export default {
         display: flex;
         flex-direction: column;
         padding: 40px 0;
+        
         // border: 1px solid goldenrod;
         @media(min-width: 768px){
           flex-basis: 50%;
