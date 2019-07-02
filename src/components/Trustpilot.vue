@@ -10,13 +10,13 @@
       <div class="login-account-wrapper middle-xs">
         <div class="wrapper-big-screens middle-xs">
   
-          <h2 v-if="!isNewCustomer">Take control of your plans with <strong>My Account</strong></h2>
-          <h2 v-if="isNewCustomer">Protect the appliances that matter to you</h2>
+          <h2 v-if="isNewCustomer">Take control of your plans with <strong>My Account</strong></h2>
+          <h2 v-if="!isNewCustomer">Protect the appliances that matter to you</h2>
 
-          <a v-if="!isNewCustomer" class="login-cta center-xs middle-xs" href="#">
+          <a v-if="isNewCustomer" class="login-cta center-xs middle-xs" href="#">
             <strong>Log in to My Account</strong>
           </a>
-          <a v-if="isNewCustomer" class="login-cta center-xs middle-xs" href="#">
+          <a v-if="!isNewCustomer" class="login-cta center-xs middle-xs" href="#">
             <strong>Get an instant quote</strong>
           </a>
         </div>
@@ -27,7 +27,7 @@
 
 <script>
 export default {
-
+//VU40002000
  name: 'Trustpilot',
  data(){
    return{

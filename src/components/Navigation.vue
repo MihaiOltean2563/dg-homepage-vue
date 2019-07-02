@@ -77,21 +77,6 @@ export default{
      isNewCustomer: true,
     }  
   },
-  mounted(){
-    this.cloneBasketNode();
-  },
-  methods: {
-    display_menu(){
-      var body = document.getElementsByTagName("body")[0];
-			(!body.classList.contains("display_menu")) ? body.classList.add("display_menu") : body.classList.remove("display_menu");
-       console.log('display menu fired');
-    },
-    cloneBasketNode(){
-      console.log('Basket node was cloned!')
-      // var nodeToClone = document.querySelector('.svg-icon--minibasket');
-      // console.log('nodetoclone', nodeToClone)
-    }
-  },
   components: {
     Slide
   }
