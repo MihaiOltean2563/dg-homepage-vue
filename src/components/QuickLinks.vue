@@ -11,7 +11,7 @@
               <p><strong>Protect your</strong></p>
               <p class="copy--blue"><strong>washing machine</strong></p>
               <div class="img-wrapper">
-                <img src="../assets/images/Appliances/img_washing-machine.png" alt="Washing Machine">
+                <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Quick+Links/img_washing-machine.png" alt="Washing Machine">
               </div>
             </a>
           </div>
@@ -20,7 +20,7 @@
               <p><strong>Protect your</strong></p>
               <p class="copy--blue"><strong>dishwasher</strong></p>
               <div class="img-wrapper">
-                <img src="../assets/images/Appliances/img_dishwasher.png" alt="Dishwasher">
+                <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Quick+Links/img_dishwasher.png" alt="Dishwasher">
               </div>
             </a>
           </div>
@@ -29,7 +29,7 @@
               <p><strong>Protect your</strong></p>
               <p class="copy--blue"><strong>fridge freezer</strong></p>
               <div class="img-wrapper">
-                <img src="../assets/images/Appliances/img_fridge-freezer.png" alt="Fridge Freezer">
+                <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Quick+Links/img_fridge-freezer.png" alt="Fridge Freezer">
               </div>
             </a>
           </div>
@@ -38,7 +38,7 @@
              <p><strong>View our</strong></p>
               <p class="copy--blue"><strong>appliances</strong></p>
               <div class="img-wrapper">
-                <img src="../assets/images/Appliances/img_all-appliances.png" alt="All appliaces">
+                <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Quick+Links/img_all-appliances.png" alt="All appliaces">
               </div>
             </a>
           </div>

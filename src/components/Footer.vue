@@ -97,6 +97,7 @@ export default {};
 #footer {
   display: flex;
   background: #f2f2f2;
+  max-width: auto!important;
   a {
     color: #333;
   }

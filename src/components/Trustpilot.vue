@@ -66,6 +66,7 @@ export default {
           max-width: 50%;
           border-right: 1px solid #BCBCBC;
           border-bottom: none;
+          border-top: none;
           order: 0;
         }
         @media(min-width: 1200px){
