@@ -8,7 +8,7 @@
             <p
               class="quote-copy"
             >Our insurance policies protect the products you can’t live without, keeping your home running and giving you added peace of mind.</p>
-            <a href="#" class="get-quote-cta center-xs middle-xs">
+            <a href="https://www.domesticandgeneral.com/products" class="get-quote-cta center-xs middle-xs">
               <strong>Get a quote</strong>
             </a>
           </div>
