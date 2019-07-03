@@ -14,7 +14,7 @@
           <h2 v-if="!isNewCustomer">Protect the appliances that matter to you</h2>
 
           <a v-if="isNewCustomer" class="login-cta center-xs middle-xs" href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">
-            <strong>Log in to My Account</strong>
+            <strong>Go to My Account</strong>
           </a>
           <a v-if="!isNewCustomer" class="login-cta center-xs middle-xs" href="#">
             <strong>Get an instant quote</strong>
