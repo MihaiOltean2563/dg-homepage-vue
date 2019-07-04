@@ -16,8 +16,8 @@
       </div>
       <div class="welcome-intro middle-xs">
         <div class="welcome-intro-wrapper">
-          <h1 class="welcome-intro__title" v-if="isNewCustomer">Protect the appliances that matter to you</h1>
-          <h1 class="welcome-intro__title" v-if="!isNewCustomer">Manage your plans, appliances, and repairs all in one place</h1>
+          <h1 class="welcome-intro__title unknown-cust" v-if="isNewCustomer">Protect the appliances that matter to you</h1>
+          <h1 class="welcome-intro__title known-cust" v-if="!isNewCustomer">Manage your plans, appliances, and repairs all in one place</h1>
         </div>
         <a class="welcome-intro__cta center-xs middle-xs" href="https://www.domesticandgeneral.com/products" v-if="isNewCustomer"><strong>Get an instant quote</strong></a>
         <a class="welcome-intro__cta center-xs middle-xs" href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151" v-if="!isNewCustomer"><strong>Log in to My Account</strong></a>
@@ -63,6 +63,13 @@ export default {
         }
         @media (min-width: 650px) {
           max-width: 650px;
+        }
+        &.unknown-cust{
+          max-width: 90%;
+          margin: 0 auto;
+          @media (min-width: 768px) {
+            max-width: 500px;
+          }
         }
       }
       &__cta {
