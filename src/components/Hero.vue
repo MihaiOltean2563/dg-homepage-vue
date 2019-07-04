@@ -19,8 +19,8 @@
           <h1 class="welcome-intro__title" v-if="isNewCustomer">Protect the appliances that matter to you</h1>
           <!-- <h1 class="welcome-intro__title known-cust" v-if="!isNewCustomer">Manage your plans, appliances, and repairs all in one place</h1> -->
         </div>
-        <a class="welcome-intro__cta center-xs middle-xs" href="https://www.domesticandgeneral.com/products" v-if="isNewCustomer"><strong>Get an instant quote</strong></a>
-        <a class="welcome-intro__cta center-xs middle-xs" href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151" v-if="!isNewCustomer"><strong>Log in to My Account</strong></a>
+        <a class="btn welcome-intro__cta center-xs middle-xs" href="https://www.domesticandgeneral.com/products" v-if="isNewCustomer"><strong>Get an instant quote</strong></a>
+        <!-- <a class="welcome-intro__cta center-xs middle-xs" href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151" v-if="!isNewCustomer"><strong>Log in to My Account</strong></a> -->
       </div>
     </div>
     <!--container-wrapper-end-->
@@ -38,6 +38,7 @@ export default {
 </script>
 
 <style lang="scss">
+
 #hero {
   display: flex;
   background: url("https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/img_banner-gradient.png");
@@ -78,12 +79,20 @@ export default {
         font-size: 18px;
         margin-bottom: 30px;
         padding: 0 15px;
+        transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+        -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+
         @media (min-width: 300px) {
           width: 280px;
         }
         @media (min-width: 768px) {
           font-size: 22px;
           margin-bottom: 100px;
+        }
+        &:hover{
+          background: #006db3;
+          -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+          transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
         }
       }
     }

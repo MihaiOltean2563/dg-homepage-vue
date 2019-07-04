@@ -178,7 +178,7 @@ export default {
         color: #fff;
         font-size: 25px;
         line-height: 38px;
-        padding: 70px 20px;
+        padding: 40px 20px;
         @media (min-width: 768px) {
           font-size: 35px;
           line-height: 52px;

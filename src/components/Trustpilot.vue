@@ -150,6 +150,11 @@ export default {
             font-size: 22px;
             margin-bottom: 15px;
           }
+          &:hover{
+            background: #006db3;
+            -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+            transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+          }
         }
 
       }

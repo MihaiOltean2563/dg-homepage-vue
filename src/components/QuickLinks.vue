@@ -65,12 +65,12 @@ export default {};
   background: #eaeaea;
 
   .quick-links-wrapper {
+    padding-bottom: 40px;
     @media (min-width: 768px) {
       display: flex;
+      padding-bottom: 70px;
     }
     .container{
-      // border: 1px solid goldenrod;
-      padding-bottom: 90px;
 
       .quick-links-greeting {
         font-size: 25px;
@@ -80,7 +80,7 @@ export default {};
         @media (min-width: 768px) {
           font-size: 35px;
           line-height: 49px;
-          padding: 90px 20px;
+          padding: 70px 20px;
         }
       }
 
@@ -94,7 +94,7 @@ export default {};
           padding: 0;
         }
         .appliance {
-          height: 200px;
+          height: 150px;
           background: #fff;
           box-shadow: 1px 1px 10px 1px #c0c1cc;
           -moz-box-shadow: 1px 1px 10px 1px #c0c1cc;
@@ -104,6 +104,9 @@ export default {};
           display: flex;
           transition: all 0.3s ease-in-out;
           border-radius: 5px;
+          @media(min-width: 500px){
+            height: 200px;
+          }
           @media (min-width: 1000px) {
             flex-basis: 23%;
             max-width: 23%;

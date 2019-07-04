@@ -46,7 +46,7 @@ export default {
 // Carousel start
 
 .VueCarousel {
-  padding-bottom: 70px;
+  padding-bottom: 40px;
   .VueCarousel-wrapper {
     border-radius: 0;
     background: #fff;
