@@ -10,17 +10,17 @@
       <div class="login-account-wrapper middle-xs">
         <div class="wrapper-big-screens middle-xs">
   
-          <h2 class="desktop-title" v-if="isNewCustomer">Take control of your plans with <strong>My Account</strong></h2>
+          <!-- <h2 class="desktop-title" v-if="isNewCustomer">Take control of your plans with <strong>My Account</strong></h2>
           <h2 class="mobile-title main">Take control of your plans with</h2>
-          <h2 class="mobile-title"><strong>My Account</strong></h2>
-          <h2 v-if="!isNewCustomer">Protect the appliances that matter to you</h2>
-
+          <h2 class="mobile-title"><strong>My Account</strong></h2> -->
+          <!-- <h2 v-if="!isNewCustomer">Protect the appliances that matter to you</h2> -->
+          <h2 class="login-title">Take control of your plans with <strong>My Account</strong></h2>
           <a v-if="isNewCustomer" class="login-cta center-xs middle-xs" href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">
             <strong>Go to My Account</strong>
           </a>
-          <a v-if="!isNewCustomer" class="login-cta center-xs middle-xs" href="#">
+          <!-- <a v-if="!isNewCustomer" class="login-cta center-xs middle-xs" href="#">
             <strong>Get an instant quote</strong>
-          </a>
+          </a> -->
         </div>
       </div>
     </div>
@@ -104,13 +104,18 @@ export default {
         h2{
           color: #333333;
           font-weight: 300;
-          padding: 0 20px 20px 20px;
+          // padding: 0 20px 20px 20px;
+          padding-bottom: 20px;
           font-size: 18px;
           line-height: 24px;
-          // flex: 1 0 auto;
+          max-width: 250px;
           @media(min-width: 768px){
             font-size: 25px;
             line-height: 28px;
+            max-width: 350px;
+          }
+          @media(min-width: 960px){
+            max-width: initial;
           }
         }
         .mobile-title{
