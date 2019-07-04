@@ -146,11 +146,13 @@ export default {};
               height: 100%;
               display: flex;
               .bottom-left{
-                width: 65%;
+                width: 150px;
                 margin-left: auto;
                 // border: 1px solid blueviolet;
                 position: relative;
                 overflow: hidden;
+                display: flex;
+                justify-content: flex-end;
               }
               img{
                 max-width: 80%;

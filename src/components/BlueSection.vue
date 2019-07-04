@@ -178,7 +178,7 @@ export default {
         color: #fff;
         font-size: 25px;
         line-height: 38px;
-        padding: 90px 20px;
+        padding: 70px 20px;
         @media (min-width: 768px) {
           font-size: 35px;
           line-height: 52px;
@@ -204,6 +204,9 @@ export default {
 
           .benefits-wrapper {
             color: #fff;
+            a{
+              display: block;
+            }
             .benefit {
               // border: 1px solid wheat;
               padding: 20px 0;
