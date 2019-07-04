@@ -11,7 +11,9 @@
               <p><strong>Protect your</strong></p>
               <p class="copy--blue"><strong>washing machine</strong></p>
               <div class="img-wrapper">
-                <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Quick+Links/img_washing-machine.png" alt="Washing Machine">
+                <div class="bottom-left">
+                  <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Quick+Links/img_washing-machine.png" alt="Washing Machine">
+                </div>
               </div>
             </a>
           </div>
@@ -20,7 +22,9 @@
               <p><strong>Protect your</strong></p>
               <p class="copy--blue"><strong>dishwasher</strong></p>
               <div class="img-wrapper">
-                <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Quick+Links/img_dishwasher.png" alt="Dishwasher">
+                <div class="bottom-left">
+                  <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Quick+Links/img_dishwasher.png" alt="Dishwasher">
+                </div>
               </div>
             </a>
           </div>
@@ -29,7 +33,9 @@
               <p><strong>Protect your</strong></p>
               <p class="copy--blue"><strong>fridge freezer</strong></p>
               <div class="img-wrapper">
-                <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Quick+Links/img_fridge-freezer.png" alt="Fridge Freezer">
+                <div class="bottom-left">
+                  <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Quick+Links/img_fridge-freezer.png" alt="Fridge Freezer">
+                </div>
               </div>
             </a>
           </div>
@@ -38,7 +44,9 @@
              <p><strong>View our</strong></p>
               <p class="copy--blue"><strong>appliances</strong></p>
               <div class="img-wrapper">
-                <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Quick+Links/img_all-appliances.png" alt="All appliaces">
+                <div class="bottom-left">
+                  <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Quick+Links/img_all-appliances.png" alt="All appliaces">
+                </div>
               </div>
             </a>
           </div>
@@ -68,7 +76,7 @@ export default {};
         font-size: 25px;
         line-height: 30px;
         color: #333333;
-        padding: 50px 20px;
+        padding: 40px 20px;
         @media (min-width: 768px) {
           font-size: 35px;
           line-height: 49px;
@@ -134,11 +142,22 @@ export default {};
             }
             .img-wrapper{
               // border: 1px solid goldenrod;
+              // border: 1px solid goldenrod;
+              height: 100%;
+              display: flex;
+              .bottom-left{
+                width: 65%;
+                margin-left: auto;
+                // border: 1px solid blueviolet;
+                position: relative;
+                overflow: hidden;
+              }
               img{
                 max-width: 80%;
                 position: absolute;
                 right: 0;
                 bottom: 0;
+                top: 20px;
                 @media(min-width: 768px){
                   max-width: 100%;
                 }

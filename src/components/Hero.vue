@@ -53,33 +53,37 @@ export default {
       &__title {
         color: #fff;
         font-size: 28px;
-        padding: 20px 20px 50px 20px;
+        padding: 40px 20px 40px 20px;
+        font-weight: bold;
+        letter-spacing: .5px;
+        line-height: 38px;
         @media (min-width: 550px) {
           padding-left: 0;
           padding-right: 0;
+          padding: 60px 0;
           max-width: 500px;
           font-size: 42px;
           line-height: 62px;
         }
-        @media (min-width: 650px) {
-          max-width: 650px;
-        }
-        &.unknown-cust{
-          max-width: 90%;
-          margin: 0 auto;
-          @media (min-width: 768px) {
-            max-width: 500px;
-          }
-        }
+        // @media (min-width: 650px) {
+        //   max-width: 650px;
+        // }
+        // &.unknown-cust{
+        //   max-width: 90%;
+        //   margin: 0 auto;
+        //   @media (min-width: 768px) {
+        //     max-width: 500px;
+        //   }
+        // }
       }
       &__cta {
         background: #0a93d3;
         color: #fff;
-        height: 55px;
+        height: 50px;
         display: flex;
         border-radius: 3px;
         font-size: 18px;
-        margin-bottom: 70px;
+        margin-bottom: 30px;
         padding: 0 15px;
         @media (min-width: 300px) {
           width: 280px;
@@ -93,7 +97,7 @@ export default {
 
     .quote-finder {
       display: flex;
-      margin: 150px 0 40px 0;
+      margin: 130px 0 0 0;
       // font-family: Arial, Helvetica, sans-serif;
       &__widget {
         display: flex;

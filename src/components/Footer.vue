@@ -99,7 +99,7 @@ export default {};
   background: #f2f2f2;
   max-width: initial!important;
 
-  a {
+  a, h3 {
     color: #333;
   }
   .container {

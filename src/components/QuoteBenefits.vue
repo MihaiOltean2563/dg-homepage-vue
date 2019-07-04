@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row qb-wrapper">
           <div class="qb-wrapper__left col-xs-12 col-md-6">
-            <h2 class="quote-title">We've got you covered</h2>
+            <h2 class="quote-title">Protection against the unexpected</h2>
             <p
               class="quote-copy"
             >Our insurance policies protect the products you can’t live without, keeping your home running and giving you added peace of mind.</p>
@@ -122,6 +122,7 @@ export default {};
    
   .quote-benefits-wrapper {
     display: flex;
+    color: #333;
     .container {
       // border: 1px solid goldenrod;
       .qb-wrapper {
@@ -137,9 +138,10 @@ export default {};
             font-size: 25px;
             line-height: 32px;
             padding-bottom: 20px;
+            
             @media (min-width: 768px) {
               font-size: 35px;
-              line-height: 44px;
+              max-width: 60%;
             }
           }
           .quote-copy {
@@ -209,6 +211,7 @@ export default {};
     display: flex;
     padding: 40px 20px;
     background: #f2f2f2;
+    color: #333;
     .container {
       // border: 1px solid goldenrod;
       .social-bar-wrapper {
@@ -234,6 +237,7 @@ export default {};
       background: #fff;
       border-radius: 50%;
       display: flex;
+      a{ display: flex; }
       img {
         width: 25px;
         height: 25px;
@@ -245,6 +249,7 @@ export default {};
       background: #fff;
       border-radius: 50%;
       display: flex;
+      a{ display: flex; }
       img {
         width: 25px;
         height: 25px;
