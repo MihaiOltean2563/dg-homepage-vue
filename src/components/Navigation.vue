@@ -1,36 +1,28 @@
 <template>
   <div class="container-fluid nav-wrapper" :class="{ sticky: showNavbar}">
+
     <header class="nav row" role="banner">
       <div class="nav__brand col-xs-2 end-xs">
         <a href="https://www.domesticandgeneral.com">
           <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/logo_D%2BG_white.png" alt="Domestic&General Logo">
         </a>
       </div>
-      <div class="nav__list col-xs-6 middle-xs">
+      <div class="nav__list col-xs-7 middle-xs">
         <ul class="list-wrapper">
-          <li class="list-wrapper__item"><a href="https://www.domesticandgeneral.com/products"><strong>Get protected</strong></a></li>
-          <li class="list-wrapper__item"><a href="https://www.domesticandgeneral.com/repairs"><strong>Book a repair</strong></a></li>
-          <li class="list-wrapper__item"><a href="https://www.domesticandgeneral.com/content/help-advice-section/faq"><strong>Help and advice</strong></a></li>
+          <li class="list-wrapper__item"><a href="https://www.domesticandgeneral.com/products">Get protected</a></li>
+          <li class="list-wrapper__item"><a href="https://www.domesticandgeneral.com/repairs">Book a repair</a></li>
+          <li class="list-wrapper__item"><a href="https://www.domesticandgeneral.com/content/help-advice-section/faq">Help and advice</a></li>
         </ul>
       </div>
-      <div class="nav__account-management col-xs-4 middle-xs" v-if="!isNewCustomer">
-        <div class="row account-box">
-          <a href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151" class="col-xs-6 account-box__login middle-xs end-xs">
-            <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
-            <strong>Log in</strong>
-          </a>
-          <a href="https://www.domesticandgeneral.com/UserRegistrationForm?new=Y&catalogId=10052&myAcctMain=1&langId=44&storeId=10151" class="col-xs-6 account-box__register middle-xs start-xs">
-            <strong>Register</strong>
-          </a>
-        </div>
-      </div>
-      <div v-if="isNewCustomer" class="nav__account-management col-xs-4 middle-xs">
+      <div v-if="isNewCustomer" class="nav__account-management col-xs-3 middle-xs">
          <a href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151"  class="col-xs-12 account-box__login middle-xs end-xs new-customer">
             <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
-            <strong>My account</strong>
+            My account
           </a>
+          <a href="#" class="logout-cta" v-if="showLogoutCta">Logout</a>
       </div>
     </header>
+
     <header class="nav-mobile row" role="banner">
       <div class="nav-mobile__burger col-xs-2 start-xs middle-xs">
 
@@ -70,22 +62,34 @@ import { Slide } from 'vue-burger-menu'
 
 export default{
   /* eslint-disable */
-
   name: 'Navigation',
+
   data(){
     return{
      isNewCustomer: true,
-     showNavbar: false
+     showNavbar: false,
+     showLogoutCta: true
     }  
   },
   components: {
     Slide
+  },
+  mounted(){
+    this.isLoggedIn();
   },
   methods:{
     handleScroll(){
       window.pageYOffset > 0 ? 
         this.showNavbar = true :
         this.showNavbar = false;
+    },
+    isLoggedIn(){
+      // check for existance of  elem with id 'signInOutQuickLink'
+      var loggedInElem = document.getElementById('signInOutQuickLink');
+      // console.log('loggedInElem', loggedInElem);
+      if(loggedInElem !== null){
+        showLogoutCta = true;
+      }
     }
   },
   created () {
@@ -136,7 +140,8 @@ export default{
         }
         &__brand{
           // border: 1px solid seagreen;
-          display: flex;       
+          display: flex;
+          padding-right: 40px;       
           img{
             max-height: 50px;
           }
@@ -151,10 +156,24 @@ export default{
             list-style: none;
             border-left : .5px solid whitesmoke;
             padding: 5px 0 5px 0;
+            a{
+              font-family: 'VAG Rounded W01 Bold',sans-serif;
+              transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+              -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+              letter-spacing: .5px;
+              &:hover{
+                color: hsla(0,0%,100%,.7);
+                -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+                transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+              }
+            }
             &__item{
-              padding: 0 10px;
+              // padding: 0 10px;
+              padding-right: 40px;
               font-size: 18px;
-              
+              &:first-of-type{
+                padding-left: 40px;
+              }
             }
           }
         }
@@ -162,6 +181,19 @@ export default{
           // border: 1px solid seagreen;
           font-size: 18px;
           display: flex;
+          a{
+            font-family: 'VAG Rounded W01 Bold',sans-serif;
+             transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+            -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+             &:hover{
+                color: hsla(0,0%,100%,.7);
+                -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+                transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+              }
+          }
+          .logout-cta{
+            color: #d8cce0;
+          }
           .account-box{
             flex: 1;
             &__login{

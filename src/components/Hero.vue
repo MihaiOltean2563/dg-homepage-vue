@@ -17,10 +17,8 @@
       <div class="welcome-intro middle-xs">
         <div class="welcome-intro-wrapper">
           <h1 class="welcome-intro__title" v-if="isNewCustomer">Protect the appliances that matter to you</h1>
-          <!-- <h1 class="welcome-intro__title known-cust" v-if="!isNewCustomer">Manage your plans, appliances, and repairs all in one place</h1> -->
         </div>
-        <a class="btn welcome-intro__cta center-xs middle-xs" href="https://www.domesticandgeneral.com/products" v-if="isNewCustomer"><strong>Get an instant quote</strong></a>
-        <!-- <a class="welcome-intro__cta center-xs middle-xs" href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151" v-if="!isNewCustomer"><strong>Log in to My Account</strong></a> -->
+        <a class="btn welcome-intro__cta center-xs middle-xs" href="https://www.domesticandgeneral.com/products" v-if="isNewCustomer">Get an instant quote</a>
       </div>
     </div>
     <!--container-wrapper-end-->
@@ -57,9 +55,10 @@ export default {
         padding: 20px 10px;
         max-width: 300px;
         margin: 0 auto;
-        font-weight: bold;
-        letter-spacing: .5px;
+        letter-spacing: 2px;
         line-height: 38px;
+        font-family: 'VAG Rounded W01 Bold',sans-serif;
+
         @media (min-width: 550px) {
           padding-left: 0;
           padding-right: 0;
@@ -81,7 +80,8 @@ export default {
         padding: 0 15px;
         transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
         -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
-
+        font-family: 'VAG Rounded W01 Bold',sans-serif;
+        letter-spacing: .5px;
         @media (min-width: 300px) {
           width: 280px;
         }
@@ -100,7 +100,8 @@ export default {
     .quote-finder {
       display: flex;
       margin: 130px 0 0 0;
-      // font-family: Arial, Helvetica, sans-serif;
+      font-family: 'VAG Rounded W01 Bold',sans-serif;
+
       &__widget {
         display: flex;
         border-radius: 50px;

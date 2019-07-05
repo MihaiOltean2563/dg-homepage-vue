@@ -10,17 +10,8 @@
       <div class="login-account-wrapper middle-xs">
         <div class="wrapper-big-screens middle-xs">
   
-          <!-- <h2 class="desktop-title" v-if="isNewCustomer">Take control of your plans with <strong>My Account</strong></h2>
-          <h2 class="mobile-title main">Take control of your plans with</h2>
-          <h2 class="mobile-title"><strong>My Account</strong></h2> -->
-          <!-- <h2 v-if="!isNewCustomer">Protect the appliances that matter to you</h2> -->
-          <h2 class="login-title">Take control of your plans with <strong>My Account</strong></h2>
-          <a v-if="isNewCustomer" class="login-cta center-xs middle-xs" href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">
-            <strong>Go to My Account</strong>
-          </a>
-          <!-- <a v-if="!isNewCustomer" class="login-cta center-xs middle-xs" href="#">
-            <strong>Get an instant quote</strong>
-          </a> -->
+          <h2 class="login-title">Take control of your plans with <span>My Account</span></h2>
+          <a v-if="isNewCustomer" class="login-cta center-xs middle-xs" href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">Go to My Account</a>
         </div>
       </div>
     </div>
@@ -98,7 +89,7 @@ export default {
         .wrapper-big-screens{
           display: flex;
           flex-direction: column;
-          // border: 1px solid goldenrod;;
+          // border: 1px solid goldenrod;
         }
 
         h2{
@@ -109,6 +100,11 @@ export default {
           font-size: 18px;
           line-height: 24px;
           max-width: 250px;
+          letter-spacing: .5px;
+          span{
+             font-family: 'VAG Rounded W01 Bold',sans-serif;
+             letter-spacing: .5px;
+          }
           @media(min-width: 768px){
             font-size: 25px;
             line-height: 28px;
@@ -118,21 +114,7 @@ export default {
             max-width: initial;
           }
         }
-        .mobile-title{
-          display: block;
-          @media(min-width: 768px){
-           display: none;
-          }
-        }
-        .mobile-title.main{
-           padding-bottom: 5px;
-        }
-        .desktop-title{
-          display: none;
-          @media(min-width: 768px){
-           display: block;
-          }
-        }
+       
        
         .login-cta{
           background: #0a93d3;
@@ -142,6 +124,8 @@ export default {
           border-radius: 3px;
           font-size: 18px;
           padding: 0 15px;
+          font-family: 'VAG Rounded W01 Bold',sans-serif;
+          letter-spacing: .5px;
           
           @media (min-width: 300px) {
             width: 280px;

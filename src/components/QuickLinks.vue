@@ -12,7 +12,7 @@
               <p class="copy--blue"><strong>washing machine</strong></p>
               <div class="img-wrapper">
                 <div class="bottom-left">
-                  <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Quick+Links/img_washing-machine.png" alt="Washing Machine">
+                  <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_washing-machine_edited.png" alt="Washing Machine">
                 </div>
               </div>
             </a>
@@ -23,7 +23,7 @@
               <p class="copy--blue"><strong>dishwasher</strong></p>
               <div class="img-wrapper">
                 <div class="bottom-left">
-                  <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Quick+Links/img_dishwasher.png" alt="Dishwasher">
+                  <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_dishwasher_edited.png" alt="Dishwasher">
                 </div>
               </div>
             </a>
@@ -34,7 +34,7 @@
               <p class="copy--blue"><strong>fridge freezer</strong></p>
               <div class="img-wrapper">
                 <div class="bottom-left">
-                  <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Quick+Links/img_fridge-freezer.png" alt="Fridge Freezer">
+                  <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_fridge-freezer_edited.png" alt="Fridge Freezer">
                 </div>
               </div>
             </a>
@@ -45,7 +45,7 @@
               <p class="copy--blue"><strong>appliances</strong></p>
               <div class="img-wrapper">
                 <div class="bottom-left">
-                  <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Quick+Links/img_all-appliances.png" alt="All appliaces">
+                  <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_all-appliances_edited.png" alt="All appliaces">
                 </div>
               </div>
             </a>
@@ -137,14 +137,13 @@ export default {};
               margin: 0;
               flex: 1 0 auto;
               font-size: 16px;
-              line-height: 28px;
+              line-height: 20px;
                @media(min-width: 768px){
                 font-size: 22px;
                 line-height: 28px;
               }
             }
             .img-wrapper{
-              // border: 1px solid goldenrod;
               // border: 1px solid goldenrod;
               height: 100%;
               display: flex;
@@ -162,7 +161,6 @@ export default {};
                 position: absolute;
                 right: 0;
                 bottom: 0;
-                top: 20px;
                 @media(min-width: 768px){
                   max-width: 100%;
                 }
