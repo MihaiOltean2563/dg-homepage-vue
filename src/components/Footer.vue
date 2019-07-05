@@ -131,6 +131,11 @@ export default {};
       &__center {
         border: none;
         padding-left: 1rem;
+        a{
+          &:hover{
+            text-decoration: underline;
+          }
+        }
         @media (min-width: 1200px) {
           border-left: 1px solid #bcbcbc;
           padding-left: 50px;
@@ -196,6 +201,9 @@ export default {};
           }
           a {
             color: #333;
+            &:hover{
+              text-decoration: underline;
+            }
           }
           @media (min-width: 990px) {
             font-size: 16px;

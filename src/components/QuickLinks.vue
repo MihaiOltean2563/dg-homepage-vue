@@ -63,6 +63,7 @@ export default {};
 <style lang="scss">
 #quick-links {
   background: #eaeaea;
+  font-family: 'VAG Rounded W01 Bold',sans-serif;
 
   .quick-links-wrapper {
     padding-bottom: 40px;

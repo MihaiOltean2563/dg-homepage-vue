@@ -167,6 +167,7 @@ export default {
 <style scoped lang="scss">
 #special-warranty {
   background: #006db3;
+  font-family: 'VAG Rounded W01 Bold',sans-serif;
   a {
     color: #fff;
   }
@@ -179,6 +180,8 @@ export default {
         font-size: 25px;
         line-height: 38px;
         padding: 40px 20px;
+        
+
         @media (min-width: 768px) {
           font-size: 35px;
           line-height: 52px;
@@ -232,6 +235,7 @@ export default {
                 flex-direction: column;
                 padding-left: 0;
                 padding-top: 5px;
+                font-family: 'VAG Rounded W01 Light',sans-serif;
                 .benefit-title {
                   display: flex;
                   transition: .5s ease-out;
