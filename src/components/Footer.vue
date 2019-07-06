@@ -61,7 +61,7 @@
         </div>
         <div class="grid-wrapper__right col-xs-12 col-md-4">
           <h3 class="footer-grid-heading">Sign up to our Newsletter</h3>
-          <input type="text" class="newsletter-input-vue">
+          <input type="text" class="newsletter-input" v-model="emailNewsletter">
           <a @click="signToNewsLetter" class="sign-to-newsletter-cta center-xs middle-xs">Sign up</a>
         </div>
       </div>
@@ -90,10 +90,37 @@
 </template>
 
 <script>
+ /* eslint-disable */
+
 export default {
+  data(){
+    return{
+      emailNewsletter: ''
+    }
+  },
+  watch: {
+    'emailNewsletter': function(val, oldVal){
+      var oldNewsletterInputElem = document.getElementById('newsletterEmail');
+      if(!oldNewsletterInputElem !== null){
+        oldNewsletterInputElem.value = val;
+      }
+    }
+  },
   methods: {
     signToNewsLetter(){
-      console.log('signed');
+      var err = document.getElementById('newsletterMessage');
+      var email = document.getElementById('newsletterEmail').value;
+      var regex = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i;
+      
+      if(regex.test(email)){
+        console.log('signing');
+        // var oldEl = document.getElementById('newsletterForm');
+        // var oldSubmit = oldEl.querySelector('[type=submit]');
+        // oldSubmit.click();
+      }else{
+        console.log('errorrrrrr');
+        return;
+      }
     }
   }
 };
@@ -166,16 +193,19 @@ export default {
         // border: 1px solid purple;
         display: flex;
         flex-direction: column;
-        .newsletter-input-vue {
+        .newsletter-input {
           height: 45px;
           border-radius: 3px;
-          border: 1px solid #333;
+          border: 1px solid #DCDCDC;
           padding-left: 5px;
           &:focus {
             outline: none;
           }
         }
-        .sign-to-newsletter-cta-vue {
+        .newsletter-old-input{
+          margin-top: 10px;
+        }
+        .sign-to-newsletter-cta {
           height: 50px;
           background: #0a93d3;
           color: #fff;
@@ -193,6 +223,7 @@ export default {
             background: #561d80;
             -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
             transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+            cursor: pointer; 
           }
         }
       }
