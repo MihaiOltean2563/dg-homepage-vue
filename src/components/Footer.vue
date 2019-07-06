@@ -63,6 +63,7 @@
           <h3 class="footer-grid-heading">Sign up to our Newsletter</h3>
           <input type="text" class="newsletter-input" v-model="emailNewsletter">
           <a @click="signToNewsLetter" class="sign-to-newsletter-cta center-xs middle-xs">Sign up</a>
+          <p v-if="hasSubmitted">Thank you, you have subscribed.</p>
         </div>
       </div>
       <div class="copy row">
@@ -95,7 +96,8 @@
 export default {
   data(){
     return{
-      emailNewsletter: ''
+      emailNewsletter: '',
+      hasSubmitted: false
     }
   },
   watch: {
@@ -114,9 +116,14 @@ export default {
       
       if(regex.test(email)){
         console.log('signing');
-        // var oldEl = document.getElementById('newsletterForm');
-        // var oldSubmit = oldEl.querySelector('[type=submit]');
-        // oldSubmit.click();
+        this.hasSubmitted = true;
+        var newsLetterInputEl = document.querySelector('.newsletter-input');
+        var newsLetterCtaEl = document.querySelector('.sign-to-newsletter-cta');
+        newsLetterInputEl.style.display = 'none';
+        newsLetterCtaEl.style.display = 'none';
+        var oldEl = document.getElementById('newsletterForm');
+        var oldSubmit = oldEl.querySelector('[type=submit]');
+        oldSubmit.click();
       }else{
         console.log('errorrrrrr');
         return;
