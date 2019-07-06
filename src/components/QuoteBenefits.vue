@@ -4,84 +4,59 @@
       <div class="container">
         <div class="row qb-wrapper">
           <div class="qb-wrapper__left col-xs-12 col-md-6">
-            <h2 class="quote-title">Protection against the unexpected</h2>
-            <p
-              class="quote-copy"
-            >Our insurance policies protect the products you can’t live without, keeping your home running and giving you added peace of mind.</p>
-            <a href="https://www.domesticandgeneral.com/products" class="get-quote-cta center-xs middle-xs">
-              <strong>Get a quote</strong>
-            </a>
+            <div class="quote-copy-desktop">
+              <h2 class="quote-title">Protection against the unexpected</h2>
+              <p class="quote-copy">Insurance for the appliances and electronics you can’t go without.</p>
+            </div>
+            <a href="https://www.domesticandgeneral.com/products" class="get-quote-cta center-xs middle-xs">Get a quote</a>
           </div>
           <div class="qb-wrapper__right col-xs-12 col-md-6">
+            <div class="quote-copy-mobile">
+              <h2 class="quote-title">Protection against the unexpected</h2>
+              <p class="quote-copy">Insurance for the appliances and electronics you can’t go without.</p>
+            </div>
             <div class="benefits-wrapper">
               <div class="benefit-row">
                   <div class="icon-wrapper">
-                    <img
-                      class="arr-right"
-                      src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/white-tick.svg"
-                    >
+                    <img class="arr-right" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/white-tick.svg">
                   </div>
                 <div>
-                  <h5 class="benefit__desc__title">
-                    <strong>Protection against breakdowns</strong>
-                  </h5>
+                  <h5 class="benefit__desc__title">Protection against breakdowns</h5>
                 </div>
               </div>
               <div class="benefit-row">
                   <div class="icon-wrapper">
-                    <img
-                      class="arr-right"
-                      src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/white-tick.svg"
-                    >
+                    <img class="arr-right" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/white-tick.svg">
                   </div>
                 <div>
-                  <h5 class="benefit__desc__title">
-                    <strong>Accidental damage cover</strong>
-                  </h5>
+                  <h5 class="benefit__desc__title">Accidental damage cover</h5>
                 </div>
               </div>
               <div class="benefit-row">
                   <div class="icon-wrapper">
-                    <img
-                      class="arr-right"
-                      src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/white-tick.svg"
-                    >
+                    <img class="arr-right" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/white-tick.svg">
                   </div>
                 <div>
-                  <h5 class="benefit__desc__title">
-                    <strong>Unlimited repairs by expert engineers</strong>
-                  </h5>
+                  <h5 class="benefit__desc__title">Unlimited repairs by expert engineers</h5>
                 </div>
               </div>
               <div class="benefit-row">
                 <div class="icon-wrapper">
-                    <img
-                      class="arr-right"
-                      src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/white-tick.svg"
-                    >
+                    <img class="arr-right" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/white-tick.svg">
                 </div>
                 <div>
-                  <h5 class="benefit__desc__title">
-                    <strong>Parts, labour, and call-out charges included</strong>
-                  </h5>
+                  <h5 class="benefit__desc__title">Parts, labour, and call-out charges included</h5>
                 </div>
               </div>
               <div class="benefit-row">
                   <div class="icon-wrapper">
-                    <img
-                      class="arr-right"
-                      src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/white-tick.svg"
-                    >
+                    <img class="arr-right" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/white-tick.svg">
                   </div>
                 <div>
-                  <h5 class="benefit__desc__title">
-                    <strong> A replacement product if yours can't be fixed</strong>
-                    (just pay the cost of installation and disposal)
+                  <h5 class="benefit__desc__title">A replacement product if yours can't be fixed
+                    <span>(just pay the cost of installation and disposal)</span>
                   </h5>
-                  <a
-                    href="https://www.domesticandgeneral.com/products"
-                    class="select-boiler-link"
-                  >Select your boiler to see the benefits of our maintenance and support plans.</a>
+                  <a href="https://www.domesticandgeneral.com/products" class="select-boiler-link">Select your boiler to see the benefits of our maintenance and support plans.</a>
                 </div>
               </div>
             </div>
@@ -97,12 +72,20 @@
           </div>
           <div class="social__twitter center-xs middle-xs">
             <a href="https://twitter.com/DandG_UK" target="_blank">
-              <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Footer/icon_social-twitter.svg" alt="twitter">
+              <!-- Generated by IcoMoon.io -->
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <title>twitter</title>
+              <path d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"></path>
+              </svg>
             </a>
           </div>
           <div class="social__facebook center-xs middle-xs">
             <a href="https://www.facebook.com/pages/Domestic-General/1465140350420618" target="_blank">
-              <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Footer/icon_social-facebook.svg" alt="facebook">
+              <!-- Generated by IcoMoon.io -->
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+              <title>facebook</title>
+              <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+              </svg>
             </a>
           </div>
         </div>
@@ -129,11 +112,20 @@ export default {};
         margin: 0;
         text-align: left;
         padding-top: 50px;
-        padding-bottom: 50px;
         @media(min-width: 768px){
-          padding-top: 90px;
+          padding: 70px 0;
         }
         &__left {
+          order: 1;
+          @media(min-width: 990px){
+            order: 0;
+          }
+          .quote-copy-desktop{
+            display: none;
+            @media(min-width: 990px){
+              display: block;
+            }
+          }
           .quote-title {
             font-size: 25px;
             line-height: 32px;
@@ -141,12 +133,17 @@ export default {};
             
             @media (min-width: 768px) {
               font-size: 35px;
+              line-height: 44px;
               max-width: 60%;
             }
           }
           .quote-copy {
+            font-size: 18px;
+            line-height: 28px;
+
             @media (min-width: 600px) {
               width: 60%;
+              line-height:27px;
             }
           }
           .get-quote-cta {
@@ -159,16 +156,45 @@ export default {};
             font-size: 18px;
             line-height: 36px;
             display: flex;
+            font-family: 'VAG Rounded W01 Bold',sans-serif;
+            letter-spacing: 1px;
+            transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+            -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
             @media (min-width: 600px) {
               max-width: 320px;
+            }
+            &:hover{
+              // background: #581ada;
+              background: #006db3;
+              -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+              transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
             }
           }
         }
         &__right {
+          .quote-copy-mobile{
+            display: block;
+            @media(min-width: 990px){
+              display: none;
+            }
+            .quote-title{
+              font-size: 25px;
+              line-height: 32px;
+              padding-bottom: 20px;
+              @media(min-width: 768px){
+                font-size: 28px;
+              }
+            }
+            .quote-copy{
+              font-size: 18px;
+              line-height: 28px;
+              padding-bottom: 20px;
+            }
+          }
           .benefits-wrapper {
             .benefit-row{
               display: flex;
-              padding-bottom: 10px;
+              padding-bottom: 30px;
               a {
                 text-decoration: underline;
                 color: #333;
@@ -197,7 +223,10 @@ export default {};
               font-size: 18px;
               line-height: 27px;
               font-weight: normal;
-              padding-bottom: 20px;
+              font-family: 'VAG Rounded W01 Bold',sans-serif;
+              span{
+                font-family: 'VAG Rounded W01 Light',sans-serif;
+              } 
               @media (min-width: 768px) {
                 line-height: 27px;
               }
@@ -226,6 +255,8 @@ export default {};
       line-height: 36px;
       padding-right: 30px;
       display: flex;
+      font-family: 'VAG Rounded W01 Bold',sans-serif;
+
       a {
         color: #333;
       }
@@ -237,7 +268,14 @@ export default {};
       background: #fff;
       border-radius: 50%;
       display: flex;
-      a{ display: flex; }
+      a{ 
+        display: flex;
+        svg{
+          &:hover{
+            fill: #1DA1F2;
+          }
+        }
+      }
       img {
         width: 25px;
         height: 25px;
@@ -249,7 +287,15 @@ export default {};
       background: #fff;
       border-radius: 50%;
       display: flex;
-      a{ display: flex; }
+      a{ 
+        display: flex;
+        
+        svg{
+          &:hover{
+            fill: #4267B2;
+          }
+        }
+      }
       img {
         width: 25px;
         height: 25px;
