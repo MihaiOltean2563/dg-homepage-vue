@@ -134,7 +134,7 @@ export default {};
             @media (min-width: 768px) {
               font-size: 35px;
               line-height: 44px;
-              max-width: 60%;
+              max-width: 275px;
             }
           }
           .quote-copy {
@@ -174,13 +174,16 @@ export default {};
         &__right {
           .quote-copy-mobile{
             display: block;
+           
             @media(min-width: 990px){
               display: none;
             }
             .quote-title{
-              font-size: 25px;
-              line-height: 32px;
+              font-size: 23px;
+              line-height: 30px;
               padding-bottom: 20px;
+              font-family: 'VAG Rounded W01 Bold',sans-serif;
+
               @media(min-width: 768px){
                 font-size: 28px;
               }
@@ -189,6 +192,7 @@ export default {};
               font-size: 18px;
               line-height: 28px;
               padding-bottom: 20px;
+              font-family: 'VAG Rounded W01 Light',sans-serif;
             }
           }
           .benefits-wrapper {
@@ -198,6 +202,7 @@ export default {};
               a {
                 text-decoration: underline;
                 color: #333;
+                font-family: 'VAG Rounded W01 Light',sans-serif;
               }
             }
             .icon-wrapper {
@@ -255,8 +260,9 @@ export default {};
       line-height: 36px;
       padding-right: 30px;
       display: flex;
-      font-family: 'VAG Rounded W01 Bold',sans-serif;
-
+      p{
+        font-family: 'VAG Rounded W01 Bold',sans-serif;
+      }
       a {
         color: #333;
       }

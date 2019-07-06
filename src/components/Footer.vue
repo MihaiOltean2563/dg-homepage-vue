@@ -62,27 +62,25 @@
         <div class="grid-wrapper__right col-xs-12 col-md-3">
           <h3 class="footer-grid-heading">Sign up to our Newsletter</h3>
           <input type="text" class="newsletter-input" id="newsletterEmail">
-          <a href="#" class="sign-to-newsletter-cta center-xs middle-xs">
-            <strong>Sign up</strong>
-          </a>
+          <a href="#" class="sign-to-newsletter-cta center-xs middle-xs">Sign up</a>
         </div>
       </div>
       <div class="copy">
         Service plans, maintenance & support plans are provided by Domestic & General Services Limited. Insurance policies are provided by Domestic & General Insurance PLC. Domestic & General Insurance PLC is an insurance undertaking, not an intermediary. We are the underwriter of the insurance policies and do not provide a personal recommendation or advice. Domestic & General Insurance PLC is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority (Financial Services Register Number 202111). Our address and details of our authorisation can be checked on the
         <a href="https://register.fca.org.uk/">FCA website</a> or by contacting the FCA on 0800 111 6768.
       </div>
-      <div class="list-wrapper">
-        <ul class="footer-list">
-          <li>© 2019 Domestic & General Group Limited</li>
-          <li>
-            <a href="https://www.domesticandgeneral.com/web-terms-conditions">Website Terms and Conditions</a>
-          </li>
-          <li>
-            <a href="https://www.domesticandgeneral.com/privacy-cookies-policy">Privacy and Cookies policy</a>
-          </li>
-          <li>
-            <a href="https://www.domesticandgeneral.com/accessibility">Accessibility policy</a>
-          </li>
+      <div class="list-wrapper row">
+        <ul class="footer-list col-xs-12">
+              <li>© 2019 Domestic & General Group Limited</li>
+              <li>
+                <a href="https://www.domesticandgeneral.com/web-terms-conditions">Website Terms and Conditions</a>
+              </li>
+              <li>
+                <a href="https://www.domesticandgeneral.com/privacy-cookies-policy">Privacy and Cookies policy</a>
+              </li>
+              <li>
+                <a href="https://www.domesticandgeneral.com/accessibility">Accessibility policy</a>
+              </li>
         </ul>
       </div>
     </div>
@@ -115,10 +113,12 @@ export default {};
 
       .footer-grid-heading {
         padding: 20px 0;
+        font-family: 'VAG Rounded W01 Bold',sans-serif;
+        font-size: 22px;
+        line-height: 36px;
+
         @media (min-width: 768px) {
-          font-size: 22px;
           padding-top: 0;
-          line-height: 36px;
         }
       }
       &__left {
@@ -126,12 +126,16 @@ export default {};
         p {
           font-size: 20px;
           line-height: 34px;
+          a{
+            font-family: 'VAG Rounded W01 Light',sans-serif;
+          }
         }
       }
       &__center {
         border: none;
         padding-left: 1rem;
         a{
+          font-family: 'VAG Rounded W01 Light',sans-serif;
           &:hover{
             text-decoration: underline;
           }
@@ -162,6 +166,8 @@ export default {};
           line-height: 36px;
           display: flex;
           border-radius: 3px;
+          font-family: 'VAG Rounded W01 Bold',sans-serif;
+          letter-spacing: 1px;
         }
       }
     }
@@ -172,6 +178,7 @@ export default {};
       font-size: 14px;
       line-height: 23px;
       padding: 20px;
+      font-family: Arial, Helvetica, sans-serif;
       a {
         text-decoration: underline;
       }
@@ -183,6 +190,9 @@ export default {};
     .list-wrapper {
       // border: 1px solid goldenrod;
       padding: 20px 0;
+      @media(min-width: 990px){
+        margin: 0;
+      }
       .footer-list {
         display: flex;
         flex-direction: column;
@@ -195,9 +205,11 @@ export default {};
           font-size: 14px;
           line-height: 23px;
           padding: 5px 20px;
+          font-family: 'VAG Rounded W01 Light',sans-serif;
 
           &:first-child {
             color: #666666;
+            font-family: Arial, Helvetica, sans-serif;
           }
           a {
             color: #333;
