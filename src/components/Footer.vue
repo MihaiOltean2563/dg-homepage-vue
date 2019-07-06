@@ -61,8 +61,8 @@
         </div>
         <div class="grid-wrapper__right col-xs-12 col-md-4">
           <h3 class="footer-grid-heading">Sign up to our Newsletter</h3>
-          <input type="text" class="newsletter-input" id="newsletterEmail">
-          <a href="#" class="sign-to-newsletter-cta center-xs middle-xs">Sign up</a>
+          <input type="text" class="newsletter-input-vue">
+          <a @click="signToNewsLetter" class="sign-to-newsletter-cta center-xs middle-xs">Sign up</a>
         </div>
       </div>
       <div class="copy row">
@@ -90,7 +90,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    signToNewsLetter(){
+      console.log('signed');
+    }
+  }
+};
 </script>
 
 <style lang="scss">
@@ -160,7 +166,7 @@ export default {};
         // border: 1px solid purple;
         display: flex;
         flex-direction: column;
-        .newsletter-input {
+        .newsletter-input-vue {
           height: 45px;
           border-radius: 3px;
           border: 1px solid #333;
@@ -169,7 +175,7 @@ export default {};
             outline: none;
           }
         }
-        .sign-to-newsletter-cta {
+        .sign-to-newsletter-cta-vue {
           height: 50px;
           background: #0a93d3;
           color: #fff;

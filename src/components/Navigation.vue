@@ -77,7 +77,6 @@ export default{
     return{
      isNewCustomer: true,
      showNavbar: false,
-    //  showLogoutCta: true
      showLogoutCta: false
     }  
   },
@@ -101,20 +100,6 @@ export default{
       }
     },
     logout(){
-      // <a id="signInOutQuickLink" class="my-account__logout-link js__account-link logOut" href="javascript:logout('');">Logout</a>
-      //https://www.domesticandgeneral.com/Logoff?catalogId=10052&amp;rememberMe=false&amp;myAcctMain=1&amp;langId=44&amp;storeId=10151&amp;deleteCartCookie=true&amp;URL=https%3A%2F%2Fwww.domesticandgeneral.com%2FTopCategoriesDisplayView%3FcatalogId%3D10052%26langId%3D44%26storeId%3D10151
-      // var str = 
-      // `
-      // https://www.domesticandgeneral.com/Logoff
-      // ?catalogId=10052
-      // &rememberMe=false
-      // &myAcctMain=1
-      // &langId=44
-      // &storeId=10151
-      // &deleteCartCookie=true
-      // &URL=
-      // https://www.domesticandgeneral.com/TopCategoriesDisplayView/catalogId=10052&langId=44&storeId=10151`;
-      //https://www.domesticandgeneral.com/TopCategoriesDisplayView?catalogId=10052&langId=44&langId=44&storeId=10151&storeId=10151&krypto=VoBwDQdXVVl4oChjxN6THAWAGLiJH2Rw2983vJcEatCEgVOc75szOcwNzksjsM1Tvo15shBhZjqOwmnseZLmrPkhm7Kx8N88BYKslkW8SIBSgdC%2BKK2hj%2BecOhtC8q1jsxvVr3o6Y7l7qb0tEZWnzg%3D%3D
       var loggedInElem = document.getElementById('signInOutQuickLink');
       if(loggedInElem !== null){
         loggedInElem.click();
@@ -315,7 +300,7 @@ export default{
               margin-left: 10%;
               font-size: 20px;
               width: 300px;
-              #logout{
+              a:last-child{
                 padding-bottom: 25px;
               }
               #my-account{
