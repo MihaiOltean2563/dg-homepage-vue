@@ -47,6 +47,11 @@ export default {
 
 .VueCarousel {
   padding-bottom: 40px;
+  width: 100%;
+  @media(min-width: 768px){
+    width: 89%;
+    margin: 0 auto;
+  }
   .VueCarousel-wrapper {
     border-radius: 0;
     background: #fff;
@@ -93,7 +98,7 @@ export default {
     // display: none;
 
     .VueCarousel-navigation-button {
-      top: 25%;
+      top: 35%;
       width: 45px;
       height: 45px;
       border-radius: 50%;

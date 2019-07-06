@@ -58,19 +58,14 @@
                 <div class="row benefit">
                   <div class="col-xs-12 col-sm-2 benefit__icon">
                     <div class="icon-box center-xs">
-                      <img
-                        src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_plan.svg"
-                        alt="icon"
-                      >
+                      <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_plan.svg" alt="icon">
                     </div>
                   </div>
                   <div class="col-xs-12 col-sm-10 benefit__desc top-xs start-xs">
                     <div class="benefit-title">
                       <img class="arr-right" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_arrow-white.png">
                       <div>
-                        <h2 class="benefit__desc__title">
-                          <a href="#">My Account</a>
-                        </h2>
+                        <h2 class="benefit__desc__title">My Account</h2>
                       </div>
                     </div>
                     <p class="benefit__desc__description">
@@ -84,17 +79,12 @@
                 <div class="row benefit">
                   <div class="col-xs-12 col-sm-2 benefit__icon start-xs">
                     <div class="icon-box center-xs">
-                      <img
-                        src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/Repair+engineer+icon+outlined.svg"
-                        alt="icon"
-                      >
+                      <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/Repair+engineer+icon+outlined.svg" alt="icon">
                     </div>
                   </div>
                   <div class="col-xs-12 col-sm-10 benefit__desc top-xs start-xs">
                     <div class="benefit-title">
-                        <img class="arr-right"
-                          src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_arrow-white.png"
-                        >
+                      <img class="arr-right" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_arrow-white.png">
                       <div>
                         <h2 class="benefit__desc__title">
                           <a href="https://www.domesticandgeneral.com/repairs">Digital repair booking</a>
@@ -111,19 +101,13 @@
                 <div class="row benefit">
                   <div class="col-xs-12 col-sm-2 benefit__icon start-xs">
                     <div class="icon-box center-xs">
-                      <img
-                        src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/Repair+icon+outlined.svg"
-                        alt="icon"
-                      >
+                      <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/Repair+icon+outlined.svg" alt="icon">
                     </div>
                   </div>
                   <div class="col-xs-12 col-sm-10 benefit__desc top-xs start-xs">
                     <div class="benefit-title">
                       <div class="last-benefit-icon">
-                        <img
-                          class="arr-right"
-                          src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_arrow-white.png"
-                        >
+                        <img class="arr-right" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_arrow-white.png">
                       </div>
                       <div>
                         <h2 class="benefit__desc__title">
@@ -167,7 +151,6 @@ export default {
 <style scoped lang="scss">
 #special-warranty {
   background: #006db3;
-  font-family: 'VAG Rounded W01 Bold',sans-serif;
   a {
     color: #fff;
   }
@@ -180,8 +163,8 @@ export default {
         font-size: 25px;
         line-height: 38px;
         padding: 40px 20px;
-        
-
+        font-family: 'VAG Rounded W01 Bold',sans-serif;
+        letter-spacing: 1px;
         @media (min-width: 768px) {
           font-size: 35px;
           line-height: 52px;
@@ -192,7 +175,7 @@ export default {
         }
       }
 
-        .special-warranty {
+      .special-warranty {
         margin: 0;
         padding: 0 10px;
         .row {
@@ -239,26 +222,30 @@ export default {
                 .benefit-title {
                   display: flex;
                   transition: .5s ease-out;
-                  &:hover > img{
-                    transform: translateX(3px);
-                    transition: .5s ease-out;
-                  }
-                  &:hover > .last-benefit-icon{
-                    transform: translateX(3px);
-                    transition: .5s ease-out;
-                  }
+                  // &:hover > img{
+                  //   transform: translateX(3px);
+                  //   transition: .5s ease-out;
+                  // }
+                  // &:hover > .last-benefit-icon{
+                  //   transform: translateX(3px);
+                  //   transition: .5s ease-out;
+                  // }
                 }
                 &__title {
                   font-size: 22px;
                   line-height: 30px;
-                 
+                  font-family: 'VAG Rounded W01 Bold',sans-serif;
+                  letter-spacing: 1px;
                 }
                 &__description {
                   font-size: 18px;
                   line-height: 28px;
-                  padding-left: 25px;
+                  padding-left: 10px;
+                  font-family: 'VAG Rounded W01 Light',sans-serif;
+                  letter-spacing: 1px;
                 }
               }
+             
             }
           }
         }

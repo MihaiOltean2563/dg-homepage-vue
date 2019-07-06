@@ -58,12 +58,12 @@ export default {
         letter-spacing: 2px;
         line-height: 38px;
         font-family: 'VAG Rounded W01 Bold',sans-serif;
-
+        font-weight: bold;
         @media (min-width: 550px) {
           padding-left: 0;
           padding-right: 0;
           padding: 60px 0;
-          max-width: 450px;
+          max-width: 455px;
           font-size: 42px;
           line-height: 62px;
         }

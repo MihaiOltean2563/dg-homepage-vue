@@ -2,9 +2,7 @@
   <section id="quick-links">
     <div class="quick-links-wrapper center-xs">
       <div class="container">
-        <h1 class="quick-links-greeting">
-          <strong>Keep your home running smoothly</strong>
-        </h1>
+        <h1 class="quick-links-greeting">Keep your home running smoothly</h1>
         <div class="quick-links-wrapper between-sm">
           <div id="3576035" class="appliance" data-type="washing-machine">
             <a class="appliance__link-wrapper" href="https://www.domesticandgeneral.com/goal-search/household-en/washing-machine-protection">
@@ -63,7 +61,6 @@ export default {};
 <style lang="scss">
 #quick-links {
   background: #eaeaea;
-  font-family: 'VAG Rounded W01 Bold',sans-serif;
 
   .quick-links-wrapper {
     padding-bottom: 40px;
@@ -78,6 +75,8 @@ export default {};
         line-height: 30px;
         color: #333333;
         padding: 40px 20px;
+        font-family: 'VAG Rounded W01 Bold',sans-serif;
+        letter-spacing: 1px;
         @media (min-width: 768px) {
           font-size: 35px;
           line-height: 49px;
@@ -95,7 +94,7 @@ export default {};
           padding: 0;
         }
         .appliance {
-          height: 150px;
+          height: 170px;
           background: #fff;
           box-shadow: 1px 1px 10px 1px #c0c1cc;
           -moz-box-shadow: 1px 1px 10px 1px #c0c1cc;
@@ -123,6 +122,8 @@ export default {};
             p{
               text-align: left;
               margin: 0;
+              font-family: 'VAG Rounded W01 Bold',sans-serif;
+              letter-spacing: 1px;
             }
             p:first-child{
               color: #333;
