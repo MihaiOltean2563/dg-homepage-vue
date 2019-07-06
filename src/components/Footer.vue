@@ -207,6 +207,7 @@ export default {};
     .list-wrapper {
       // border: 1px solid goldenrod;
       padding: 20px 0;
+      margin: 0;
       @media(min-width: 990px){
         margin: 0;
       }

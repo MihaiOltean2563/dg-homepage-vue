@@ -15,7 +15,7 @@
         </ul>
       </div>
       <div v-if="isNewCustomer" class="nav__account-management col-xs-3 middle-xs">
-         <a href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151"  class="col-xs-12 account-box__login middle-xs end-xs new-customer">
+         <a href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151"  class="account-box__login middle-xs end-xs new-customer">
             <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
             My account
           </a>
@@ -181,6 +181,7 @@ export default{
           // border: 1px solid seagreen;
           font-size: 18px;
           display: flex;
+          
           a{
             font-family: 'VAG Rounded W01 Bold',sans-serif;
              transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
@@ -193,6 +194,7 @@ export default{
           }
           .logout-cta{
             color: #d8cce0;
+            padding-left: 20px
           }
           .account-box{
             flex: 1;
