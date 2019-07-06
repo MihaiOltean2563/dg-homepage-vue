@@ -87,7 +87,7 @@ export default {
         }
         @media (min-width: 768px) {
           font-size: 22px;
-          margin-bottom: 100px;
+          margin-bottom: 125px;
         }
         &:hover{
           background: #006db3;

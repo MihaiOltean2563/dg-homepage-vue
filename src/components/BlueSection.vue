@@ -7,9 +7,7 @@
         <carousel
           :scrollPerPage="true"
           :navigationEnabled="true"
-          :perPageCustom="[[480, 2],[600, 3], [768, 4], [960, 5]]"
-          
-        >
+          :perPageCustom="[[480, 2],[600, 3], [768, 4], [960, 5]]">
         <!-- :autoplay="true" -->
           <slide><img class="slide-brand" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Brands-Images/AEG.png"></slide>
           <slide><img class="slide-brand" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Brands-Images/AO.png"></slide>
@@ -162,7 +160,7 @@ export default {
         color: #fff;
         font-size: 25px;
         line-height: 38px;
-        padding: 40px 20px;
+        padding: 60px 20px 50px 20px;
         font-family: 'VAG Rounded W01 Bold',sans-serif;
         letter-spacing: 1px;
         @media (min-width: 768px) {
@@ -172,6 +170,7 @@ export default {
           padding-left: 0;
           max-width: 975px;
           margin: 0 auto;
+          padding: 70px 20px;
         }
       }
 
@@ -196,11 +195,17 @@ export default {
             .benefit {
               // border: 1px solid wheat;
               padding: 20px 0;
+              &:hover{
+                .benefit-title img{
+                    transform: translateX(3px);
+                    transition: .5s ease-out;
+                  }
+              }
               &__icon {
                 // border: 1px solid palegreen;
                 display: flex;
                 padding-right: 0;
-                padding-bottom: 20px;
+                padding-bottom: 30px;
                 @media (min-width: 768px) {
                   justify-content: center;
                 }
@@ -245,7 +250,9 @@ export default {
                   letter-spacing: 1px;
                 }
               }
-             
+              @media(min-width: 768px){
+                padding: 30px 0;
+              }
             }
           }
         }

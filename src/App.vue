@@ -46,7 +46,7 @@ export default {
 // Carousel start
 
 .VueCarousel {
-  padding-bottom: 40px;
+  padding-bottom: 50px;
   width: 100%;
   @media(min-width: 768px){
     width: 89%;
