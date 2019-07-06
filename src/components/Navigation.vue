@@ -36,8 +36,14 @@
           <a id="help-advice" href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
             <span>Help and advice</span>
           </a>
-          <a id="logout" href="#">
+          <a id="logout" href="#" v-if="showLogoutCta">
             <span>Log out</span>
+          </a>
+          <a id="my-account" href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">
+            <span class="my-account-side-nav">
+              My account
+              <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
+            </span>
           </a>
         </Slide>
 
@@ -69,6 +75,7 @@ export default{
      isNewCustomer: true,
      showNavbar: false,
      showLogoutCta: true
+    //  showLogoutCta: false
     }  
   },
   components: {
@@ -171,6 +178,9 @@ export default{
               // padding: 0 10px;
               padding-right: 40px;
               font-size: 18px;
+              @media(min-width: 768px) and (max-width: 1100px){
+                padding-right: 30px;
+              }
               &:first-of-type{
                 padding-left: 40px;
               }
@@ -181,7 +191,7 @@ export default{
           // border: 1px solid seagreen;
           font-size: 18px;
           display: flex;
-          
+          padding:0;
           a{
             font-family: 'VAG Rounded W01 Bold',sans-serif;
              transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
@@ -283,6 +293,21 @@ export default{
               margin-left: 10%;
               font-size: 20px;
               width: 300px;
+              #logout{
+                padding-bottom: 25px;
+              }
+              #my-account{
+                display: flex;
+                align-items: center;
+                border-top: 1px solid #d3d3d3;
+                .my-account-side-nav{
+                  display: flex;
+                  align-items: center;
+                  img{
+                    padding-left: 10px;
+                  }
+                }
+              }
             }
             .bm-item-list > * {
               display: flex;
