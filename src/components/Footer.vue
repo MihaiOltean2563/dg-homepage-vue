@@ -17,7 +17,7 @@
             <a href="https://www.domesticandgeneral.com/products/camera-mobile">Photo & Video devices</a>
           </p>
         </div>
-        <div class="grid-wrapper__center col-xs-12 col-md-6">
+        <div class="grid-wrapper__center col-xs-12 col-md-5">
           <h3 class="footer-grid-heading">Useful links</h3>
           <div class="row">
             <div class="col-xs-12 col-md-5">
@@ -59,15 +59,17 @@
             </div>
           </div>
         </div>
-        <div class="grid-wrapper__right col-xs-12 col-md-3">
+        <div class="grid-wrapper__right col-xs-12 col-md-4">
           <h3 class="footer-grid-heading">Sign up to our Newsletter</h3>
           <input type="text" class="newsletter-input" id="newsletterEmail">
           <a href="#" class="sign-to-newsletter-cta center-xs middle-xs">Sign up</a>
         </div>
       </div>
-      <div class="copy">
-        Service plans, maintenance & support plans are provided by Domestic & General Services Limited. Insurance policies are provided by Domestic & General Insurance PLC. Domestic & General Insurance PLC is an insurance undertaking, not an intermediary. We are the underwriter of the insurance policies and do not provide a personal recommendation or advice. Domestic & General Insurance PLC is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority (Financial Services Register Number 202111). Our address and details of our authorisation can be checked on the
-        <a href="https://register.fca.org.uk/">FCA website</a> or by contacting the FCA on 0800 111 6768.
+      <div class="copy row">
+        <div class="col-xs-12">
+          Service plans, maintenance & support plans are provided by Domestic & General Services Limited. Insurance policies are provided by Domestic & General Insurance PLC. Domestic & General Insurance PLC is an insurance undertaking, not an intermediary. We are the underwriter of the insurance policies and do not provide a personal recommendation or advice. Domestic & General Insurance PLC is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the Prudential Regulation Authority (Financial Services Register Number 202111). Our address and details of our authorisation can be checked on the
+          <a href="https://register.fca.org.uk/">FCA website</a> or by contacting the FCA on 0800 111 6768.
+        </div>
       </div>
       <div class="list-wrapper row">
         <ul class="footer-list col-xs-12">
@@ -102,16 +104,15 @@ export default {};
   }
   .container {
     // border:1px solid goldenrod;
-    .row {
-      &--grid-wrapper {
-        margin: 0;
-      }
-    }
     .grid-wrapper {
       padding: 40px 0;
+      margin: 0;
       text-align: left;
-
+      @media(min-width: 768px){
+        padding: 65px 0;
+      }
       .footer-grid-heading {
+        padding-top: 0;
         padding: 20px 0;
         font-family: 'VAG Rounded W01 Bold',sans-serif;
         font-size: 22px;
@@ -123,6 +124,9 @@ export default {};
       }
       &__left {
         // border: 1px solid purple;
+        .footer-grid-heading {
+          padding-top: 0;
+        }
         p {
           font-size: 20px;
           line-height: 34px;
@@ -144,14 +148,19 @@ export default {};
           border-left: 1px solid #bcbcbc;
           padding-left: 50px;
         }
+        .footer-grid-heading {
+          padding: 30px 0;
+        }
       }
       &__right {
         // border: 1px solid purple;
         display: flex;
         flex-direction: column;
         .newsletter-input {
-          height: 50px;
-          // border-radius: 3px;
+          height: 45px;
+          border-radius: 3px;
+          border: 1px solid #333;
+          padding-left: 5px;
           &:focus {
             outline: none;
           }
@@ -168,6 +177,13 @@ export default {};
           border-radius: 3px;
           font-family: 'VAG Rounded W01 Bold',sans-serif;
           letter-spacing: 1px;
+          transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+          -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+          &:hover{
+            background: #561d80;
+            -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+            transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
+          }
         }
       }
     }
@@ -177,8 +193,9 @@ export default {};
       text-align: left;
       font-size: 14px;
       line-height: 23px;
-      padding: 20px;
+      padding-bottom: 30px;
       font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
       a {
         text-decoration: underline;
       }
@@ -209,6 +226,10 @@ export default {};
           &:first-child {
             color: #666666;
             font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 40px;
+            @media(min-width: 990px){
+              padding-bottom: 0;
+            }
           }
           a {
             color: #333;

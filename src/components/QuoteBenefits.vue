@@ -122,6 +122,7 @@ export default {};
           }
           .quote-copy-desktop{
             display: none;
+            
             @media(min-width: 990px){
               display: block;
             }
@@ -137,7 +138,7 @@ export default {};
           .quote-copy {
             font-size: 18px;
             line-height: 28px;
-
+            letter-spacing: .5px;
             @media (min-width: 600px) {
               width: 60%;
               line-height:27px;
@@ -244,9 +245,12 @@ export default {};
   }
   .social {
     display: flex;
-    padding: 40px 20px;
+    padding: 30px 20px;
     background: #f2f2f2;
     color: #333;
+    @media(min-width:768px){
+      padding: 25px 20px;
+    }
     .container {
       // border: 1px solid goldenrod;
       .social-bar-wrapper {
