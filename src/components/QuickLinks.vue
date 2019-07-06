@@ -6,8 +6,8 @@
         <div class="quick-links-wrapper between-sm">
           <div id="3576035" class="appliance" data-type="washing-machine">
             <a class="appliance__link-wrapper" href="https://www.domesticandgeneral.com/goal-search/household-en/washing-machine-protection">
-              <p><strong>Protect your</strong></p>
-              <p class="copy--blue"><strong>washing machine</strong></p>
+              <p>Protect your</p>
+              <p class="copy--blue">washing machine</p>
               <div class="img-wrapper">
                 <div class="bottom-left">
                   <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_washing-machine_edited.png" alt="Washing Machine">
@@ -17,8 +17,8 @@
           </div>
           <div id="8261695" class="appliance" data-type="dishwasher">
             <a class="appliance__link-wrapper" href="https://www.domesticandgeneral.com/goal-search/household-en/dishwasher-protection">
-              <p><strong>Protect your</strong></p>
-              <p class="copy--blue"><strong>dishwasher</strong></p>
+              <p>Protect your</p>
+              <p class="copy--blue">dishwasher</p>
               <div class="img-wrapper">
                 <div class="bottom-left">
                   <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_dishwasher_edited.png" alt="Dishwasher">
@@ -28,8 +28,8 @@
           </div>
           <div id="2688671" class="appliance" data-type="fridge-freezer">
             <a class="appliance__link-wrapper" href="https://www.domesticandgeneral.com/goal-search/household-en/fridge-freezer-44">
-              <p><strong>Protect your</strong></p>
-              <p class="copy--blue"><strong>fridge freezer</strong></p>
+              <p>Protect your</p>
+              <p class="copy--blue">fridge freezer</p>
               <div class="img-wrapper">
                 <div class="bottom-left">
                   <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_fridge-freezer_edited.png" alt="Fridge Freezer">
@@ -39,8 +39,8 @@
           </div>
           <div id="6165187" class="appliance" data-type="all-appliances">
             <a class="appliance__link-wrapper" href="https://www.domesticandgeneral.com/products">
-             <p><strong>View our</strong></p>
-              <p class="copy--blue"><strong>appliances</strong></p>
+             <p>View our</p>
+              <p class="copy--blue">appliances</p>
               <div class="img-wrapper">
                 <div class="bottom-left">
                   <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_all-appliances_edited.png" alt="All appliaces">

@@ -19,7 +19,7 @@
             <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
             My account
           </a>
-          <a href="#" class="logout-cta" v-if="showLogoutCta">Logout</a>
+          <a class="logout-cta js__account-link logOut" @click="logout" v-if="showLogoutCta">Logout</a>
       </div>
     </header>
 
@@ -36,7 +36,10 @@
           <a id="help-advice" href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
             <span>Help and advice</span>
           </a>
-          <a id="logout" href="#" v-if="showLogoutCta">
+          <a id="logout"
+          class="js__account-link logOut"
+          @click="logout"
+          v-if="showLogoutCta">
             <span>Log out</span>
           </a>
           <a id="my-account" href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">
@@ -74,8 +77,8 @@ export default{
     return{
      isNewCustomer: true,
      showNavbar: false,
-     showLogoutCta: true
-    //  showLogoutCta: false
+    //  showLogoutCta: true
+     showLogoutCta: false
     }  
   },
   components: {
@@ -93,9 +96,28 @@ export default{
     isLoggedIn(){
       // check for existance of  elem with id 'signInOutQuickLink'
       var loggedInElem = document.getElementById('signInOutQuickLink');
-      // console.log('loggedInElem', loggedInElem);
       if(loggedInElem !== null){
-        showLogoutCta = true;
+        this.showLogoutCta = true;
+      }
+    },
+    logout(){
+      // <a id="signInOutQuickLink" class="my-account__logout-link js__account-link logOut" href="javascript:logout('');">Logout</a>
+      //https://www.domesticandgeneral.com/Logoff?catalogId=10052&amp;rememberMe=false&amp;myAcctMain=1&amp;langId=44&amp;storeId=10151&amp;deleteCartCookie=true&amp;URL=https%3A%2F%2Fwww.domesticandgeneral.com%2FTopCategoriesDisplayView%3FcatalogId%3D10052%26langId%3D44%26storeId%3D10151
+      // var str = 
+      // `
+      // https://www.domesticandgeneral.com/Logoff
+      // ?catalogId=10052
+      // &rememberMe=false
+      // &myAcctMain=1
+      // &langId=44
+      // &storeId=10151
+      // &deleteCartCookie=true
+      // &URL=
+      // https://www.domesticandgeneral.com/TopCategoriesDisplayView/catalogId=10052&langId=44&storeId=10151`;
+      //https://www.domesticandgeneral.com/TopCategoriesDisplayView?catalogId=10052&langId=44&langId=44&storeId=10151&storeId=10151&krypto=VoBwDQdXVVl4oChjxN6THAWAGLiJH2Rw2983vJcEatCEgVOc75szOcwNzksjsM1Tvo15shBhZjqOwmnseZLmrPkhm7Kx8N88BYKslkW8SIBSgdC%2BKK2hj%2BecOhtC8q1jsxvVr3o6Y7l7qb0tEZWnzg%3D%3D
+      var loggedInElem = document.getElementById('signInOutQuickLink');
+      if(loggedInElem !== null){
+        loggedInElem.click();
       }
     }
   },

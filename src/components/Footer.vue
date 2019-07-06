@@ -138,18 +138,22 @@ export default {};
       &__center {
         border: none;
         padding-left: 1rem;
+        padding-top: 40px;
         a{
           font-family: 'VAG Rounded W01 Light',sans-serif;
           &:hover{
             text-decoration: underline;
           }
         }
+        @media (min-width: 768px) {
+          padding-top: 0;
+        }
         @media (min-width: 1200px) {
           border-left: 1px solid #bcbcbc;
           padding-left: 50px;
         }
         .footer-grid-heading {
-          padding: 30px 0;
+            padding-top: 0;
         }
       }
       &__right {
@@ -222,7 +226,7 @@ export default {};
         li {
           font-size: 14px;
           line-height: 23px;
-          padding: 5px 20px;
+          padding: 5px 0;
 
           &:first-child {
             color: #666666;
