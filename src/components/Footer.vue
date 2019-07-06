@@ -205,7 +205,6 @@ export default {};
           font-size: 14px;
           line-height: 23px;
           padding: 5px 20px;
-          font-family: 'VAG Rounded W01 Light',sans-serif;
 
           &:first-child {
             color: #666666;
@@ -213,6 +212,8 @@ export default {};
           }
           a {
             color: #333;
+            font-family: 'VAG Rounded W01 Light',sans-serif;
+
             &:hover{
               text-decoration: underline;
             }

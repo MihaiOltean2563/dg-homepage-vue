@@ -56,7 +56,7 @@
                   <h5 class="benefit__desc__title">A replacement product if yours can't be fixed
                     <span>(just pay the cost of installation and disposal)</span>
                   </h5>
-                  <a href="https://www.domesticandgeneral.com/products" class="select-boiler-link">Select your boiler to see the benefits of our maintenance and support plans.</a>
+                  <!-- <a href="https://www.domesticandgeneral.com/products" class="select-boiler-link">Select your boiler to see the benefits of our maintenance and support plans.</a> -->
                 </div>
               </div>
             </div>
@@ -126,17 +126,14 @@ export default {};
               display: block;
             }
           }
-          .quote-title {
-            font-size: 25px;
-            line-height: 32px;
+          .quote-title {      
             padding-bottom: 20px;
-            
-            @media (min-width: 768px) {
-              font-size: 35px;
-              line-height: 44px;
-              max-width: 275px;
-            }
+            font-family: 'VAG Rounded W01 Bold',sans-serif;
+            font-size: 35px;
+            line-height: 44px;
+            max-width: 275px;
           }
+
           .quote-copy {
             font-size: 18px;
             line-height: 28px;
@@ -203,6 +200,7 @@ export default {};
                 text-decoration: underline;
                 color: #333;
                 font-family: 'VAG Rounded W01 Light',sans-serif;
+                letter-spacing: 1px;
               }
             }
             .icon-wrapper {
@@ -229,8 +227,11 @@ export default {};
               line-height: 27px;
               font-weight: normal;
               font-family: 'VAG Rounded W01 Bold',sans-serif;
+              letter-spacing: 1px;
+              
               span{
                 font-family: 'VAG Rounded W01 Light',sans-serif;
+                letter-spacing: 1px;
               } 
               @media (min-width: 768px) {
                 line-height: 27px;
@@ -277,8 +278,12 @@ export default {};
       a{ 
         display: flex;
         svg{
+          -webkit-transition: 300ms fill cubic-bezier(0.4, 0, 0.6, 1);
+          transition: 300ms fill cubic-bezier(0.4, 0, 0.6, 1);
           &:hover{
             fill: #1DA1F2;
+            -webkit-transition: 300ms fill cubic-bezier(0.4, 0, 0.6, 1);
+            transition: 300ms fill cubic-bezier(0.4, 0, 0.6, 1);
           }
         }
       }
@@ -297,8 +302,12 @@ export default {};
         display: flex;
         
         svg{
+           -webkit-transition: 300ms fill cubic-bezier(0.4, 0, 0.6, 1);
+          transition: 300ms fill cubic-bezier(0.4, 0, 0.6, 1);
           &:hover{
             fill: #4267B2;
+            -webkit-transition: 300ms fill cubic-bezier(0.4, 0, 0.6, 1);
+            transition: 300ms fill cubic-bezier(0.4, 0, 0.6, 1);
           }
         }
       }
