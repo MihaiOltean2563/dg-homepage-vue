@@ -62,6 +62,7 @@
         <div class="grid-wrapper__right col-xs-12 col-md-4">
           <h3 class="footer-grid-heading">Sign up to our Newsletter</h3>
           <input type="text" class="newsletter-input" v-model="emailNewsletter">
+          <p class="invalid-email">Invalid email address</p>
           <a @click="signToNewsLetter" class="sign-to-newsletter-cta center-xs middle-xs">Sign up</a>
           <p v-if="hasSubmitted">Thank you, you have subscribed.</p>
         </div>
@@ -97,7 +98,8 @@ export default {
   data(){
     return{
       emailNewsletter: '',
-      hasSubmitted: false
+      hasSubmitted: false,
+      isEmailValid: ''
     }
   },
   watch: {
@@ -113,19 +115,20 @@ export default {
       var err = document.getElementById('newsletterMessage');
       var email = document.getElementById('newsletterEmail').value;
       var regex = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i;
-      
+      var invalidEmailEl = document.querySelector('.invalid-email');
+
       if(regex.test(email)){
-        console.log('signing');
         this.hasSubmitted = true;
         var newsLetterInputEl = document.querySelector('.newsletter-input');
         var newsLetterCtaEl = document.querySelector('.sign-to-newsletter-cta');
         newsLetterInputEl.style.display = 'none';
         newsLetterCtaEl.style.display = 'none';
+        invalidEmailEl.style.display = 'none';
         var oldEl = document.getElementById('newsletterForm');
         var oldSubmit = oldEl.querySelector('[type=submit]');
         oldSubmit.click();
       }else{
-        console.log('errorrrrrr');
+        invalidEmailEl.style.display = 'block';
         return;
       }
     }
@@ -200,6 +203,9 @@ export default {
         // border: 1px solid purple;
         display: flex;
         flex-direction: column;
+        .invalid-email{
+          display: none;
+        }
         .newsletter-input {
           height: 45px;
           border-radius: 3px;
