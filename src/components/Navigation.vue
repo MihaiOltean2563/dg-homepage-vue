@@ -300,7 +300,7 @@ export default{
               margin-left: 10%;
               font-size: 20px;
               width: 300px;
-              a:last-child{
+              a:nth-last-child(2){
                 padding-bottom: 25px;
               }
               #my-account{

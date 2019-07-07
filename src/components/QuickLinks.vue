@@ -182,9 +182,13 @@ export default {};
                 }
               }
               .icon{
-                top: 20px;
-                right: 120px;
+                top: 40px;
+                right: 82px;
                 z-index: 1;
+                @media(min-width: 768px){
+                  top: 20px;
+                  right: 120px;
+                }
               }
             }
           }
