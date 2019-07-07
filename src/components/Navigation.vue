@@ -9,13 +9,30 @@
       </div>
       <div class="nav__list col-xs-7 middle-xs">
         <ul class="list-wrapper">
-          <li class="list-wrapper__item"><a href="https://www.domesticandgeneral.com/products">Get protected</a></li>
-          <li class="list-wrapper__item"><a href="https://www.domesticandgeneral.com/repairs">Book a repair</a></li>
-          <li class="list-wrapper__item"><a href="https://www.domesticandgeneral.com/content/help-advice-section/faq">Help and advice</a></li>
+          
+          <li data-ga-label="Get Protected"
+          @click="handleAnalytics" 
+          class="list-wrapper__item">
+            <a href="https://www.domesticandgeneral.com/products">Get protected</a>
+          </li>
+
+          <li data-ga-label="Book Repair"
+          @click="handleAnalytics"  
+          class="list-wrapper__item">
+            <a href="https://www.domesticandgeneral.com/repairs">Book a repair</a>
+          </li>
+          <li data-ga-label="Help and Advice"
+          @click="handleAnalytics"  
+          class="list-wrapper__item">
+            <a href="https://www.domesticandgeneral.com/content/help-advice-section/faq">Help and advice</a>
+          </li>
+
         </ul>
       </div>
-      <div v-if="isNewCustomer" class="nav__account-management col-xs-3 middle-xs">
-         <a href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151"  class="account-box__login middle-xs end-xs new-customer">
+      <div v-if="isNewCustomer" class="nav__account-management col-xs-3 middle-xs" data-ga-label="LoginRegister">
+         <a href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151"  
+         class="account-box__login middle-xs end-xs new-customer"
+         @click="handleAnalytics">
             <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
             My account
           </a>
@@ -104,6 +121,14 @@ export default{
       if(loggedInElem !== null){
         loggedInElem.click();
       }
+    },
+    handleAnalytics(e){
+      this.dataLayer.push({
+        event: 'gaEvent',
+        event_action: 'Interaction',
+        event_category: 'Header',
+        event_label: e.srcElement.parentElement.dataset.gaLabel
+      })
     }
   },
   created () {

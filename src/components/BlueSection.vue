@@ -143,6 +143,35 @@ export default {
     Carousel,
     Slide
   }
+  /*
+  //Clicked on MyAccount (Login) button - Body
+
+window.dataLayer.push({
+    event: 'gaEvent',
+    event_action: 'Interaction-Body',
+    event_category: 'Home',
+    event_label: 'LoginRegister'
+  })   
+  
+   
+//Clicked on Online repair booking button - Body
+window.dataLayer.push({
+    event: 'gaEvent',
+    event_action: 'Interaction-Body',
+    event_category: 'Home',
+    event_label: 'Get Protected'
+  })  
+  
+  
+//Clicked on Troubleshooting and maintenance button - Body  
+
+window.dataLayer.push({
+    event: 'gaEvent',
+    event_action: 'Interaction-Body',
+    event_category: 'Home',
+    event_label: 'Help and Advice'
+  })  
+  */
 };
 </script>
 

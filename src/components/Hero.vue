@@ -30,7 +30,35 @@ export default {
   data(){
     return{
       isNewCustomer: true,
-    }  
+    }
+    /*
+    //Clicked on Find my Quote button - Header
+
+window.dataLayer.push({
+    event: 'gaEvent',
+    event_action: 'FormSubmit',
+    event_category: 'Home',
+    event_label: 'offerSubmit-clicked'
+  })
+   
+//Clicked on Go/Login to myaccount button - Hero
+
+window.dataLayer.push({
+    event: 'gaEvent',
+    event_action: 'GoToMyAccountButtonClicked',
+    event_category: 'Home',
+    event_label: 'primaryButtons-CTA'
+  })  
+   
+//Clicked on Get Protected/Quote button - Hero
+
+window.dataLayer.push({
+    event: 'gaEvent',
+    event_action: 'GetAQuoteButtonClicked',
+    event_category: 'Home',
+    event_label: 'primaryButtons-CTA'
+  })  
+    */  
   },
 };
 </script>

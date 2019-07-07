@@ -95,7 +95,19 @@
 </template>
 
 <script>
-export default {};
+export default {
+  /*
+  //Clicked on Get Protected/Quote button - Body
+
+window.dataLayer.push({
+    event: 'gaEvent',
+    event_action: 'GetAQuoteButtonClicked-Body',
+    event_category: 'Home',
+    event_label: 'primaryButtons-CTA'
+    
+})   
+  */
+};
 </script>
 
 <style lang="scss">

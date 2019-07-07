@@ -67,7 +67,46 @@
 </template>
 
 <script>
-export default {};
+export default {
+  /*
+  //Clicked on washing machine protection - body
+
+window.dataLayer.push({
+    event: 'gaEvent',
+    event_action: 'Appliances',
+    event_category: 'Home',
+    event_label: 'washing-machine'
+  })  
+      
+//Clicked on Dishwasher protection - body
+
+window.dataLayer.push({
+    event: 'gaEvent',
+    event_action: 'Appliances',
+    event_category: 'Home',
+    event_label: 'dishwasher'
+  })    
+  
+ //Clicked on Fridge Freezer protection - body
+
+window.dataLayer.push({
+    event: 'gaEvent',
+    event_action: 'Appliances',
+    event_category: 'Home',
+    event_label: 'fridge-freezer'
+  })   
+  
+  
+  //Clicked on All appliances protection - body
+
+window.dataLayer.push({
+    event: 'gaEvent',
+    event_action: 'Appliances',
+    event_category: 'Home',
+    event_label: 'all-appliances'
+  })   
+  */
+};
 </script>
 
 <style lang="scss">
