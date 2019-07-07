@@ -123,7 +123,7 @@ export default{
       }
     },
     handleAnalytics(e){
-      this.dataLayer.push({
+      window.dataLayer.push({
         event: 'gaEvent',
         event_action: 'Interaction',
         event_category: 'Header',

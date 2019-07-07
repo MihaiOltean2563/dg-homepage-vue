@@ -1,0 +1,300 @@
+[33mcommit 618d7ff008b737871edebe537f8e3df0f06033ad[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Sun Jul 7 19:21:54 2019 +0100
+
+    more analytics
+
+[33mcommit 7bf2eba4d08888c5923dbccdbe18833b699a8e49[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Sun Jul 7 17:05:16 2019 +0100
+
+    nav analytics added
+
+[33mcommit b27b59a2e7555a7027959c6421fdcf2ef36bf2dc[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Sun Jul 7 12:16:10 2019 +0100
+
+    yet another css fix commit
+
+[33mcommit b2d49dd60ee0d524ae67ef677747b3ae7b4e6720[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Sun Jul 7 12:04:23 2019 +0100
+
+    added hero bgs
+
+[33mcommit b320fe8114b943d83fb83cbc643a1de2d914f6b9[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Sun Jul 7 11:15:45 2019 +0100
+
+    newsletter simple regex
+
+[33mcommit 43545582a3c0478e992a00aa0be981dd4f38689e[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Sat Jul 6 22:46:06 2019 +0100
+
+    newsletter functionality start
+
+[33mcommit b586a3726a39fda7cae4b47ee09bd060472a4f21[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Sat Jul 6 22:12:19 2019 +0100
+
+    newsletter functionality start
+
+[33mcommit cdfab1f7f8794f1187ea2df9bf8b7e5d496d95ef[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Sat Jul 6 19:30:43 2019 +0100
+
+    nav css improvements
+
+[33mcommit cd65a7e03462d17154ba9e02fb5ecc639445757f[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Sat Jul 6 19:12:27 2019 +0100
+
+    more css sparkles
+
+[33mcommit fd1cfaa7c6150130e77bc750c0d0631dd8a61470[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Sat Jul 6 15:22:01 2019 +0100
+
+    new nav css
+
+[33mcommit 773815941f3d472b2284b90a6e350cbab0e1621a[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Sat Jul 6 14:47:19 2019 +0100
+
+    removed vertical scroll on mobile
+
+[33mcommit 6588f5fd28fd94042e6b608be137dcd87994679e[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Sat Jul 6 14:24:37 2019 +0100
+
+    more footer changes
+
+[33mcommit b4985b4e2e30b145b6c9e5070ea000381a6a750c[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Sat Jul 6 13:26:46 2019 +0100
+
+    :sparkles: css improvements in quote benefits
+
+[33mcommit 5522d8835ab0655b205641cac1287debbe2703de[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Sat Jul 6 12:13:30 2019 +0100
+
+    footer start
+
+[33mcommit 53c8619ac210b9da25218c6dd8e277850faf9855[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Sat Jul 6 11:17:45 2019 +0100
+
+    quote-benefits start
+
+[33mcommit 4fcc99cc24ee5d0a88f5c74759fb045ce04b2abe[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Sat Jul 6 10:05:36 2019 +0100
+
+    first 3 sections done
+
+[33mcommit 473b81197367417f7fbbb0bdebef7939166bd1bf[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Sat Jul 6 09:42:00 2019 +0100
+
+    css improvements
+
+[33mcommit f57e2615430a2cedb3a16b93e3ec72f05cce3835[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Fri Jul 5 22:13:00 2019 +0100
+
+    added some font family
+
+[33mcommit 10dac794be04660a8873512247a126ae588b14a9[m
+Author: Mihai Oltean <OLTEANM@domesticandgeneral.com>
+Date:   Fri Jul 5 21:45:14 2019 +0100
+
+    latest changes
+
+[33mcommit ee835c41d5c3810d7b9e85e0eb5e743e18c8247f[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Thu Jul 4 20:58:23 2019 +0100
+
+    spacings
+
+[33mcommit 1f80820f0571583282cc017cebf99b8d4651b2c5[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Thu Jul 4 20:28:28 2019 +0100
+
+    titles css fixes
+
+[33mcommit c73aa26c0c973d6e9985d443bf23d638b94d4e96[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Thu Jul 4 19:58:46 2019 +0100
+
+    css upodates
+
+[33mcommit e4d7c1b78e070baf9fcc2f19b558d555632e5ac3[m
+Author: MihaiOltean2563 <MihaiOltean2563@gmail.com>
+Date:   Thu Jul 4 17:15:39 2019 +0100
+
+    first 2 sections reviewed
+
+[33mcommit 7096ef2ec7c8df0303287bb9b80f564b279ac698[m
+Author: MihaiOltean2563 <MihaiOltean2563@gmail.com>
+Date:   Thu Jul 4 09:12:59 2019 +0100
+
+    small css amends
+
+[33mcommit ec1cd95c8ac4b8dd994dec15636a437e24a23660[m
+Author: MihaiOltean2563 <MihaiOltean2563@gmail.com>
+Date:   Wed Jul 3 15:49:55 2019 +0100
+
+    changes
+
+[33mcommit 730138760fe624dc02ddc8a97fee1d36be793ddb[m
+Author: MihaiOltean2563 <MihaiOltean2563@gmail.com>
+Date:   Wed Jul 3 14:38:50 2019 +0100
+
+    small change copy
+
+[33mcommit 8bfc7278fa0ec2e619f7963eac1d1d2ff23d95c1[m
+Author: MihaiOltean2563 <MihaiOltean2563@gmail.com>
+Date:   Wed Jul 3 13:52:31 2019 +0100
+
+    new stuff
+
+[33mcommit 7470ab1844f89b44b6daf217c27bccdedf90d072[m[33m ([m[1;31morigin/feature/nav-mobile[m[33m, [m[1;32mfeature/nav-mobile[m[33m)[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Tue Jul 2 20:00:35 2019 +0100
+
+    :sparkles: added new css for nav and other small changes
+
+[33mcommit 001cda3e22b32550ae379e50e45fc688c691e05b[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Tue Jul 2 19:04:35 2019 +0100
+
+    improvs
+
+[33mcommit 3ff1260042d4212cfb9c0d1e30d58adc9020d845[m
+Author: MihaiOltean2563 <MihaiOltean2563@gmail.com>
+Date:   Tue Jul 2 15:00:02 2019 +0100
+
+    new changes
+
+[33mcommit db309c109928558e34bcb48f2ae34a681583c2a0[m
+Author: Mihai Oltean <OLTEANM@domesticandgeneral.com>
+Date:   Tue Jun 25 10:38:34 2019 +0100
+
+    small amend
+
+[33mcommit 1982cd3743c721f77b4be5a8c1f9edea3e7122c5[m
+Author: Mihai Oltean <OLTEANM@domesticandgeneral.com>
+Date:   Mon Jun 24 16:37:44 2019 +0100
+
+    simple nafv
+
+[33mcommit fe9108a23ab63d61dbd16e206ea051e527c9bc49[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Thu Jun 20 21:23:59 2019 +0100
+
+    nav css
+
+[33mcommit e06afc07d82295a593f19904275834f579a8159d[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Thu Jun 20 21:09:19 2019 +0100
+
+    nav improvements
+
+[33mcommit d60f6a6f962a3e94ff8646320f825d6afa6dafda[m
+Author: MihaiOltean2563 <MihaiOltean2563@gmail.com>
+Date:   Thu Jun 20 15:31:11 2019 +0100
+
+    new stuff
+
+[33mcommit 8f34a54abf135d73ca1daf84a6de220817908eb5[m
+Author: MihaiOltean2563 <MihaiOltean2563@gmail.com>
+Date:   Thu Jun 20 14:16:54 2019 +0100
+
+    new styles
+
+[33mcommit da05b7286fb8d0f15dcf951a38e893d50fc7f7ee[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Wed Jun 19 23:08:56 2019 +0100
+
+    new css
+
+[33mcommit ab30f8827a493c41a7f32cf3295782f6f8c2a0de[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Wed Jun 19 22:46:09 2019 +0100
+
+    new nav css
+
+[33mcommit 9f34989053abc3d5e085c56d3544a084f362a231[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Wed Jun 19 21:45:52 2019 +0100
+
+    nav changes
+
+[33mcommit f4edb57b1c833df9c8e0387700d841a8e4181c73[m
+Author: MihaiOltean2563 <MihaiOltean2563@gmail.com>
+Date:   Wed Jun 19 17:34:55 2019 +0100
+
+    new stuff
+
+[33mcommit 0026c4ba675bdb7f2d4f154d2c5af4a7d49f058e[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Tue Jun 18 23:30:41 2019 +0100
+
+    nav-demo
+
+[33mcommit 858380f5d253d68d4a4ba6c38daac34e346dc9d9[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Tue Jun 18 22:45:17 2019 +0100
+
+    new improvements
+
+[33mcommit 050750c9a1f278174d762939f15351e9bd98a584[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Tue Jun 18 20:07:00 2019 +0100
+
+    new improvements css
+
+[33mcommit 9a2545149179f53a1498ebdfb4f063acb3c16938[m
+Author: MihaiOltean2563 <MihaiOltean2563@gmail.com>
+Date:   Tue Jun 18 17:06:51 2019 +0100
+
+    new css
+
+[33mcommit 29c260991c4384bc2a4d5ae1513a274eff728329[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Mon Jun 17 23:06:48 2019 +0100
+
+    new css
+
+[33mcommit 01d8aeebb0d3a90d45a1fc271a124856514946a9[m
+Author: MihaiOltean2563 <MihaiOltean2563@gmail.com>
+Date:   Mon Jun 17 17:06:09 2019 +0100
+
+    latest
+
+[33mcommit c95cd4c3c98cb9db27b54916a3d074c36c148737[m
+Merge: 3826a24 8723504
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Mon Jun 17 00:13:38 2019 +0100
+
+    init commit
+
+[33mcommit 8723504b4748ffd13da2bb594280b2fb9c58a8f5[m
+Author: Michael <mihai.oltean2563@gmail.com>
+Date:   Mon Jun 17 00:10:52 2019 +0100
+
+    Initial commit
+
+[33mcommit 3826a2420c8230ca223f4d7f385e9e75969b0756[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Mon Jun 17 00:10:07 2019 +0100
+
+    initial commit
+
+[33mcommit 14f54cc74b01a0def6139cec83aa332fad462003[m
+Author: MihaiOltean2563 <mihai.oltean2563@gmail.com>
+Date:   Sun Jun 16 10:08:42 2019 +0100
+
+    init
