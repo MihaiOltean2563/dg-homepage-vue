@@ -8,7 +8,12 @@
               <h2 class="quote-title">Protection against the unexpected</h2>
               <p class="quote-copy">Insurance for the appliances and electronics you can’t go without.</p>
             </div>
-            <a href="https://www.domesticandgeneral.com/products" class="get-quote-cta center-xs middle-xs">Get a quote</a>
+            <a href="https://www.domesticandgeneral.com/products"
+            @click="handleAnalytics" 
+            class="get-quote-cta center-xs middle-xs"
+            data-ga-action="GetAQuoteButtonClicked-Body"
+            data-ga-label="primaryButtons-CTA"
+            >Get a quote</a>
           </div>
           <div class="qb-wrapper__right col-xs-12 col-md-6">
             <div class="quote-copy-mobile">
@@ -96,17 +101,17 @@
 
 <script>
 export default {
-  /*
-  //Clicked on Get Protected/Quote button - Body
-
-window.dataLayer.push({
-    event: 'gaEvent',
-    event_action: 'GetAQuoteButtonClicked-Body',
-    event_category: 'Home',
-    event_label: 'primaryButtons-CTA'
-    
-})   
-  */
+  /* eslint-disable */
+  methods: {
+    handleAnalytics(e){
+      window.dataLayer.push({
+        event: 'gaEvent',
+        event_action: e.currentTarget.dataset.gaAction,
+        event_category: 'Home',
+        event_label: e.currentTarget.dataset.gaLabel
+      })
+    }
+  }
 };
 </script>
 

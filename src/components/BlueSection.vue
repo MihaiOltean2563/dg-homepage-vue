@@ -52,7 +52,9 @@
         <div class="row special-warranty">
           <div class="col-xs-12 col-md-6 special-warranty__left">
             <div class="benefits-wrapper">
-              <a href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">
+              <a @click="handleAnalytics"
+              data-ga-label="LoginRegister"
+               href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">
                 <div class="row benefit">
                   <div class="col-xs-12 col-sm-2 benefit__icon">
                     <div class="icon-box center-xs">
@@ -73,7 +75,9 @@
                   </div>
                 </div>
               </a>
-              <a href="https://www.domesticandgeneral.com/repairs">
+              <a @click="handleAnalytics" 
+              data-ga-label="Get Protected"
+              href="https://www.domesticandgeneral.com/repairs">
                 <div class="row benefit">
                   <div class="col-xs-12 col-sm-2 benefit__icon start-xs">
                     <div class="icon-box center-xs">
@@ -95,7 +99,10 @@
                   </div>
                 </div>
               </a>
-              <a href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
+              <a 
+              @click="handleAnalytics" 
+              data-ga-label="Help and Advice"
+              href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
                 <div class="row benefit">
                   <div class="col-xs-12 col-sm-2 benefit__icon start-xs">
                     <div class="icon-box center-xs">
@@ -113,9 +120,7 @@
                         </h2>
                       </div>
                     </div>
-                    <p
-                      class="benefit__desc__description"
-                    >Get quick fixes for common faults without needing an engineer</p>
+                    <p class="benefit__desc__description">Get quick fixes for common faults without needing an engineer</p>
                   </div>
                 </div>
               </a>
@@ -135,6 +140,7 @@
 
 
 <script>
+/* eslint-disable */
 import { Carousel, Slide } from "vue-carousel";
 
 export default {
@@ -142,6 +148,16 @@ export default {
   components: {
     Carousel,
     Slide
+  },
+  methods: {
+    handleAnalytics(e){
+      window.dataLayer.push({
+        event: 'gaEvent',
+        event_action: 'Interaction-Body',
+        event_category: 'Home',
+        eveny_label: e.currentTarget.dataset.gaLabel
+      })
+    }
   }
   /*
   //Clicked on MyAccount (Login) button - Body
