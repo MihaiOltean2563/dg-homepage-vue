@@ -7,10 +7,10 @@
             <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_arrow-purple.svg" alt="arrow-purple">
           </div>
           <div class="widget-body middle-xs">
-            <p><strong>Received a letter in the post?</strong></p>
-            <a class="find-my-quote" id="find-my-quote" href="#">
-              <strong>Find my quote</strong>
-            </a>
+            <p>Received a letter in the post?</p>
+            <a class="find-my-quote" 
+            id="find-my-quote" 
+            href="#">Find my quote</a>
           </div>
         </div>
       </div>
@@ -18,7 +18,13 @@
         <div class="welcome-intro-wrapper">
           <h1 class="welcome-intro__title" v-if="isNewCustomer">Protect the appliances that matter to you</h1>
         </div>
-        <a class="btn welcome-intro__cta center-xs middle-xs" href="https://www.domesticandgeneral.com/products" v-if="isNewCustomer">Get an instant quote</a>
+        <a class="btn welcome-intro__cta center-xs middle-xs" 
+        href="https://www.domesticandgeneral.com/products" 
+        v-if="isNewCustomer"
+        @click="handleAnalytics" 
+        data-ga-action="GetAQuoteButtonClicked"
+        data-ga-label="primaryButtons-CTA"
+        >Get an instant quote</a>
       </div>
     </div>
     <!--container-wrapper-end-->
@@ -26,40 +32,23 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
   data(){
     return{
       isNewCustomer: true,
     }
-    /*
-    //Clicked on Find my Quote button - Header
-
-window.dataLayer.push({
-    event: 'gaEvent',
-    event_action: 'FormSubmit',
-    event_category: 'Home',
-    event_label: 'offerSubmit-clicked'
-  })
-   
-//Clicked on Go/Login to myaccount button - Hero
-
-window.dataLayer.push({
-    event: 'gaEvent',
-    event_action: 'GoToMyAccountButtonClicked',
-    event_category: 'Home',
-    event_label: 'primaryButtons-CTA'
-  })  
-   
-//Clicked on Get Protected/Quote button - Hero
-
-window.dataLayer.push({
-    event: 'gaEvent',
-    event_action: 'GetAQuoteButtonClicked',
-    event_category: 'Home',
-    event_label: 'primaryButtons-CTA'
-  })  
-    */  
   },
+  methods: {
+    handleAnalytics(e){
+      window.dataLayer.push({
+        event: 'gaEvent',
+        event_action: e.srcElement.dataset.gaAction,
+        event_category: 'Home',
+        event_label: e.srcElement.dataset.gaLabel
+      }) 
+    }
+  }
 };
 </script>
 
@@ -183,7 +172,12 @@ window.dataLayer.push({
         .widget-body {
           display: block;
           text-align: left;
-
+          a{
+            font-family: 'VAG Rounded W01 Bold',sans-serif;
+          }
+          P{
+            font-family: 'VAG Rounded W01 Light',sans-serif;
+          }
           @media (min-width: 500px) {
             display: flex;
           }

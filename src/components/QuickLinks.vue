@@ -4,8 +4,8 @@
       <div class="container">
         <h1 class="quick-links-greeting">Keep your home running smoothly</h1>
         <div class="quick-links-wrapper between-sm">
-          <div id="3576035" class="appliance" data-type="washing-machine">
-            <a class="appliance__link-wrapper" href="https://www.domesticandgeneral.com/goal-search/household-en/washing-machine-protection">
+          <div id="3576035" @click="handleAnalytics" class="appliance">
+            <a class="appliance__link-wrapper"  data-type="washing-machine" href="https://www.domesticandgeneral.com/goal-search/household-en/washing-machine-protection">
               <p>Protect your</p>
               <p class="copy--blue">washing machine</p>
               <div class="img-wrapper">
@@ -18,8 +18,8 @@
               </div>
             </a>
           </div>
-          <div id="8261695" class="appliance" data-type="dishwasher">
-            <a class="appliance__link-wrapper" href="https://www.domesticandgeneral.com/goal-search/household-en/dishwasher-protection">
+          <div id="8261695" @click="handleAnalytics" class="appliance">
+            <a class="appliance__link-wrapper" data-type="dishwasher" href="https://www.domesticandgeneral.com/goal-search/household-en/dishwasher-protection">
               <p>Protect your</p>
               <p class="copy--blue">dishwasher</p>
               <div class="img-wrapper">
@@ -32,8 +32,8 @@
               </div>
             </a>
           </div>
-          <div id="2688671" class="appliance" data-type="fridge-freezer">
-            <a class="appliance__link-wrapper" href="https://www.domesticandgeneral.com/goal-search/household-en/fridge-freezer-44">
+          <div id="2688671" @click="handleAnalytics" class="appliance">
+            <a class="appliance__link-wrapper" data-type="fridge-freezer" href="https://www.domesticandgeneral.com/goal-search/household-en/fridge-freezer-44">
               <p>Protect your</p>
               <p class="copy--blue">fridge freezer</p>
               <div class="img-wrapper">
@@ -46,8 +46,8 @@
               </div>
             </a>
           </div>
-          <div id="6165187" class="appliance" data-type="all-appliances">
-            <a class="appliance__link-wrapper" href="https://www.domesticandgeneral.com/products">
+          <div id="6165187" @click="handleAnalytics" class="appliance">
+            <a class="appliance__link-wrapper" data-type="all-appliances" href="https://www.domesticandgeneral.com/products">
              <p>View our</p>
               <p class="copy--blue">appliances</p>
               <div class="img-wrapper">
@@ -68,44 +68,16 @@
 
 <script>
 export default {
-  /*
-  //Clicked on washing machine protection - body
-
-window.dataLayer.push({
-    event: 'gaEvent',
-    event_action: 'Appliances',
-    event_category: 'Home',
-    event_label: 'washing-machine'
-  })  
-      
-//Clicked on Dishwasher protection - body
-
-window.dataLayer.push({
-    event: 'gaEvent',
-    event_action: 'Appliances',
-    event_category: 'Home',
-    event_label: 'dishwasher'
-  })    
-  
- //Clicked on Fridge Freezer protection - body
-
-window.dataLayer.push({
-    event: 'gaEvent',
-    event_action: 'Appliances',
-    event_category: 'Home',
-    event_label: 'fridge-freezer'
-  })   
-  
-  
-  //Clicked on All appliances protection - body
-
-window.dataLayer.push({
-    event: 'gaEvent',
-    event_action: 'Appliances',
-    event_category: 'Home',
-    event_label: 'all-appliances'
-  })   
-  */
+  methods: {
+    handleAnalytics(e){
+      window.dataLayer.push({
+        event: 'gaEvent',
+        event_action: 'Appliances',
+        event_category: 'Home',
+        event_label: e.srcElement.parentElement.dataset.type
+      })
+    }
+  }
 };
 </script>
 
