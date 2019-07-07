@@ -39,10 +39,20 @@ export default {
 
 #hero {
   display: flex;
-  background: url("https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/img_banner-gradient.png");
+  // background: url("https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/img_banner-gradient.png");
+  background: url('https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Hero/img_banner_320.png');
   background-repeat: no-repeat;
   background-size: cover;
-
+  @media(min-width: 640px){
+    background: url('https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Hero/img_banner_640.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media(min-width: 990px){
+    background: url('https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Hero/img_banner-big.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .container__wrapper {
     // border: 1px solid goldenrod;
     .welcome-intro {

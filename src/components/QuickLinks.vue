@@ -9,6 +9,9 @@
               <p>Protect your</p>
               <p class="copy--blue">washing machine</p>
               <div class="img-wrapper">
+                <img class="icon" 
+                src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/icon_shield-green.svg"
+                alt="icon-protective-shield"/>
                 <div class="bottom-left">
                   <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_washing-machine_edited.png" alt="Washing Machine">
                 </div>
@@ -20,6 +23,9 @@
               <p>Protect your</p>
               <p class="copy--blue">dishwasher</p>
               <div class="img-wrapper">
+                <img class="icon" 
+                src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/icon_shield-green.svg"
+                alt="icon-protective-shield"/>
                 <div class="bottom-left">
                   <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_dishwasher_edited.png" alt="Dishwasher">
                 </div>
@@ -31,6 +37,9 @@
               <p>Protect your</p>
               <p class="copy--blue">fridge freezer</p>
               <div class="img-wrapper">
+                <img class="icon" 
+                src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/icon_shield-green.svg"
+                alt="icon-protective-shield"/>
                 <div class="bottom-left">
                   <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_fridge-freezer_edited.png" alt="Fridge Freezer">
                 </div>
@@ -42,6 +51,9 @@
              <p>View our</p>
               <p class="copy--blue">appliances</p>
               <div class="img-wrapper">
+                <img class="icon" 
+                src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/icon_shield-green.svg"
+                alt="icon-protective-shield"/>
                 <div class="bottom-left">
                   <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_all-appliances_edited.png" alt="All appliaces">
                 </div>
@@ -149,6 +161,7 @@ export default {};
               // border: 1px solid goldenrod;
               height: 100%;
               display: flex;
+              position: relative;
               .bottom-left{
                 width: 150px;
                 margin-left: auto;
@@ -158,6 +171,7 @@ export default {};
                 display: flex;
                 justify-content: flex-end;
               }
+              
               img{
                 max-width: 80%;
                 position: absolute;
@@ -166,6 +180,11 @@ export default {};
                 @media(min-width: 768px){
                   max-width: 100%;
                 }
+              }
+              .icon{
+                top: 20px;
+                right: 120px;
+                z-index: 1;
               }
             }
           }
