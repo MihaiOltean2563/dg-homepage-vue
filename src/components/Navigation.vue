@@ -74,7 +74,7 @@
         </a>
       </div>
       <div class="nav-mobile__basket col-xs-2 center-xs middle-xs">
-        <a href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">
+        <a href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151" class="center-xs">
           <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
         </a>
       </div>
@@ -145,9 +145,12 @@ export default{
     position: absolute;
     left: 0;
     right: 0;
-    padding-top: 35px;
+    padding-top: 20px;
     background: transparent;
     transition: .5s ease-in-out;
+    @media(min-width: 1200px){
+      max-width: 1200px; 
+    }
     &.sticky{
       position:fixed;
       top:0;
@@ -162,9 +165,6 @@ export default{
         top: initial;
         background: transparent;
       }
-    }
-    @media(min-width: 1200px){
-      max-width: 1200px; 
     }
     .nav{
       display: none;
@@ -287,7 +287,7 @@ export default{
             }
             .line-style {
               position: absolute;
-              height: 20%;
+              height: 13%;
               left: 0;
               right: 0;
             }
@@ -360,13 +360,19 @@ export default{
 
       &__brand{
         // border: 1px solid seagreen;
+        a{
+          display: flex;
+        }
         display: flex;       
         img{
-          max-height: 50px;
+          max-height: 45px;
         }
       }
       &__basket{
         display: flex;
+        a{
+          display: flex;
+        }
         .basket-img{
           width: 40px;
         }

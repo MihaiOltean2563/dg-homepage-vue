@@ -149,7 +149,7 @@ export default {
             font-family: 'VAG Rounded W01 Bold',sans-serif;
             font-size: 35px;
             line-height: 44px;
-            max-width: 275px;
+            max-width: 280px;
           }
 
           .quote-copy {

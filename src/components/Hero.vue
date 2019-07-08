@@ -79,7 +79,7 @@ export default {
       &__title {
         color: #fff;
         font-size: 28px;
-        padding: 20px 10px;
+        padding: 30px 10px;
         max-width: 300px;
         margin: 0 auto;
         letter-spacing: 2px;
@@ -114,7 +114,7 @@ export default {
         }
         @media (min-width: 768px) {
           font-size: 22px;
-          margin-bottom: 125px;
+          margin-bottom: 110px;
         }
         &:hover{
           background: #006db3;
@@ -126,9 +126,11 @@ export default {
 
     .quote-finder {
       display: flex;
-      margin: 130px 0 0 0;
+      margin: 100px 0 0 0;
       font-family: 'VAG Rounded W01 Bold',sans-serif;
-
+      @media(min-width: 768px){
+        margin: 130px 0 0 0;
+      }
       &__widget {
         display: flex;
         border-radius: 50px;
@@ -139,14 +141,15 @@ export default {
         p,
         a {
           color: #fff;
-          letter-spacing: .5px;
+          letter-spacing: .7px;
+          font-family: 'VAG Rounded W01 Bold',sans-serif;
         }
         p {
           padding: 0 10px;
           margin: 5px 0;
           color: #D8CCE0;
-          font-size: 14px;
-          margin-bottom: 3px;
+          font-size: 12px;
+          // margin-bottom: 3px;
           @media (min-width: 768px) {
             font-size: 16px;
             margin-bottom: 5px;
