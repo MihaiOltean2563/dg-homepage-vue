@@ -9,7 +9,7 @@
               <p>Protect your</p>
               <p class="copy--blue">washing machine</p>
               <div class="img-wrapper">
-                <img class="icon" 
+                <img class="icon icon1" 
                 src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/icon_shield-green.svg"
                 alt="icon-protective-shield"/>
                 <div class="bottom-left">
@@ -23,7 +23,7 @@
               <p>Protect your</p>
               <p class="copy--blue">dishwasher</p>
               <div class="img-wrapper">
-                <img class="icon" 
+                <img class="icon icon2" 
                 src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/icon_shield-green.svg"
                 alt="icon-protective-shield"/>
                 <div class="bottom-left">
@@ -162,10 +162,12 @@ export default {
               margin: 0;
               flex: 1 0 auto;
               font-size: 16px;
-              line-height: 20px;
+              line-height: 16px;
+              width: 97%;
+             
                @media(min-width: 768px){
                 font-size: 22px;
-                line-height: 28px;
+                line-height: 18px;
               }
             }
             .img-wrapper{
@@ -195,9 +197,16 @@ export default {
                 }
               }
               .icon{
-                top: 20px;
+                top: 33px;
                 right: 45%;
                 z-index: 1;
+                &.icon1{
+                  top: 10px;
+                }
+                &.icon2{
+                  top: 25px;
+                }
+               
                 @media(min-width: 768px){
                   top: 20px;
                   right: 120px;

@@ -152,7 +152,7 @@ export default {
       margin: 0;
       text-align: left;
       @media(min-width: 768px){
-        padding: 65px 0;
+        padding: 60px 0;
       }
       .footer-grid-heading {
         padding-top: 0;
@@ -160,6 +160,7 @@ export default {
         font-family: 'VAG Rounded W01 Bold',sans-serif;
         font-size: 22px;
         line-height: 36px;
+        letter-spacing: .7px;
 
         @media (min-width: 768px) {
           padding-top: 0;
@@ -173,6 +174,7 @@ export default {
         p {
           font-size: 20px;
           line-height: 34px;
+          letter-spacing: .5px;
           a{
             font-family: 'VAG Rounded W01 Light',sans-serif;
           }
@@ -196,13 +198,26 @@ export default {
           padding-left: 50px;
         }
         .footer-grid-heading {
+          padding-top: 40px;
+          @media(min-width: 990px){
             padding-top: 0;
+          }
+        }
+        p{
+          letter-spacing: .5px;
         }
       }
       &__right {
         // border: 1px solid purple;
         display: flex;
         flex-direction: column;
+        .footer-grid-heading{
+          padding-bottom: 30px;
+          padding-top: 40px;
+          @media(min-width: 990px){
+            padding-top: 0;
+          }
+        }
         .invalid-email{
           display: none;
         }
@@ -233,7 +248,7 @@ export default {
           transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
           -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
           &:hover{
-            background: #561d80;
+            background: #0071bb;
             -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
             transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
             cursor: pointer; 
@@ -247,7 +262,6 @@ export default {
       text-align: left;
       font-size: 14px;
       line-height: 23px;
-      padding-bottom: 30px;
       font-family: Arial, Helvetica, sans-serif;
       margin: 0;
       a {
@@ -260,8 +274,11 @@ export default {
     }
     .list-wrapper {
       // border: 1px solid goldenrod;
-      padding: 20px 0;
+      padding: 20px 0 40px 0;
       margin: 0;
+      @media(min-width: 768px){
+         padding: 20px 0 60px
+      }
       @media(min-width: 990px){
         margin: 0;
       }

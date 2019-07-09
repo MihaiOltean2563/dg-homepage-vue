@@ -135,7 +135,7 @@ export default {
             margin-bottom: 15px;
           }
           &:hover{
-            background: #006db3;
+            background: #0071bb;
             -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
             transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
           }

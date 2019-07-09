@@ -98,7 +98,7 @@ export default {
     // display: none;
 
     .VueCarousel-navigation-button {
-      top: 35%;
+      top: 33%;
       width: 45px;
       height: 45px;
       border-radius: 50%;

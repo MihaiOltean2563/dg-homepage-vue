@@ -192,7 +192,8 @@ export default {
 
       .special-warranty {
         margin: 0;
-        padding: 0 10px;
+        padding: 0 30px;
+    
         .row {
           margin: 0;
         }
@@ -210,7 +211,7 @@ export default {
             }
             .benefit {
               // border: 1px solid wheat;
-              padding: 20px 0;
+              padding: 15px 0;
               &:hover{
                 .benefit-title img{
                     transform: translateX(3px);
@@ -221,7 +222,7 @@ export default {
                 // border: 1px solid palegreen;
                 display: flex;
                 padding-right: 0;
-                padding-bottom: 30px;
+                padding-bottom: 20px;
                 opacity: .8;
                 @media (min-width: 768px) {
                   justify-content: center;
