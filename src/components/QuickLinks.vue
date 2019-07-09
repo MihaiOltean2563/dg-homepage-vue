@@ -151,10 +151,10 @@ export default {
             p:first-child{
               color: #333;
               font-size: 14px;
-              line-height: 28px;
+              line-height: 18px;
               @media(min-width: 768px){
                 font-size: 18px;
-                line-height: 28px;
+                line-height: 25px;
               }
             }
             .copy--blue{
@@ -184,17 +184,19 @@ export default {
               }
               
               img{
-                max-width: 80%;
+                // max-width: 80%;
+                max-width: 94px;
                 position: absolute;
-                right: 0;
+                right: -3px;
                 bottom: 0;
+                border-radius: 3px;
                 @media(min-width: 768px){
                   max-width: 100%;
                 }
               }
               .icon{
-                top: 40px;
-                right: 82px;
+                top: 20px;
+                right: 45%;
                 z-index: 1;
                 @media(min-width: 768px){
                   top: 20px;

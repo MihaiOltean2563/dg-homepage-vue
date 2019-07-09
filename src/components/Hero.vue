@@ -85,7 +85,6 @@ export default {
         letter-spacing: 2px;
         line-height: 38px;
         font-family: 'VAG Rounded W01 Bold',sans-serif;
-        font-weight: bold;
         @media (min-width: 550px) {
           padding-left: 0;
           padding-right: 0;

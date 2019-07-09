@@ -7,7 +7,7 @@
         <carousel
           :scrollPerPage="true"
           :navigationEnabled="true"
-          :perPageCustom="[[480, 2],[600, 3], [768, 4], [960, 5]]">
+          :perPageCustom="[[480, 2],[600, 3], [768, 4], [960, 6]]">
         <!-- :autoplay="true" -->
           <slide><img class="slide-brand" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Brands-Images/AEG.png"></slide>
           <slide><img class="slide-brand" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Brands-Images/AO.png"></slide>
@@ -159,35 +159,6 @@ export default {
       })
     }
   }
-  /*
-  //Clicked on MyAccount (Login) button - Body
-
-window.dataLayer.push({
-    event: 'gaEvent',
-    event_action: 'Interaction-Body',
-    event_category: 'Home',
-    event_label: 'LoginRegister'
-  })   
-  
-   
-//Clicked on Online repair booking button - Body
-window.dataLayer.push({
-    event: 'gaEvent',
-    event_action: 'Interaction-Body',
-    event_category: 'Home',
-    event_label: 'Get Protected'
-  })  
-  
-  
-//Clicked on Troubleshooting and maintenance button - Body  
-
-window.dataLayer.push({
-    event: 'gaEvent',
-    event_action: 'Interaction-Body',
-    event_category: 'Home',
-    event_label: 'Help and Advice'
-  })  
-  */
 };
 </script>
 
@@ -205,7 +176,7 @@ window.dataLayer.push({
         color: #fff;
         font-size: 25px;
         line-height: 38px;
-        padding: 60px 20px 50px 20px;
+        padding: 60px 30px 50px 30px;
         font-family: 'VAG Rounded W01 Bold',sans-serif;
         letter-spacing: 1px;
         @media (min-width: 768px) {
@@ -251,6 +222,7 @@ window.dataLayer.push({
                 display: flex;
                 padding-right: 0;
                 padding-bottom: 30px;
+                opacity: .8;
                 @media (min-width: 768px) {
                   justify-content: center;
                 }
@@ -272,26 +244,18 @@ window.dataLayer.push({
                 .benefit-title {
                   display: flex;
                   transition: .5s ease-out;
-                  // &:hover > img{
-                  //   transform: translateX(3px);
-                  //   transition: .5s ease-out;
-                  // }
-                  // &:hover > .last-benefit-icon{
-                  //   transform: translateX(3px);
-                  //   transition: .5s ease-out;
-                  // }
                 }
                 &__title {
                   font-size: 22px;
                   line-height: 30px;
                   font-family: 'VAG Rounded W01 Bold',sans-serif;
-                  letter-spacing: 1px;
+                  letter-spacing: 1.5px;
                 }
                 &__description {
                   font-size: 18px;
                   line-height: 28px;
                   padding-left: 10px;
-                  font-family: 'VAG Rounded W01 Light',sans-serif;
+                  font-family: Arial, Helvetica, sans-serif;
                   letter-spacing: 1px;
                 }
               }
