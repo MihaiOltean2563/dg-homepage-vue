@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid nav-wrapper" :class="{ sticky: showNavbar}">
-
+  <div class="nav-wrapper">
+    <!-- container-fluid from nav-wrapper above -->
     <header class="nav row" role="banner">
       <div class="nav__brand col-xs-2 end-xs">
         <a href="https://www.domesticandgeneral.com">
@@ -41,7 +41,7 @@
     </header>
 
     <header class="nav-mobile row" role="banner">
-      <div class="nav-mobile__burger col-xs-2 start-xs middle-xs">
+      <div class="nav-mobile__burger col-xs-2 start-xs middle-xs" :class="{ sticky: showNavbar}">
 
         <Slide class="nav-burger-wrapper">
           <a id="home" href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
@@ -79,6 +79,49 @@
         </a>
       </div>
 
+    </header>
+
+    <header role="banner" class="nav-slide-in" :class="{ sticky: showNavbar}">
+      <div class="row">
+
+        <div class="nav-mobile__burger col-xs-2 start-xs middle-xs">
+
+          <!-- <Slide class="nav-burger-wrapper">
+            <a id="home" href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
+              <span>Get protected</span>
+            </a>
+            <a id="repairs" href="https://www.domesticandgeneral.com/repairs">
+              <span>Book a repair</span>
+            </a>
+            <a id="help-advice" href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
+              <span>Help and advice</span>
+            </a>
+            <a id="logout"
+            class="js__account-link logOut"
+            @click="logout"
+            v-if="showLogoutCta">
+              <span>Log out</span>
+            </a>
+            <a id="my-account" href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">
+              <span class="my-account-side-nav">
+                My account
+                <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
+              </span>
+            </a>
+          </Slide> -->
+
+        </div>
+        <div class="nav-mobile__brand col-xs-8 middle-xs center-xs">
+          <a href="https://www.domesticandgeneral.com">
+            <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/logo_D%2BG_white.png" alt="Domestic&General Logo">
+          </a>
+        </div>
+        <div class="nav-mobile__basket col-xs-2 center-xs middle-xs">
+          <a href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151" class="center-xs">
+            <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
+          </a>
+        </div>
+      </div>
     </header>
   </div>
 </template>
@@ -145,7 +188,7 @@ export default{
     position: absolute;
     left: 0;
     right: 0;
-    padding-top: 20px;
+    // padding-top: 20px;
     background: transparent;
     transition: .5s ease-in-out;
     @media(min-width: 1200px){
@@ -157,9 +200,9 @@ export default{
       width: 100%;
       padding-top: 10px;
       padding-bottom: 10px;
-      // background: #400668;
       background: rgba(64, 6, 104, .92);
       z-index: 1;
+
       @media(min-width: 768px){
         position: absolute;
         top: initial;
@@ -268,17 +311,20 @@ export default{
       max-width: 100%;
       margin: 0;
       position: relative;
-   
+      padding: 20px 0;
    
       &__burger{
         display: flex;
+        
         // vue-burger-menu css
         .nav-burger-wrapper{
+            position: fixed;
+            top: -10px;
+            z-index: 1000;
            .bm-burger-button {
               width: 36px;
               height: 30px;
-              left: 0px;
-              top: 12px;
+              left:10px;
               cursor: pointer;
             }
             
@@ -376,6 +422,30 @@ export default{
         .basket-img{
           width: 40px;
         }
+      }
+    }
+
+    .nav-slide-in{
+      position: fixed!important;
+      top: 0;
+      z-index: 100;
+      width: 100%;
+      opacity: 0;
+      -webkit-transition: all 400ms ease-in-out;
+      -o-transition: all 400ms ease-in-out;
+      transition: all 400ms ease-in-out;
+      -webkit-transform: translate3d(0,-60px,0);
+      transform: translate3d(0,-60px,0);
+      &.sticky{
+        -webkit-box-shadow: 0 0.3rem 0.3rem rgba(0,0,0,.2);
+        box-shadow: 0 0.3rem 0.3rem rgba(0,0,0,.2);
+        opacity: 1;
+        // background: rgba(64, 6, 104, .92);
+        background: rgba(64, 6, 104, 1);
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        padding: 10px;
+        padding-bottom: 20px;
       }
     }
   }
