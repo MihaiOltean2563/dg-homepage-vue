@@ -10,7 +10,7 @@
               <p class="copy--blue">washing machine</p>
               <div class="img-wrapper">
                 <img class="icon icon1" 
-                src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/icon_shield-green.svg"
+                src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Quick+Links/icon_badge-green.png"
                 alt="icon-protective-shield"/>
                 <div class="bottom-left">
                   <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_washing-machine_edited.png" alt="Washing Machine">
@@ -24,7 +24,7 @@
               <p class="copy--blue">dishwasher</p>
               <div class="img-wrapper">
                 <img class="icon icon2" 
-                src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/icon_shield-green.svg"
+                src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Quick+Links/icon_badge-green.png"
                 alt="icon-protective-shield"/>
                 <div class="bottom-left">
                   <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_dishwasher_edited.png" alt="Dishwasher">
@@ -38,7 +38,7 @@
               <p class="copy--blue">fridge freezer</p>
               <div class="img-wrapper">
                 <img class="icon" 
-                src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/icon_shield-green.svg"
+                src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Quick+Links/icon_badge-green.png"
                 alt="icon-protective-shield"/>
                 <div class="bottom-left">
                   <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_fridge-freezer_edited.png" alt="Fridge Freezer">
@@ -52,7 +52,7 @@
               <p class="copy--blue">appliances</p>
               <div class="img-wrapper">
                 <img class="icon" 
-                src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/icon_shield-green.svg"
+                src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Quick+Links/icon_badge-green.png"
                 alt="icon-protective-shield"/>
                 <div class="bottom-left">
                   <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_all-appliances_edited.png" alt="All appliaces">
@@ -200,11 +200,18 @@ export default {
                 top: 33px;
                 right: 45%;
                 z-index: 1;
+                max-width: 40px;
                 &.icon1{
-                  top: 10px;
+                  top: 15px;
+                  @media(min-width: 768px){
+                    top: 20px;
+                  }
                 }
                 &.icon2{
-                  top: 25px;
+                  top: 30px;
+                  @media(min-width: 768px){
+                    top: 20px;
+                  }
                 }
                
                 @media(min-width: 768px){

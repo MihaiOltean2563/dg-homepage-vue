@@ -126,8 +126,10 @@ export default {
         invalidEmailEl.style.display = 'none';
         var oldEl = document.getElementById('newsletterForm');
         var oldSubmit = oldEl.querySelector('[type=submit]');
+        console.log('clicking old button');
         oldSubmit.click();
       }else{
+        console.log('else block')
         invalidEmailEl.style.display = 'block';
         return;
       }
