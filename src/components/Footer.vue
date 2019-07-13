@@ -127,7 +127,7 @@ export default {
         var oldEl = document.getElementById('newsletterForm');
         var oldSubmit = oldEl.querySelector('[type=submit]');
         console.log('clicking old button');
-        oldSubmit.click();
+        // oldSubmit.click();
       }else{
         console.log('else block')
         invalidEmailEl.style.display = 'block';
