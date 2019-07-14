@@ -191,8 +191,10 @@ export default{
     // padding-top: 20px;
     background: transparent;
     transition: .5s ease-in-out;
+
     @media(min-width: 1200px){
-      max-width: 1200px; 
+      // max-width: 1200px;
+      max-width: 100%;
     }
     &.sticky{
       position:fixed;
@@ -211,21 +213,31 @@ export default{
     }
     .nav{
       display: none;
+      padding: 20px 0;
+      
       @media(min-width: 975px){
         // border: 1px solid goldenrod;
         display: flex;
         color: #fff;
-        max-width: 100%;
+        // max-width: 100%;
         margin: 0;
+        
         a{
           color: #fff;
         }
         &__brand{
           // border: 1px solid seagreen;
           display: flex;
-          padding-right: 40px;       
+                 
           img{
-            max-height: 50px;
+            max-height: 40px;
+
+            @media(min-width: 1200px){
+              max-height: 50px;
+            }
+          }
+          @media(min-width: 1200px){
+            padding-right: 40px;
           }
         }
         &__list{
@@ -250,14 +262,17 @@ export default{
               }
             }
             &__item{
-              // padding: 0 10px;
-              padding-right: 40px;
               font-size: 18px;
-              @media(min-width: 768px) and (max-width: 1100px){
-                padding-right: 30px;
+              @media(min-width: 975px) and (max-width: 1200px){
+                padding: 0 20px;
+              }
+              @media(min-width: 1200px){
+                padding: 0 20px;
               }
               &:first-of-type{
-                padding-left: 40px;
+                @media(min-width: 1200px){
+                  padding-left: 40px;
+                }
               }
             }
           }
@@ -300,6 +315,10 @@ export default{
           }
           
         }
+      }
+      @media(min-width: 1200px){
+        max-width: 1100px;
+        margin: 0 auto;
       }
     }
     .nav-mobile{
@@ -431,11 +450,15 @@ export default{
       z-index: 100;
       width: 100%;
       opacity: 0;
+      display: block;
       -webkit-transition: all 400ms ease-in-out;
       -o-transition: all 400ms ease-in-out;
       transition: all 400ms ease-in-out;
       -webkit-transform: translate3d(0,-60px,0);
       transform: translate3d(0,-60px,0);
+      @media(min-width: 975px){
+        display: none;
+      }
       &.sticky{
         -webkit-box-shadow: 0 0.3rem 0.3rem rgba(0,0,0,.2);
         box-shadow: 0 0.3rem 0.3rem rgba(0,0,0,.2);
