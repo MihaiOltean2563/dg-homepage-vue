@@ -105,7 +105,7 @@ export default {
   watch: {
     'emailNewsletter': function(val, oldVal){
       var oldNewsletterInputElem = document.getElementById('newsletterEmail');
-      if(!oldNewsletterInputElem !== null){
+      if(oldNewsletterInputElem !== null){
         oldNewsletterInputElem.value = val;
       }
     }
@@ -113,13 +113,14 @@ export default {
   methods: {
     signToNewsLetter(){
       var err = document.getElementById('newsletterMessage');
-      var email = document.getElementById('newsletterEmail').value;
+      // var email = document.getElementById('newsletterEmail').value;
+      var email = document.querySelector('.newsletter-input').value;
       var regex = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i;
       var invalidEmailEl = document.querySelector('.invalid-email');
+      var newsLetterInputEl = document.querySelector('.newsletter-input');
 
       if(regex.test(email)){
         this.hasSubmitted = true;
-        var newsLetterInputEl = document.querySelector('.newsletter-input');
         var newsLetterCtaEl = document.querySelector('.sign-to-newsletter-cta');
         newsLetterInputEl.style.display = 'none';
         newsLetterCtaEl.style.display = 'none';
@@ -129,8 +130,9 @@ export default {
         console.log('clicking old button');
         // oldSubmit.click();
       }else{
-        console.log('else block')
+        console.log('else block');
         invalidEmailEl.style.display = 'block';
+        newsLetterInputEl.classList.add('invalid');
         return;
       }
     }
@@ -149,6 +151,7 @@ export default {
   }
   .container {
     // border:1px solid goldenrod;
+    height: auto;
     .grid-wrapper {
       padding: 40px 0;
       margin: 0;
@@ -222,6 +225,7 @@ export default {
         }
         .invalid-email{
           display: none;
+          color: #af2c2b;
         }
         .newsletter-input {
           height: 45px;
@@ -231,7 +235,11 @@ export default {
           &:focus {
             outline: none;
           }
+          &.invalid{
+            border: 2px solid #af2c2b;
+          }
         }
+  
         .newsletter-old-input{
           margin-top: 10px;
         }
