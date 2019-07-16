@@ -175,10 +175,11 @@ export default {
               height: 100%;
               display: flex;
               position: relative;
+              
               .bottom-left{
                 width: 150px;
                 margin-left: auto;
-                // border: 1px solid blueviolet;
+                border: 1px solid blueviolet;
                 position: relative;
                 overflow: hidden;
                 display: flex;
