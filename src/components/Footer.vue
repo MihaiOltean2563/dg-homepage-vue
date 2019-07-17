@@ -117,10 +117,10 @@ export default {
       var email = document.getElementById('newsletterEmail').value;
       var regex = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i;
       var invalidEmailEl = document.querySelector('.invalid-email');
+      var newsLetterInputEl = document.querySelector('.newsletter-input');
 
       if(regex.test(email)){
         this.hasSubmitted = true;
-        var newsLetterInputEl = document.querySelector('.newsletter-input');
         var newsLetterCtaEl = document.querySelector('.sign-to-newsletter-cta');
         newsLetterInputEl.style.display = 'none';
         newsLetterCtaEl.style.display = 'none';
@@ -130,6 +130,7 @@ export default {
         oldSubmit.click();
       }else{
         invalidEmailEl.style.display = 'block';
+        newsLetterInputEl.classList.add('invalid');
         return;
       }
     }

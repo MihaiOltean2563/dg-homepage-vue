@@ -29,14 +29,12 @@ export default {
  },
  methods: {
     handleAnalytics(e){
-      var testArr = [];
-      testArr.push({
+      window.dataLayer.push({
         event: 'gaEvent',
         event_action: e.srcElement.dataset.gaLabel,
         event_category: 'Home',
         event_label: 'primaryButtons-CTA'
       })
-      console.log('testArr', testArr);
     }
  }
 };
