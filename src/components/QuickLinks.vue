@@ -2,10 +2,10 @@
   <section id="quick-links">
     <div class="quick-links-wrapper center-xs">
       <div class="container">
-        <h1 class="quick-links-greeting">Keep your home running smoothly</h1>
+        <h1 class="quick-links-greeting">Help keep your home running smoothly</h1>
         <div class="quick-links-wrapper between-sm">
-          <div id="3576035" @click="handleAnalytics" class="appliance" data-type="washing-machine">
-            <a class="appliance__link-wrapper" href="https://www.domesticandgeneral.com/goal-search/household-en/washing-machine-protection">
+          <div id="3576035" @click="handleAnalytics" class="appliance-v2" data-type="washing-machine">
+            <a class="appliance-v2__link-wrapper" href="https://www.domesticandgeneral.com/goal-search/household-en/washing-machine-protection">
               <p>Protect your</p>
               <p class="copy--blue">washing machine</p>
               <div class="img-wrapper">
@@ -15,8 +15,8 @@
               </div>
             </a>
           </div>
-          <div id="8261695" @click="handleAnalytics" class="appliance" data-type="dishwasher">
-            <a class="appliance__link-wrapper" href="https://www.domesticandgeneral.com/goal-search/household-en/dishwasher-protection">
+          <div id="8261695" @click="handleAnalytics" class="appliance-v2" data-type="dishwasher">
+            <a class="appliance-v2__link-wrapper" href="https://www.domesticandgeneral.com/goal-search/household-en/dishwasher-protection">
               <p>Protect your</p>
               <p class="copy--blue">dishwasher</p>
               <div class="img-wrapper">
@@ -26,8 +26,8 @@
               </div>
             </a>
           </div>
-          <div id="2688671" @click="handleAnalytics" class="appliance" data-type="fridge-freezer">
-            <a class="appliance__link-wrapper" href="https://www.domesticandgeneral.com/goal-search/household-en/fridge-freezer-44">
+          <div id="2688671" @click="handleAnalytics" class="appliance-v2" data-type="fridge-freezer">
+            <a class="appliance-v2__link-wrapper" href="https://www.domesticandgeneral.com/goal-search/household-en/fridge-freezer-44">
               <p>Protect your</p>
               <p class="copy--blue">fridge freezer</p>
               <div class="img-wrapper">
@@ -37,8 +37,8 @@
               </div>
             </a>
           </div>
-          <div id="6165187" @click="handleAnalytics" class="appliance"  data-type="all-appliances">
-            <a class="appliance__link-wrapper" href="https://www.domesticandgeneral.com/products">
+          <div id="6165187" @click="handleAnalytics" class="appliance-v2"  data-type="all-appliances">
+            <a class="appliance-v2__link-wrapper" href="https://www.domesticandgeneral.com/products">
              <p>View our</p>
               <p class="copy--blue">appliances</p>
               <div class="img-wrapper">
@@ -105,7 +105,7 @@ export default {
         @media (min-width: 768px) {
           padding: 0;
         }
-        .appliance {
+        .appliance-v2 {
           height: 170px;
           background: #fff;
           box-shadow: 1px 1px 10px 1px #c0c1cc;
