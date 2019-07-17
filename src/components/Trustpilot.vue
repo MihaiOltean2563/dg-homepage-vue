@@ -11,7 +11,7 @@
         <div class="wrapper-big-screens middle-xs">
   
           <h2 class="login-title">Take control of your plans with <span>My Account</span></h2>
-          <a v-if="isNewCustomer" class="login-cta center-xs middle-xs" href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">Go to My Account</a>
+          <a v-if="isNewCustomer" @click="handleAnalytics" data-ga-label="LoginRegister" class="login-cta center-xs middle-xs" href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">Go to My Account</a>
         </div>
       </div>
     </div>
@@ -19,14 +19,26 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
  name: 'Trustpilot',
  data(){
    return{
      isNewCustomer: true,
    }
+ },
+ methods: {
+    handleAnalytics(e){
+      var testArr = [];
+      testArr.push({
+        event: 'gaEvent',
+        event_action: e.srcElement.dataset.gaLabel,
+        event_category: 'Home',
+        event_label: 'primaryButtons-CTA'
+      })
+      console.log('testArr', testArr);
+    }
  }
-
 };
 </script>
 

@@ -86,30 +86,6 @@
 
         <div class="nav-mobile__burger col-xs-2 start-xs middle-xs">
 
-          <!-- <Slide class="nav-burger-wrapper">
-            <a id="home" href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
-              <span>Get protected</span>
-            </a>
-            <a id="repairs" href="https://www.domesticandgeneral.com/repairs">
-              <span>Book a repair</span>
-            </a>
-            <a id="help-advice" href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
-              <span>Help and advice</span>
-            </a>
-            <a id="logout"
-            class="js__account-link logOut"
-            @click="logout"
-            v-if="showLogoutCta">
-              <span>Log out</span>
-            </a>
-            <a id="my-account" href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">
-              <span class="my-account-side-nav">
-                My account
-                <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
-              </span>
-            </a>
-          </Slide> -->
-
         </div>
         <div class="nav-mobile__brand col-xs-8 middle-xs center-xs">
           <a href="https://www.domesticandgeneral.com">

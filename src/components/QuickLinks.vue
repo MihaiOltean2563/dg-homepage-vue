@@ -4,58 +4,46 @@
       <div class="container">
         <h1 class="quick-links-greeting">Keep your home running smoothly</h1>
         <div class="quick-links-wrapper between-sm">
-          <div id="3576035" @click="handleAnalytics" class="appliance">
-            <a class="appliance__link-wrapper"  data-type="washing-machine" href="https://www.domesticandgeneral.com/goal-search/household-en/washing-machine-protection">
+          <div id="3576035" @click="handleAnalytics" class="appliance" data-type="washing-machine">
+            <a class="appliance__link-wrapper" href="https://www.domesticandgeneral.com/goal-search/household-en/washing-machine-protection">
               <p>Protect your</p>
               <p class="copy--blue">washing machine</p>
               <div class="img-wrapper">
-                <img class="icon icon1" 
-                src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/icon_shield-green.svg"
-                alt="icon-protective-shield"/>
                 <div class="bottom-left">
-                  <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_washing-machine_edited.png" alt="Washing Machine">
+                  <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_washing-machine.png" alt="Washing Machine">
                 </div>
               </div>
             </a>
           </div>
-          <div id="8261695" @click="handleAnalytics" class="appliance">
-            <a class="appliance__link-wrapper" data-type="dishwasher" href="https://www.domesticandgeneral.com/goal-search/household-en/dishwasher-protection">
+          <div id="8261695" @click="handleAnalytics" class="appliance" data-type="dishwasher">
+            <a class="appliance__link-wrapper" href="https://www.domesticandgeneral.com/goal-search/household-en/dishwasher-protection">
               <p>Protect your</p>
               <p class="copy--blue">dishwasher</p>
               <div class="img-wrapper">
-                <img class="icon icon2" 
-                src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/icon_shield-green.svg"
-                alt="icon-protective-shield"/>
                 <div class="bottom-left">
-                  <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_dishwasher_edited.png" alt="Dishwasher">
+                  <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_dishwasher.png" alt="Dishwasher">
                 </div>
               </div>
             </a>
           </div>
-          <div id="2688671" @click="handleAnalytics" class="appliance">
-            <a class="appliance__link-wrapper" data-type="fridge-freezer" href="https://www.domesticandgeneral.com/goal-search/household-en/fridge-freezer-44">
+          <div id="2688671" @click="handleAnalytics" class="appliance" data-type="fridge-freezer">
+            <a class="appliance__link-wrapper" href="https://www.domesticandgeneral.com/goal-search/household-en/fridge-freezer-44">
               <p>Protect your</p>
               <p class="copy--blue">fridge freezer</p>
               <div class="img-wrapper">
-                <img class="icon" 
-                src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/icon_shield-green.svg"
-                alt="icon-protective-shield"/>
                 <div class="bottom-left">
-                  <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_fridge-freezer_edited.png" alt="Fridge Freezer">
+                  <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_fridge-freezer.png" alt="Fridge Freezer">
                 </div>
               </div>
             </a>
           </div>
-          <div id="6165187" @click="handleAnalytics" class="appliance">
-            <a class="appliance__link-wrapper" data-type="all-appliances" href="https://www.domesticandgeneral.com/products">
+          <div id="6165187" @click="handleAnalytics" class="appliance"  data-type="all-appliances">
+            <a class="appliance__link-wrapper" href="https://www.domesticandgeneral.com/products">
              <p>View our</p>
               <p class="copy--blue">appliances</p>
               <div class="img-wrapper">
-                <img class="icon" 
-                src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/icon_shield-green.svg"
-                alt="icon-protective-shield"/>
                 <div class="bottom-left">
-                  <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_all-appliances_edited.png" alt="All appliaces">
+                  <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Appliances/img_all-appliances.png" alt="All appliaces">
                 </div>
               </div>
             </a>
@@ -68,14 +56,17 @@
 
 <script>
 export default {
+  /* eslint-disable */
   methods: {
     handleAnalytics(e){
-      window.dataLayer.push({
+      var testArr = [];
+      testArr.push({
         event: 'gaEvent',
         event_action: 'Appliances',
         event_category: 'Home',
-        event_label: e.srcElement.parentElement.dataset.type
-      })
+        event_label: e.currentTarget.dataset.type
+      });
+      console.log('testArr', testArr);
     }
   }
 };
@@ -177,18 +168,22 @@ export default {
               position: relative;
               
               .bottom-left{
-                width: 150px;
+                width: 165px;
                 margin-left: auto;
-                border: 1px solid blueviolet;
                 position: relative;
+                // border: 1px solid violet;
                 overflow: hidden;
                 display: flex;
                 justify-content: flex-end;
+                @media(min-width: 500px){
+                  width: 100%;
+                }
               }
               
               img{
                 // max-width: 80%;
-                max-width: 94px;
+                // max-width: 135px;
+                max-width: 100%;
                 position: absolute;
                 right: -3px;
                 bottom: 0;
