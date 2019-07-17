@@ -9,7 +9,9 @@
           <div class="widget-body middle-xs">
             <p>Received a letter in the post?</p>
             <a class="find-my-quote" 
-            id="find-my-quote" 
+            id="find-my-quote"
+            data-ga-action="FormSubmit"
+            data-ga-label="offerSubmit-clicked" 
             href="https://www.domesticandgeneral.com/find-your-quote">Find my quote</a>
           </div>
         </div>
@@ -46,7 +48,7 @@ export default {
         event_action: e.srcElement.dataset.gaAction,
         event_category: 'Home',
         event_label: e.srcElement.dataset.gaLabel
-      }) 
+      })
     }
   }
 };

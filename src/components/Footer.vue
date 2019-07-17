@@ -244,6 +244,7 @@ export default {
           line-height: 36px;
           display: flex;
           border-radius: 3px;
+          border: none;
           font-family: 'VAG Rounded W01 Bold',sans-serif;
           letter-spacing: 1px;
           transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
@@ -253,6 +254,9 @@ export default {
             -webkit-transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
             transition: 300ms background cubic-bezier(0.4, 0, 0.6, 1);
             cursor: pointer; 
+          }
+          &:focus{
+            outline: none;
           }
         }
       }
