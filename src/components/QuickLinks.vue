@@ -59,14 +59,12 @@ export default {
   /* eslint-disable */
   methods: {
     handleAnalytics(e){
-      var testArr = [];
-      testArr.push({
+      window.dataLayer.push({
         event: 'gaEvent',
         event_action: 'Appliances',
         event_category: 'Home',
         event_label: e.currentTarget.dataset.type
       });
-      console.log('testArr', testArr);
     }
   }
 };

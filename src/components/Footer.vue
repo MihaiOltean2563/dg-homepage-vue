@@ -63,7 +63,7 @@
           <h3 class="footer-grid-heading">Sign up to our Newsletter</h3>
           <input type="text" class="newsletter-input" v-model="emailNewsletter">
           <p class="invalid-email">Invalid email address</p>
-          <a @click="signToNewsLetter" class="sign-to-newsletter-cta center-xs middle-xs">Sign up</a>
+          <button @click="signToNewsLetter" class="sign-to-newsletter-cta center-xs middle-xs">Sign up</button>
           <p v-if="hasSubmitted">Thank you, you have subscribed.</p>
         </div>
       </div>
@@ -111,7 +111,8 @@ export default {
     }
   },
   methods: {
-    signToNewsLetter(){
+    signToNewsLetter(e){
+      e.preventDefault();
       var err = document.getElementById('newsletterMessage');
       var email = document.getElementById('newsletterEmail').value;
       var regex = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i;
