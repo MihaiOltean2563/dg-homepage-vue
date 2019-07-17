@@ -221,6 +221,7 @@ export default {
         }
         .invalid-email{
           display: none;
+          color: #af2c2b;
         }
         .newsletter-input {
           height: 45px;
@@ -229,6 +230,9 @@ export default {
           padding-left: 5px;
           &:focus {
             outline: none;
+          }
+          &.invalid{
+            border: 2px solid #af2c2b;
           }
         }
         .newsletter-old-input{
