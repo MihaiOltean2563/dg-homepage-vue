@@ -10,9 +10,10 @@
             <p>Received a letter in the post?</p>
             <a class="find-my-quote" 
             id="find-my-quote"
+            @click="handleAnalytics"
             data-ga-action="FormSubmit"
             data-ga-label="offerSubmit-clicked" 
-            href="https://www.domesticandgeneral.com/find-your-quote">Find my quote</a>
+            href="/find-your-quote">Find my quote</a>
           </div>
         </div>
       </div>
@@ -21,7 +22,7 @@
           <h1 class="welcome-intro__title" v-if="isNewCustomer">Protect the appliances that matter to you</h1>
         </div>
         <a class="btn welcome-intro__cta center-xs middle-xs" 
-        href="https://www.domesticandgeneral.com/products" 
+        href="/products" 
         v-if="isNewCustomer"
         @click="handleAnalytics" 
         data-ga-action="GetAQuoteButtonClicked"

@@ -155,7 +155,7 @@ export default {
         event: 'gaEvent',
         event_action: 'Interaction-Body',
         event_category: 'Home',
-        eveny_label: e.currentTarget.dataset.gaLabel
+        event_label: e.currentTarget.dataset.gaLabel
       })
     }
   }
