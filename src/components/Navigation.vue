@@ -13,18 +13,18 @@
           <li data-ga-label="Get Protected"
           @click="handleAnalytics" 
           class="list-wrapper__item">
-            <a href="https://www.domesticandgeneral.com/products">Get protected</a>
+            <a href="/products">Get protected</a>
           </li>
 
           <li data-ga-label="Book Repair"
           @click="handleAnalytics"  
           class="list-wrapper__item">
-            <a href="https://www.domesticandgeneral.com/repairs">Book a repair</a>
+            <a href="/repairs">Book a repair</a>
           </li>
           <li data-ga-label="Help and Advice"
           @click="handleAnalytics"  
           class="list-wrapper__item">
-            <a href="https://www.domesticandgeneral.com/content/help-advice-section/faq">Help and advice</a>
+            <a href="/content/help-advice-section/faq">Help and advice</a>
           </li>
 
         </ul>
@@ -44,13 +44,13 @@
       <div class="nav-mobile__burger col-xs-2 start-xs middle-xs" :class="{ sticky: showNavbar}">
 
         <Slide class="nav-burger-wrapper">
-          <a id="home" href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
+          <a id="home" href="/content/help-advice-section/faq">
             <span>Get protected</span>
           </a>
-          <a id="repairs" href="https://www.domesticandgeneral.com/repairs">
+          <a id="repairs" href="/repairs">
             <span>Book a repair</span>
           </a>
-          <a id="help-advice" href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
+          <a id="help-advice" href="/content/help-advice-section/faq">
             <span>Help and advice</span>
           </a>
           <a id="logout"
@@ -59,7 +59,7 @@
           v-if="showLogoutCta">
             <span>Log out</span>
           </a>
-          <a id="my-account" href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">
+          <a id="my-account" href="/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">
             <span class="my-account-side-nav">
               My account
               <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
@@ -74,7 +74,7 @@
         </a>
       </div>
       <div class="nav-mobile__basket col-xs-2 center-xs middle-xs">
-        <a href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151" class="center-xs">
+        <a href="/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151" class="center-xs">
           <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
         </a>
       </div>
@@ -93,7 +93,7 @@
           </a>
         </div>
         <div class="nav-mobile__basket col-xs-2 center-xs middle-xs">
-          <a href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151" class="center-xs">
+          <a href="/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151" class="center-xs">
             <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
           </a>
         </div>

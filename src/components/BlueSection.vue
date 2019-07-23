@@ -54,7 +54,7 @@
             <div class="benefits-wrapper">
               <a @click="handleAnalytics"
               data-ga-label="LoginRegister"
-               href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">
+               href="/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">
                 <div class="row benefit">
                   <div class="col-xs-12 col-sm-2 benefit__icon">
                     <div class="icon-box center-xs">
@@ -77,7 +77,7 @@
               </a>
               <a @click="handleAnalytics" 
               data-ga-label="Get Protected"
-              href="https://www.domesticandgeneral.com/repairs">
+              href="/repairs">
                 <div class="row benefit">
                   <div class="col-xs-12 col-sm-2 benefit__icon start-xs">
                     <div class="icon-box center-xs">
@@ -89,7 +89,7 @@
                       <img class="arr-right" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Blue+section/icon_arrow-white.png">
                       <div>
                         <h2 class="benefit__desc__title">
-                          <a href="https://www.domesticandgeneral.com/repairs">Digital repair booking</a>
+                          <a href="/repairs">Digital repair booking</a>
                         </h2>
                       </div>
                     </div>
@@ -102,7 +102,7 @@
               <a 
               @click="handleAnalytics" 
               data-ga-label="Help and Advice"
-              href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
+              href="/content/help-advice-section/faq">
                 <div class="row benefit">
                   <div class="col-xs-12 col-sm-2 benefit__icon start-xs">
                     <div class="icon-box center-xs">
@@ -116,7 +116,7 @@
                       </div>
                       <div>
                         <h2 class="benefit__desc__title">
-                          <a href="https://www.domesticandgeneral.com/content/help-advice-section/faq">Troubleshooting and maintenance content</a>
+                          <a href="/content/help-advice-section/faq">Troubleshooting and maintenance content</a>
                         </h2>
                       </div>
                     </div>

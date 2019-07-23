@@ -5,16 +5,16 @@
         <div class="grid-wrapper__left col-xs-12 col-md-3">
           <h3 class="footer-grid-heading">Products we protect</h3>
           <p>
-            <a href="https://www.domesticandgeneral.com/products/household">Household appliances</a>
+            <a href="/products/household">Household appliances</a>
           </p>
           <p>
-            <a href="https://www.domesticandgeneral.com/heating">Heating</a>
+            <a href="/heating">Heating</a>
           </p>
           <p>
-            <a href="https://www.domesticandgeneral.com/products/tv-audio">TV & Audio</a>
+            <a href="/products/tv-audio">TV & Audio</a>
           </p>
           <p>
-            <a href="https://www.domesticandgeneral.com/products/camera-mobile">Photo & Video devices</a>
+            <a href="/products/camera-mobile">Photo & Video devices</a>
           </p>
         </div>
         <div class="grid-wrapper__center col-xs-12 col-md-5">
@@ -22,16 +22,16 @@
           <div class="row">
             <div class="col-xs-12 col-md-5">
               <p>
-                <a href="https://www.domesticandgeneral.com/corporate/about-us">About us</a>
+                <a href="/corporate/about-us">About us</a>
               </p>
               <p>
-                <a href="https://www.domesticandgeneral.com/content/help-advice-section/faq">Help and advice</a>
+                <a href="/content/help-advice-section/faq">Help and advice</a>
               </p>
               <p>
-                <a href="https://www.domesticandgeneral.com/content/contact-domestic-general">Contact us</a>
+                <a href="/content/contact-domestic-general">Contact us</a>
               </p>
               <p>
-                <a href="https://www.domesticandgeneral.com/content/help-advice-section/corporate-information/media-centre">Media centre</a>
+                <a href="/content/help-advice-section/corporate-information/media-centre">Media centre</a>
               </p>
               <p>
                 <a href="https://careers.domesticandgeneral.com/">Careers</a>
@@ -42,19 +42,19 @@
                 <a href="https://investors.domesticandgeneral.com/">Investor relations</a>
               </p>
               <p>
-                <a href="https://www.domesticandgeneral.com/company-information-legal">Regulatory information</a>
+                <a href="/company-information-legal">Regulatory information</a>
               </p>
               <p>
-                <a href="https://www.domesticandgeneral.com/content/help-advice-section/corporate-information/charity-partnerships">Charity Partnerships</a>
+                <a href="/content/help-advice-section/corporate-information/charity-partnerships">Charity Partnerships</a>
               </p>
               <p>
-                <a href="https://www.domesticandgeneral.com/modern-slavery">Modern Slavery Statement</a>
+                <a href="/modern-slavery">Modern Slavery Statement</a>
               </p>
               <p>
-                <a href="https://www.domesticandgeneral.com/PartVIITransfer">Part VII Transfer</a>
+                <a href="/PartVIITransfer">Part VII Transfer</a>
               </p>
               <p>
-                <a href="https://www.domesticandgeneral.com/content/help-advice-section/faq/received-a-strange-call-">Rogue Trader Guidance</a>
+                <a href="/content/help-advice-section/faq/received-a-strange-call-">Rogue Trader Guidance</a>
               </p>
             </div>
           </div>
@@ -77,13 +77,13 @@
         <ul class="footer-list col-xs-12">
               <li>© 2019 Domestic & General Group Limited</li>
               <li>
-                <a href="https://www.domesticandgeneral.com/web-terms-conditions">Website Terms and Conditions</a>
+                <a href="/web-terms-conditions">Website Terms and Conditions</a>
               </li>
               <li>
-                <a href="https://www.domesticandgeneral.com/privacy-cookies-policy">Privacy and Cookies policy</a>
+                <a href="/privacy-cookies-policy">Privacy and Cookies policy</a>
               </li>
               <li>
-                <a href="https://www.domesticandgeneral.com/accessibility">Accessibility policy</a>
+                <a href="/accessibility">Accessibility policy</a>
               </li>
         </ul>
       </div>

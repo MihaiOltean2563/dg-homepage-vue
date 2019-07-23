@@ -8,7 +8,7 @@
               <h2 class="quote-title">Protection against the unexpected</h2>
               <p class="quote-copy">Insurance for the appliances and electronics you can’t go without.</p>
             </div>
-            <a href="https://www.domesticandgeneral.com/products"
+            <a href="/products"
             @click="handleAnalytics" 
             class="get-quote-cta center-xs middle-xs"
             data-ga-action="GetAQuoteButtonClicked-Body"
@@ -61,7 +61,6 @@
                   <h5 class="benefit__desc__title">A replacement product if yours can't be fixed
                     <span>(just pay the cost of installation and disposal)</span>
                   </h5>
-                  <!-- <a href="https://www.domesticandgeneral.com/products" class="select-boiler-link">Select your boiler to see the benefits of our maintenance and support plans.</a> -->
                 </div>
               </div>
             </div>
