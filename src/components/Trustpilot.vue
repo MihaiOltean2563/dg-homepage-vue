@@ -3,7 +3,7 @@
     <div class="cols-wrapper">
       <div class="trustpilot-wrapper middle-xs">
         <!-- TrustBox widget - Mini --> 
-        <div class="trustpilot-widget" data-locale="en-GB" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="4cb3113600006400050dfb02" data-style-height="100px" data-style-width="100%" data-theme="light">    <a href="https://uk.trustpilot.com/review/domesticandgeneral.com" target="_blank" rel="noopener">Trustpilot</a> </div> 
+        <div class="trustpilot-widget" data-locale="en-GB" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="4cb3113600006400050dfb02" data-style-height="120px" data-style-width="100%" data-theme="light">    <a href="https://uk.trustpilot.com/review/domesticandgeneral.com" target="_blank" rel="noopener">Trustpilot</a> </div> 
         <!-- End TrustBox widget - Mini-->
       </div>
 
