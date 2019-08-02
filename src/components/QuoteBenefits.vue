@@ -18,7 +18,7 @@
           <div class="qb-wrapper__right col-xs-12 col-md-6">
             <div class="quote-copy-mobile">
               <h2 class="quote-title">Protection against the unexpected</h2>
-              <p class="quote-copy">Insurance for the appliances and electronics you can’t go without.</p>
+              <p class="quote-copy">Insurance for the appliances and electronics you can’t go without</p>
             </div>
             <div class="benefits-wrapper">
               <div class="benefit-row">

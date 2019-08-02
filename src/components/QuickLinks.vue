@@ -39,7 +39,7 @@
           </div>
           <div id="6165187" @click="handleAnalytics" class="appliance-v2"  data-type="all-appliances">
             <a class="appliance-v2__link-wrapper" href="/products">
-             <p>View our</p>
+             <p>View all</p>
               <p class="copy--blue">appliances</p>
               <div class="img-wrapper">
                 <div class="bottom-left">
