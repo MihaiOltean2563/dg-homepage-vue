@@ -4,7 +4,7 @@
     <header class="nav row" role="banner">
       <div class="nav__brand col-xs-2 end-xs">
         <a href="https://www.domesticandgeneral.com">
-          <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/logo_D%2BG_white.png" alt="Domestic&General Logo">
+          <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/DG_logo45.png" alt="Domestic&General Logo">
         </a>
       </div>
       <div class="nav__list col-xs-7 middle-xs">
@@ -70,7 +70,7 @@
       </div>
       <div class="nav-mobile__brand col-xs-8 middle-xs center-xs">
         <a href="https://www.domesticandgeneral.com">
-          <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/logo_D%2BG_white.png" alt="Domestic&General Logo">
+          <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/DG_logo45.png" alt="Domestic&General Logo">
         </a>
       </div>
       <div class="nav-mobile__basket col-xs-2 center-xs middle-xs">
@@ -89,7 +89,7 @@
         </div>
         <div class="nav-mobile__brand col-xs-8 middle-xs center-xs">
           <a href="https://www.domesticandgeneral.com">
-            <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/logo_D%2BG_white.png" alt="Domestic&General Logo">
+            <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/DG_logo45.png" alt="Domestic&General Logo">
           </a>
         </div>
         <div class="nav-mobile__basket col-xs-2 center-xs middle-xs">
@@ -165,7 +165,7 @@ export default{
     left: 0;
     right: 0;
     // padding-top: 20px;
-    background: transparent;
+    background: #fff;
     transition: .5s ease-in-out;
 
     @media(min-width: 1200px){
@@ -192,14 +192,12 @@ export default{
       padding: 20px 0;
       
       @media(min-width: 975px){
-        // border: 1px solid goldenrod;
         display: flex;
-        color: #fff;
-        // max-width: 100%;
         margin: 0;
         
         a{
-          color: #fff;
+          color: #111;
+          font-weight: bold;
         }
         &__brand{
           // border: 1px solid seagreen;
@@ -224,7 +222,7 @@ export default{
           .list-wrapper{
             display: flex;
             list-style: none;
-            border-left : .5px solid whitesmoke;
+            border-left : 1px solid #111;
             padding: 5px 0 5px 0;
             a{
               font-family: 'VAG Rounded W01 Bold',sans-serif;
@@ -232,9 +230,9 @@ export default{
               -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
               letter-spacing: .5px;
               &:hover{
-                color: hsla(0,0%,100%,.7);
-                -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
-                transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+                // color: hsla(0,0%,100%,.7);
+                // -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+                // transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
               }
             }
             &__item{
@@ -263,9 +261,9 @@ export default{
              transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
             -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
              &:hover{
-                color: hsla(0,0%,100%,.7);
-                -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
-                transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+                // color: hsla(0,0%,100%,.7);
+                // -webkit-transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
+                // transition: 300ms color cubic-bezier(0.4, 0, 0.6, 1);
               }
           }
           .logout-cta{
@@ -324,7 +322,7 @@ export default{
             }
             
             .bm-burger-bars {
-              background-color: #fff;
+              background-color: #111;
             }
             .line-style {
               position: absolute;
@@ -439,8 +437,7 @@ export default{
         -webkit-box-shadow: 0 0.3rem 0.3rem rgba(0,0,0,.2);
         box-shadow: 0 0.3rem 0.3rem rgba(0,0,0,.2);
         opacity: 1;
-        // background: rgba(64, 6, 104, .92);
-        background: rgba(64, 6, 104, 1);
+        background: #fff;
         -webkit-transform: translate3d(0,0,0);
         transform: translate3d(0,0,0);
         padding: 10px;

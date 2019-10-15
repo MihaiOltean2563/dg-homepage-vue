@@ -4,17 +4,37 @@
       <div class="quote-finder center-xs">
         <div class="quote-finder__widget middle-xs">
           <div class="widget-icon center-xs">
-            <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_arrow-purple.svg" alt="arrow-purple">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.82 14.3"><defs></defs><title>post</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M19.54,0H1.28A1.28,1.28,0,0,0,0,1.28V13A1.27,1.27,0,0,0,1.28,14.3H19.54A1.27,1.27,0,0,0,20.82,13V1.28A1.28,1.28,0,0,0,19.54,0ZM14.17,7.58A.57.57,0,0,0,14,8a.56.56,0,0,0,.12.4l.07.07,4.31,4.3H2.35l4.3-4.29a.55.55,0,0,0,.07-.78A.53.53,0,0,0,6,7.58l-.07.06L1.58,12V2.44L9.9,7.83a1,1,0,0,0,1,0l8.32-5.39V12L15,7.65a.62.62,0,0,0-.38-.2A.57.57,0,0,0,14.17,7.58Zm-3.76-.72L2.26,1.57h16.3Z"/></g></g></svg>
           </div>
           <div class="widget-body middle-xs">
             <p>Received a letter in the post?</p>
-            <a class="find-my-quote" 
+            <!-- <a class="find-my-quote" 
             id="find-my-quote"
             @click="handleAnalytics"
             data-ga-action="FormSubmit"
             data-ga-label="offerSubmit-clicked" 
-            href="/find-your-quote">Find my quote</a>
+            href="/find-your-quote">Find my quote</a> -->
           </div>
+          <!-- <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_arrow-purple.svg" alt="arrow-purple"> -->
+          <a class="find-my-quote" 
+            id="find-my-quote"
+            @click="handleAnalytics"
+            data-ga-action="FormSubmit"
+            data-ga-label="offerSubmit-clicked" 
+            href="/find-your-quote">
+
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 14 13">
+              <defs>
+                <clipPath id="clip-Artboard_5">
+                  <rect width="14" height="13"/>
+                </clipPath>
+              </defs>
+              <g id="Artboard_5" data-name="Artboard – 5" clip-path="url(#clip-Artboard_5)">
+                <path id="arrow-right2" d="M7.8,11.8l3.333-3.333a.644.644,0,0,0,0-.933L7.8,4.2a.66.66,0,0,0-.933.933l2.2,2.2h-6.4a.667.667,0,1,0,0,1.333h6.4l-2.2,2.2a.644.644,0,0,0,0,.933A.644.644,0,0,0,7.8,11.8Z" transform="translate(0.5 -1.5)" fill="#fff" stroke="#fff" stroke-width="1"/>
+              </g>
+            </svg>
+          </a>
+
         </div>
       </div>
       <div class="welcome-intro middle-xs">
@@ -59,7 +79,6 @@ export default {
 
 #hero {
   display: flex;
-  // background: url("https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/img_banner-gradient.png");
   background: url('https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Hero/img_banner_320.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -138,7 +157,6 @@ export default {
         border-radius: 50px;
         padding: 5px 15px;
         padding-left: 8px;
-        padding-bottom: 6px;
         background: rgba(255, 255, 255, 0.18);
         p,
         a {
@@ -149,9 +167,7 @@ export default {
         p {
           padding: 0 10px;
           margin: 5px 0;
-          color: #D8CCE0;
           font-size: 12px;
-          // margin-bottom: 3px;
           @media (min-width: 768px) {
             font-size: 16px;
             margin-bottom: 5px;
@@ -159,10 +175,16 @@ export default {
         }
         .widget-icon {
           border-radius: 50%;
-          width: 40px;
-          height: 40px;
+          width: 35px;
+          height: 35px;
           background: #4c2178;
           display: flex;
+
+          svg{
+            width: 20px;
+            fill: #fff;
+          }
+
           img{
             width: 18px;
             @media (min-width: 768px) {
@@ -170,8 +192,8 @@ export default {
             }
           }
           @media (min-width: 768px) {
-            width: 25px;
-            height: 25px;
+            // width: 25px;
+            // height: 25px;
           }
         }
         .widget-body {
@@ -191,6 +213,7 @@ export default {
           text-decoration: underline;
           padding-left: 10px;
           padding-right: 10px;
+          display: flex;
           @media (min-width: 768px) {
             padding-left: 0;
           }
