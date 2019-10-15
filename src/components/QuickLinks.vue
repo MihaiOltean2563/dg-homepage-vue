@@ -194,11 +194,18 @@ export default {
                 top: 33px;
                 right: 45%;
                 z-index: 1;
+                max-width: 40px;
                 &.icon1{
-                  top: 10px;
+                  top: 15px;
+                  @media(min-width: 768px){
+                    top: 20px;
+                  }
                 }
                 &.icon2{
-                  top: 25px;
+                  top: 30px;
+                  @media(min-width: 768px){
+                    top: 20px;
+                  }
                 }
                
                 @media(min-width: 768px){

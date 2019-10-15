@@ -105,7 +105,7 @@ export default {
   watch: {
     'emailNewsletter': function(val, oldVal){
       var oldNewsletterInputElem = document.getElementById('newsletterEmail');
-      if(!oldNewsletterInputElem !== null){
+      if(oldNewsletterInputElem !== null){
         oldNewsletterInputElem.value = val;
       }
     }
@@ -114,7 +114,8 @@ export default {
     signToNewsLetter(e){
       e.preventDefault();
       var err = document.getElementById('newsletterMessage');
-      var email = document.getElementById('newsletterEmail').value;
+      // var email = document.getElementById('newsletterEmail').value;
+      var email = document.querySelector('.newsletter-input').value;
       var regex = /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/i;
       var invalidEmailEl = document.querySelector('.invalid-email');
       var newsLetterInputEl = document.querySelector('.newsletter-input');
@@ -127,8 +128,10 @@ export default {
         invalidEmailEl.style.display = 'none';
         var oldEl = document.getElementById('newsletterForm');
         var oldSubmit = oldEl.querySelector('[type=submit]');
-        oldSubmit.click();
+        console.log('clicking old button');
+        // oldSubmit.click();
       }else{
+        console.log('else block');
         invalidEmailEl.style.display = 'block';
         newsLetterInputEl.classList.add('invalid');
         return;
@@ -149,6 +152,7 @@ export default {
   }
   .container {
     // border:1px solid goldenrod;
+    height: auto;
     .grid-wrapper {
       padding: 40px 0;
       margin: 0;
@@ -236,6 +240,7 @@ export default {
             border: 2px solid #af2c2b;
           }
         }
+  
         .newsletter-old-input{
           margin-top: 10px;
         }
