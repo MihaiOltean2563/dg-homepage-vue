@@ -3,7 +3,7 @@
     <div class="cols-wrapper">
       <div class="trustpilot-wrapper middle-xs">
         <!-- TrustBox widget - Mini --> 
-        <div class="trustpilot-widget" data-locale="en-GB" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="4cb3113600006400050dfb02" data-style-height="100px" data-style-width="100%" data-theme="light">    <a href="https://uk.trustpilot.com/review/domesticandgeneral.com" target="_blank" rel="noopener">Trustpilot</a> </div> 
+        <div class="trustpilot-widget" data-locale="en-GB" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="4cb3113600006400050dfb02" data-style-height="120px" data-style-width="100%" data-theme="light">    <a href="https://uk.trustpilot.com/review/domesticandgeneral.com" target="_blank" rel="noopener">Trustpilot</a> </div> 
         <!-- End TrustBox widget - Mini-->
       </div>
 
@@ -11,7 +11,7 @@
         <div class="wrapper-big-screens middle-xs">
   
           <h2 class="login-title">Take control of your plans with <span>My Account</span></h2>
-          <a v-if="isNewCustomer" class="login-cta center-xs middle-xs" href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">Go to My Account</a>
+          <a v-if="isNewCustomer" @click="handleAnalytics" data-ga-label="GoToMyAccountButtonClicked" class="login-cta center-xs middle-xs" href="/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">Go to My Account</a>
         </div>
       </div>
     </div>
@@ -19,14 +19,24 @@
 </template>
 
 <script>
+/* eslint-disable */
 export default {
  name: 'Trustpilot',
  data(){
    return{
      isNewCustomer: true,
    }
+ },
+ methods: {
+    handleAnalytics(e){
+      window.dataLayer.push({
+        event: 'gaEvent',
+        event_action: e.srcElement.dataset.gaLabel,
+        event_category: 'Home',
+        event_label: 'primaryButtons-CTA'
+      })
+    }
  }
-
 };
 </script>
 

@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid nav-wrapper" :class="{ sticky: showNavbar}">
-
+  <div class="nav-wrapper">
+    <!-- container-fluid from nav-wrapper above -->
     <header class="nav row" role="banner">
       <div class="nav__brand col-xs-2 end-xs">
         <a href="https://www.domesticandgeneral.com">
@@ -13,18 +13,18 @@
           <li data-ga-label="Get Protected"
           @click="handleAnalytics" 
           class="list-wrapper__item">
-            <a href="https://www.domesticandgeneral.com/products">Get protected</a>
+            <a href="/products">Get protected</a>
           </li>
 
           <li data-ga-label="Book Repair"
           @click="handleAnalytics"  
           class="list-wrapper__item">
-            <a href="https://www.domesticandgeneral.com/repairs">Book a repair</a>
+            <a href="/repairs">Book a repair</a>
           </li>
           <li data-ga-label="Help and Advice"
           @click="handleAnalytics"  
           class="list-wrapper__item">
-            <a href="https://www.domesticandgeneral.com/content/help-advice-section/faq">Help and advice</a>
+            <a href="/content/help-advice-section/faq">Help and advice</a>
           </li>
 
         </ul>
@@ -41,16 +41,16 @@
     </header>
 
     <header class="nav-mobile row" role="banner">
-      <div class="nav-mobile__burger col-xs-2 start-xs middle-xs">
+      <div class="nav-mobile__burger col-xs-2 start-xs middle-xs" :class="{ sticky: showNavbar}">
 
         <Slide class="nav-burger-wrapper">
-          <a id="home" href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
+          <a id="home" href="/content/help-advice-section/faq">
             <span>Get protected</span>
           </a>
-          <a id="repairs" href="https://www.domesticandgeneral.com/repairs">
+          <a id="repairs" href="/repairs">
             <span>Book a repair</span>
           </a>
-          <a id="help-advice" href="https://www.domesticandgeneral.com/content/help-advice-section/faq">
+          <a id="help-advice" href="/content/help-advice-section/faq">
             <span>Help and advice</span>
           </a>
           <a id="logout"
@@ -59,7 +59,7 @@
           v-if="showLogoutCta">
             <span>Log out</span>
           </a>
-          <a id="my-account" href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">
+          <a id="my-account" href="/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151">
             <span class="my-account-side-nav">
               My account
               <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
@@ -74,11 +74,30 @@
         </a>
       </div>
       <div class="nav-mobile__basket col-xs-2 center-xs middle-xs">
-        <a href="https://www.domesticandgeneral.com/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151" class="center-xs">
+        <a href="/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151" class="center-xs">
           <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
         </a>
       </div>
 
+    </header>
+
+    <header role="banner" class="nav-slide-in" :class="{ sticky: showNavbar}">
+      <div class="row">
+
+        <div class="nav-mobile__burger col-xs-2 start-xs middle-xs">
+
+        </div>
+        <div class="nav-mobile__brand col-xs-8 middle-xs center-xs">
+          <a href="https://www.domesticandgeneral.com">
+            <img src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/logo_D%2BG_white.png" alt="Domestic&General Logo">
+          </a>
+        </div>
+        <div class="nav-mobile__basket col-xs-2 center-xs middle-xs">
+          <a href="/AllMyPoliciesView?catalogId=10052&langId=44&storeId=10151" class="center-xs">
+            <img class="user-icon" src="https://front-end-assets.s3.eu-west-2.amazonaws.com/DGX+-+Homepage/Header/icon_my-account.svg" alt="User Icon">
+          </a>
+        </div>
+      </div>
     </header>
   </div>
 </template>
@@ -145,11 +164,13 @@ export default{
     position: absolute;
     left: 0;
     right: 0;
-    padding-top: 20px;
+    // padding-top: 20px;
     background: transparent;
     transition: .5s ease-in-out;
+
     @media(min-width: 1200px){
-      max-width: 1200px; 
+      // max-width: 1200px;
+      max-width: 100%;
     }
     &.sticky{
       position:fixed;
@@ -157,9 +178,9 @@ export default{
       width: 100%;
       padding-top: 10px;
       padding-bottom: 10px;
-      // background: #400668;
       background: rgba(64, 6, 104, .92);
       z-index: 1;
+
       @media(min-width: 768px){
         position: absolute;
         top: initial;
@@ -168,21 +189,31 @@ export default{
     }
     .nav{
       display: none;
+      padding: 20px 0;
+      
       @media(min-width: 975px){
         // border: 1px solid goldenrod;
         display: flex;
         color: #fff;
-        max-width: 100%;
+        // max-width: 100%;
         margin: 0;
+        
         a{
           color: #fff;
         }
         &__brand{
           // border: 1px solid seagreen;
           display: flex;
-          padding-right: 40px;       
+                 
           img{
-            max-height: 50px;
+            max-height: 40px;
+
+            @media(min-width: 1200px){
+              max-height: 50px;
+            }
+          }
+          @media(min-width: 1200px){
+            padding-right: 40px;
           }
         }
         &__list{
@@ -207,14 +238,17 @@ export default{
               }
             }
             &__item{
-              // padding: 0 10px;
-              padding-right: 40px;
               font-size: 18px;
-              @media(min-width: 768px) and (max-width: 1100px){
-                padding-right: 30px;
+              @media(min-width: 975px) and (max-width: 1200px){
+                padding: 0 20px;
+              }
+              @media(min-width: 1200px){
+                padding: 0 20px;
               }
               &:first-of-type{
-                padding-left: 40px;
+                @media(min-width: 1200px){
+                  padding-left: 40px;
+                }
               }
             }
           }
@@ -258,6 +292,10 @@ export default{
           
         }
       }
+      @media(min-width: 1200px){
+        max-width: 1100px;
+        margin: 0 auto;
+      }
     }
     .nav-mobile{
       @media(min-width: 975px){
@@ -268,17 +306,20 @@ export default{
       max-width: 100%;
       margin: 0;
       position: relative;
-   
+      padding: 20px 0;
    
       &__burger{
         display: flex;
+        
         // vue-burger-menu css
         .nav-burger-wrapper{
+            position: fixed;
+            top: -10px;
+            z-index: 1000;
            .bm-burger-button {
               width: 36px;
               height: 30px;
-              left: 0px;
-              top: 12px;
+              left:10px;
               cursor: pointer;
             }
             
@@ -376,6 +417,34 @@ export default{
         .basket-img{
           width: 40px;
         }
+      }
+    }
+
+    .nav-slide-in{
+      position: fixed!important;
+      top: 0;
+      z-index: 100;
+      width: 100%;
+      opacity: 0;
+      display: block;
+      -webkit-transition: all 400ms ease-in-out;
+      -o-transition: all 400ms ease-in-out;
+      transition: all 400ms ease-in-out;
+      -webkit-transform: translate3d(0,-60px,0);
+      transform: translate3d(0,-60px,0);
+      @media(min-width: 975px){
+        display: none;
+      }
+      &.sticky{
+        -webkit-box-shadow: 0 0.3rem 0.3rem rgba(0,0,0,.2);
+        box-shadow: 0 0.3rem 0.3rem rgba(0,0,0,.2);
+        opacity: 1;
+        // background: rgba(64, 6, 104, .92);
+        background: rgba(64, 6, 104, 1);
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        padding: 10px;
+        padding-bottom: 20px;
       }
     }
   }
