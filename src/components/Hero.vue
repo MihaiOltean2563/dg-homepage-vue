@@ -158,6 +158,7 @@ export default {
         padding: 5px 15px;
         padding-left: 8px;
         background: rgba(255, 255, 255, 0.18);
+        border: .5px solid #fff;
         p,
         a {
           color: #fff;

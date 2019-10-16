@@ -113,7 +113,7 @@ export default{
     return{
      isNewCustomer: true,
      showNavbar: false,
-     showLogoutCta: false
+     showLogoutCta: true
     }  
   },
   components: {
